@@ -2,4 +2,4 @@
 
 # 购买指导
 
-![nsort dsort msort](/images/indexmenu\>/compute/uhost/buy#1)
+{{indexmenu>:compute:uhost:buy#1 | nsort dsort msort}}

@@ -2,4 +2,5 @@
 
 {{indexmenu_n>3}}
 
-![nsort dsort msort](/images/indexmenu\>/compute/uhost/guide#2)
+
+{{indexmenu>:compute:uhost:guide#2 | nsort dsort msort}}

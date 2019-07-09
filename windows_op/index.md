@@ -2,4 +2,4 @@
 
 # Windows服务配置指南
 
-![nsort dsort msort](/images/indexmenu\>/compute/uhost/windows_op#1)
+{{indexmenu>:compute:uhost:windows_op#1 | nsort dsort msort}}

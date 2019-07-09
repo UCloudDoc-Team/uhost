@@ -2,4 +2,4 @@
 
 {{indexmenu_n>15}}
 
-![nsort dsort msort](/images/indexmenu\>/compute/uhost/public#1)
+{{indexmenu>:compute:uhost:public#1 | nsort dsort msort}}

@@ -2,4 +2,4 @@
 
 # 快速上手
 
-![nsort dsort msort](/images/indexmenu\>/compute/uhost/newuser#1)
+{{indexmenu>:compute:uhost:newuser#1 | nsort dsort msort}}

@@ -4,5 +4,4 @@
 
 **目录：**
 
-![skipfile=/^(compute:uhost:concepts)$/ nsort dsort
-msort](/indexmenu\>/compute/uhost#1)
+{{indexmenu>:compute:uhost#1 | skipfile=/^(compute:uhost:concepts)$/ nsort dsort msort}}

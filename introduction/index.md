@@ -2,4 +2,4 @@
 
 # 产品简介
 
-![nsort dsort msort](/images/indexmenu\>/compute/uhost/introduction#2)
+{{indexmenu>:compute:uhost:introduction#2 | nsort dsort msort}}
