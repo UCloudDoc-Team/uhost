@@ -61,31 +61,19 @@ Centos / Ubuntu / Redhat：
 > 1.删除文件/etc/init/uga.conf 文件， kill init 进程
 > 
 > 2.kill uga进程，确认uga进程不再重启
-
-\>
-
+>
 > 3.chattr -i /usr/bin/uga 去除属性(immutable)
-
-\>
-
+>
 > 4.删除文件 /usr/bin/uga
 
 Debian：
 
 > 1.修改/etc/inittab文件，注释行： uga:2345respawn:/usr/bin/uga 并保存
-
-\>
-
+>
 > 2.init q 重启inittab
-
-\>
-
+>
 > 3.查看uga进程不再运行
-
-\>
-
+>
 > 4.chattr -i /usr/bin/uga 去除属性(immutable)
-
-\>
-
-> 4.删除文件/usr/bin/uga
+>
+> 5.删除文件/usr/bin/uga
