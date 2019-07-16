@@ -72,7 +72,7 @@ route change 0.0.0.0 mask 0.0.0.0 $router_ip [if n] /p
 
 n为网卡号码，单网卡不需要输入中括号中内容。可以通过在cmd中执行route print结果中的第一列查看。
 
-![image](/images/route_print.png)
+![image](/images/route_print.jpg)
 
 > **note**
 > 
