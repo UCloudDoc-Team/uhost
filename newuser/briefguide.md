@@ -104,10 +104,10 @@
 > 
 > Linux系统与Windows系统界面不同，但登录步骤类似。
 
-![](/images/UHOST_linux.png)
+![](/images/uhost_login_linux.png)
 
 （Linux系统下登录）
 
-![](/images/UHOST_windows.png)
+![](/images/uhost_login_windows.png)
 
 （Windows系统下登录）
