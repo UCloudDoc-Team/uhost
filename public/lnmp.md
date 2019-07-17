@@ -28,6 +28,6 @@
 
 注：
 
-1.下载 lnmpcloud.zip
+1.下载 lnmpcloud.zip；
 
 2.www.myapp.com 请修改为自己的域名。
