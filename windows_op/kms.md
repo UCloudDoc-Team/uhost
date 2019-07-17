@@ -21,11 +21,10 @@ Key)多次激活密钥方式和KMS(Key Management Service)密钥管理服务方�
 
 KVM运作机制如下：
 
-1.  KMS Server安装密钥后通过公网连接微软授权许可服务器激活自身KMS服务；
-2.  Client在初始化时内网访问 KMS地址通过DNS Server解析到KMS Server IP；
-3.  DNS Server定期内网保持与KMS Server集群通讯，如果当探测到一台KMS
-    Server异常时，则自动将域名解析到另一台KMS Server上；
-4.  KMS Server与Client通过默认端口1688通讯，并自动激活Client端系统，每180天会再次联系KMS Server激活。
+1. KMS Server安装密钥后通过公网连接微软授权许可服务器激活自身KMS服务；
+2. Client在初始化时内网访问 KMS地址通过DNS Server解析到KMS Server IP；
+3. DNS Server定期内网保持与KMS Server集群通讯，如果当探测到一台KMS Server异常时，则自动将域名解析到另一台KMS Server上；
+4. KMS Server与Client通过默认端口1688通讯，并自动激活Client端系统，每180天会再次联系KMS Server激活。
 
 ## 客户端激活
 
@@ -44,21 +43,18 @@ Uhost安装系统：Windows server 2008 datacenter r2
 
 ### Q: 请问你们提供的Windows云主机是否都是正版的呢？
 
-A:
-我们UCloud提供的所有Windows平台的主机均已向微软购买了官方正版授权许可，您在购买我们Windows版本的主机时就已经包含了系统版权费用，因此您无需再另外购买系统序列号。
+A：我们UCloud提供的所有Windows平台的主机均已向微软购买了官方正版授权许可，您在购买我们Windows版本的主机时就已经包含了系统版权费用，因此您无需再另外购买系统序列号。
 主机在初始化时就已经通过内网的KMS服务自动激活，并且每180天会自动激活一次，您可以在主机内部通过cmd命令slmgr.vbs /dlv
 查看具体激活信息。
 
 ### Q: 如果我要在这些Windows云主机上另外安装其他收费软件是否可以呢？
 
-A:
-您可以在UCloud的UHost主机内安装收费软件，但是软件所需的版权费用需要用户自行向软件提供商支付，UCloud不会干涉用户在主机内的任何操作，如果您使用盗版软件由此引发的法律责任全部由客户自行承担。
+A：您可以在UCloud的UHost主机内安装收费软件，但是软件所需的版权费用需要用户自行向软件提供商支付，UCloud不会干涉用户在主机内的任何操作，如果您使用盗版软件由此引发的法律责任全部由客户自行承担。
 
-Q:
-我在UCloud的一个机房创建了一台Windows主机并制作成了镜像，提交工单后你们帮我把这个镜像迁移到了另一个机房，但是我现在通过这个镜像生成一个新的UHost后系统提示“产品未激活”，请问我该如何解决？
+### Q:我在UCloud的一个机房创建了一台Windows主机并制作成了镜像，提交工单后你们帮我把这个镜像迁移到了另一个机房，但是我现在通过这个镜像生成一个新的UHost后系统提示“产品未激活”，请问我该如何解决？
 
-A: 由于您的镜像进行了跨机房迁移，因此系统内部的KMS地址发生了变化，镜像里的KMS信息仍然还是记录前一个机房，需要手动激活一次即可解决。
-具体操作可以参考我们的 [FAQ文档](../faq.html#如何激活UHost上的Windows_Server)
+A：由于您的镜像进行了跨机房迁移，因此系统内部的KMS地址发生了变化，镜像里的KMS信息仍然还是记录前一个机房，需要手动激活一次即可解决。
+具体操作可以参考我们的 [FAQ文档](../faq.html#如何激活UHost上的Windows_Server)。
 
 ## 总结
 
