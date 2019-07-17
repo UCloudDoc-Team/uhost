@@ -10,9 +10,8 @@
 
 新版机型与旧版对应关系：
 
-|           |                                        |
-| --------- | -------------------------------------- |
 | 原有机型      | 现有机型                                   |
+| --------- | -------------------------------------- |
 | 标准型N1     | 通用型N + IvyBridage/Haswell CPU          |
 | 标准型N2     | 通用型N + Broadwell CPU                   |
 | 标准型N3     | 通用型N + Skylake CPU                     |
@@ -55,7 +54,7 @@ UCloud云主机可选三种类型的磁盘：云硬盘（UDisk），本地普通
 
 ## 在SSD云主机上使用MySQL，如何发挥最佳性能？
 
-在SSD云主机上使用MySQL数据库需要进行以下优化： innodb\_io\_capacity设为2000 (若使用MyISAM则无需此配置）
+在SSD云主机上使用MySQL数据库需要进行以下优化：innodb\_io\_capacity设为2000 (若使用MyISAM则无需此配置）
 
 ## 怎么将文件迁移到云主机呢？
 
@@ -80,8 +79,7 @@ UCloud云主机可选三种类型的磁盘：云硬盘（UDisk），本地普通
 
 ## CentOS中yum update很慢，如何处理？
 
-将/etc/yum.repos.d/CentOS-Base.repo中6.3（或者其他版本号）改为$releasever，然后yum
-update。
+将/etc/yum.repos.d/CentOS-Base.repo中6.3（或者其他版本号）改为$releasever，然后yum update。
 
 ## Gem经常很慢，不能用，如何更换成taobao的源？
 
@@ -106,12 +104,16 @@ gem install foo
 
 **主机记录**
 
-主机记录就是域名前缀，常见用法有： www ： 解析后的域名为www.ucloud.cn @ ： 直接解析主域名ucloud.cn \* ：
-泛解析，匹配其他所有域名\*.ucloud.cn
+主机记录就是域名前缀，常见用法有： www ： 解析后的域名为www.ucloud.cn @ ： 直接解析主域名ucloud.cn * ：
+泛解析，匹配其他所有域名*.ucloud.cn
 
-**记录类型** 这边我们做A记录，选择A即可。
+**记录类型** 
 
-**线路类型 & 记录值** 线路类型第一条选默认，后面记录值填写电信IP 线路类型第二条选联通，后面记录值填写联通IP
+这边我们做A记录，选择A即可。
+
+**线路类型 & 记录值** 
+
+线路类型第一条选默认，后面记录值填写电信IP线路类型第二条选联通，后面记录值填写联通IP。
 
 **例子**
 
@@ -176,7 +178,6 @@ yum install rpm-build redhat-rpm-config patchutils xmlto asciidoc elfutils-libel
     # 清理
     rm -rf ~/rpmbuild/BUILD/kernel-2.6.32-358.14.1.el6*
 
-\<
 
 修改SPEC文件, 生成新的内核RPM包 :
 
@@ -206,13 +207,13 @@ yum install rpm-build redhat-rpm-config patchutils xmlto asciidoc elfutils-libel
 
 ## CentOS系统安装软件包出现对kernel-devel依赖的问题，应该如何解决？
 
-``%%` 为了确保内核的稳定，默认情况下，我们在yum的配置文件/etc/yum.conf中加了exclude=kernel*
+为了确保内核的稳定，默认情况下，我们在yum的配置文件/etc/yum.conf中加了exclude=kernel*
 centos-release*，这样可以防止在装软件包时无意更新内核相关的东西。
-如果确实需要安装此软件包，将/etc/yum.conf中的这行代码注释即可。`%%``
+如果确实需要安装此软件包，将/etc/yum.conf中的这行代码注释即可。
 
 ## /usr/bin/uga程序是什么？主机中的uga进程是什么？
 
-UGA是UCloud提供的主机内置代理程序。仅仅用于帮助用户结合主机控制台功能执行自动化操作，提升用户体验。无法通过UGA查，增，删，改用户文件。[详情](/compute/uhost/guide/uga)
+UGA是UCloud提供的主机内置代理程序。仅仅用于帮助用户结合主机控制台功能执行自动化操作，提升用户体验。无法通过UGA查、增、删、改用户文件。[详情](/compute/uhost/guide/uga)
 
 ## 如何激活UHost上的Windows Server?
 
@@ -220,30 +221,30 @@ UCloud上创建的Windows云主机，默认是自动激活的，用户无需再�
 
 若遇特殊原因，需要手动激活一下，则步骤如下：
 
-1.  KMS地址
+1.KMS地址
 
 首先定义下各个数据中心的KMS地址（$kms\_name）。步骤4中会用到$kms\_name，请用相应的地址替代。例如北京二可用区E的地址为hb06.kms.ucloud.cn。若需其他可用区地址，请联系技术支持。
 
-\- 进入命令目录
+- 进入命令目录
 
 用管理员身份打开cmd -\> cd C:\\Windows\\system32
 
 ![image](/images/02.jpg)
 
-\- 清除密钥并重启
+- 清除密钥并重启
 
 执行 cscript.exe slmgr.vbs /rearm 来清除统一密钥。完成后重启操作系统。
 
 ![image](/images/03.jpg)
 
-\- 配置KMS
+- 配置KMS
 
 用管理员身份打开cmd -\> cd C:Windowssystem32。执行cscript.exe slmgr.vbs /skms
 $kms\_name(见步骤1)
 
 ![image](/images/04.jpg)
 
-\- 激活Windows
+- 激活Windows
 
 执行cscript.exe slmgr.vbs /ato 激活windows
 
