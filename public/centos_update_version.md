@@ -18,7 +18,7 @@ cat /etc/centos-release
 
 ## Step 2 升级所有软件包
 
-输入命令
+输入命令：
 
 ```
 yum update
@@ -30,7 +30,7 @@ yum update
 
 ## Step 3 确认升级完成
 
-升级完成后，再次输入命令
+升级完成后，再次输入命令：
 
 ```
 cat /etc/centos-release
