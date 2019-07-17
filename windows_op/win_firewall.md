@@ -1,6 +1,6 @@
 # 防火墙启用教程
 
-教程纲要：
+#### 教程纲要：
 
 开启windows防火墙，并添加远程桌面连接、ICMP v4和ICMP v6多播侦听程序至信任规则中；
 
@@ -16,7 +16,7 @@ windows防火墙可以阻止一些恶意程序攻击，防止某些端口被远�
 
 ### 开启Windows Firewall服务
 
-并将启动类型设置为自动：
+将启动类型设置为自动：
 
 ![image](/images/software/windows_firewall1.png)
 
@@ -24,9 +24,7 @@ windows防火墙可以阻止一些恶意程序攻击，防止某些端口被远�
 
 ![image](/images/software/windows_firewall2.png)
 
-将远程桌面、ICMP v4和v6的多播侦听程序加入防火墙规则中
-
-（ICMP v4需要手动创建，ICMP v6和远程桌面可以直接添加到信任规则中）：
+将远程桌面、ICMP v4和v6的多播侦听程序加入防火墙规则中，其中ICMP v4需要手动创建，ICMP v6和远程桌面可以直接添加到信任规则中。
 
 （1）创建ICMP v4规则：
 
