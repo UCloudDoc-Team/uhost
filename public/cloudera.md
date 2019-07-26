@@ -22,7 +22,7 @@
 
 执行 :
 
-    ./cloudera-manager-installer.bin
+    cloudera-manager-installer.bin
 
 ## 安装Cloudera-CDH
 
