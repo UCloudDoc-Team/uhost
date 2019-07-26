@@ -34,22 +34,17 @@ UCloud云主机根据应用场景将主机区分为：**标准型N、高IO型I�
   - 配置范围：1核1G - 32核256G
   - 支持网络增强，热升级
   - 系统盘：
-
-
-
+  
 ``` 
-  本地普通盘：默认大小Linux 20GB，Windows 40GB，支持创建后扩容到100GB，支持数据方舟
-  SSD云盘：默认大小Linux 20GB，Windows 40GB，支持扩容到500GB
+本地普通盘：默认大小Linux 20GB，Windows 40GB，支持创建后扩容到100GB，支持数据方舟
+SSD云盘：默认大小Linux 20GB，Windows 40GB，支持扩容到500GB
 ```
-
   - 数据盘：
-
-
-
+  
 ``` 
-  本地普通盘：20GB～2000GB，支持数据方舟
-  普通云盘：20GB～8000GB，支持快照与数据方舟
-  SSD云盘：20GB～4000GB
+本地普通盘：20GB～2000GB，支持数据方舟
+普通云盘：20GB～8000GB，支持快照与数据方舟
+SSD云盘：20GB～4000GB
 ```
 
 **系列2 N2**
@@ -59,22 +54,17 @@ UCloud云主机根据应用场景将主机区分为：**标准型N、高IO型I�
   - 配置范围：1核1G - 32核128G
   - 支持网络增强，热升级
   - 系统盘：
-
-
-
+  
 ``` 
-  本地普通盘：默认大小Linux 20GB，Windows 40GB，支持创建后扩容到100GB，支持数据方舟
-  SSD云盘：默认大小Linux 20GB，Windows 40GB，支持扩容到500GB
+本地普通盘：默认大小Linux 20GB，Windows 40GB，支持创建后扩容到100GB，支持数据方舟
+SSD云盘：默认大小Linux 20GB，Windows 40GB，支持扩容到500GB
 ```
-
   - 数据盘：
-
-
-
+  
 ``` 
-  本地普通盘：20GB～2000GB，支持IO加速技术，数据方舟
-  普通云盘：20GB～8000GB，支持快照与数据方舟
-  SSD云盘：20GB～4000GB
+本地普通盘：20GB～2000GB，支持IO加速技术，数据方舟
+普通云盘：20GB～8000GB，支持快照与数据方舟
+SSD云盘：20GB～4000GB
 ```
 
 **系列1 N1**
@@ -85,18 +75,13 @@ UCloud云主机根据应用场景将主机区分为：**标准型N、高IO型I�
   - 支持网络增强
   - 系统盘：
 
-
-
 ``` 
-  本地普通盘：默认大小Linux 20GB，Windows 40GB，支持创建后扩容到100GB，支持数据方舟
+本地普通盘：默认大小Linux 20GB，Windows 40GB，支持创建后扩容到100GB，支持数据方舟
 ```
-
   - 数据盘：
 
-
-
 ``` 
-  本地普通盘：20GB～2000GB，支持数据方舟
+本地普通盘：20GB～2000GB，支持数据方舟
 ```
 
 ### 高主频型 C
@@ -112,20 +97,15 @@ UCloud云主机根据应用场景将主机区分为：**标准型N、高IO型I�
   - 支持网络增强，热升级
   - 系统盘：
 
-
-
 ``` 
-  本地SSD盘：默认大小Linux 20GB，Windows 40GB，支持创建后扩容到100GB
-  SSD云盘：默认大小Linux 20GB，Windows 40GB，支持扩容到500GB
+本地SSD盘：默认大小Linux 20GB，Windows 40GB，支持创建后扩容到100GB
+SSD云盘：默认大小Linux 20GB，Windows 40GB，支持扩容到500GB
 ```
-
   - 数据盘：
-
-
-
+  
 ``` 
-  本地SSD盘：20GB～1000GB
-  SSD云盘：20GB～4000GB
+本地SSD盘：20GB～1000GB
+SSD云盘：20GB～4000GB
 ```
 
 ### 高IO型 I
@@ -140,21 +120,16 @@ UCloud云主机根据应用场景将主机区分为：**标准型N、高IO型I�
   - 配置范围：1核1G - 32核128G
   - 支持网络增强，热升级
   - 系统盘：
-
-
-
+  
 ``` 
-  本地SSD盘：默认大小Linux 20GB，Windows 40GB，支持创建后扩容到100GB
-  SSD云盘：默认大小Linux 20GB，Windows 40GB，支持扩容到500GB
+本地SSD盘：默认大小Linux 20GB，Windows 40GB，支持创建后扩容到100GB
+SSD云盘：默认大小Linux 20GB，Windows 40GB，支持扩容到500GB
 ```
-
   - 数据盘：
-
-
-
+  
 ``` 
-  本地SSD盘：20GB～1000GB
-  SSD云盘：20GB～4000GB
+本地SSD盘：20GB～1000GB
+SSD云盘：20GB～4000GB
 ```
 
 **系列1 I1**
@@ -164,19 +139,14 @@ UCloud云主机根据应用场景将主机区分为：**标准型N、高IO型I�
   - 配置范围：1核1G - 16核64G
   - 支持网络增强
   - 系统盘：
-
-
-
+  
 ``` 
-  本地SSD盘：默认大小Linux 20GB，Windows 40GB，支持创建后扩容到100GB
+本地SSD盘：默认大小Linux 20GB，Windows 40GB，支持创建后扩容到100GB
 ```
-
   - 数据盘：
 
-
-
 ``` 
-  本地SSD盘：20GB～1000GB
+本地SSD盘：20GB～1000GB
 ```
 
 ### GPU机型 G
@@ -192,21 +162,16 @@ UCloud云主机根据应用场景将主机区分为：**标准型N、高IO型I�
   - 配置范围：4核8G 1颗GPU - 32核128G 4颗GPU
   - 支持网络增强
   - 系统盘：
-
-
-
+  
 ``` 
-  本地SSD盘：默认大小Linux 20GB，Windows 40GB，支持创建后扩容到100GB
-  SSD云盘：默认大小Linux 20GB，Windows 40GB，支持扩容到500GB
+本地SSD盘：默认大小Linux 20GB，Windows 40GB，支持创建后扩容到100GB
+SSD云盘：默认大小Linux 20GB，Windows 40GB，支持扩容到500GB
 ```
-
   - 数据盘：
-
-
-
+  
 ``` 
-  本地SSD盘：20GB～1000GB
-  SSD云盘：20GB～4000GB
+本地SSD盘：20GB～1000GB
+SSD云盘：20GB～4000GB
 ```
 
 **系列2 GPU-P40**
@@ -217,21 +182,16 @@ UCloud云主机根据应用场景将主机区分为：**标准型N、高IO型I�
   - 配置范围：4核8G 1颗GPU - 32核128G 4颗GPU
   - 支持网络增强
   - 系统盘：
-
-
-
+  
 ``` 
-  本地SSD盘：默认大小Linux 20GB，Windows 40GB，支持创建后扩容到100GB
-  SSD云盘：默认大小Linux 20GB，Windows 40GB，支持扩容到500GB
+本地SSD盘：默认大小Linux 20GB，Windows 40GB，支持创建后扩容到100GB
+SSD云盘：默认大小Linux 20GB，Windows 40GB，支持扩容到500GB
 ```
-
   - 数据盘：
-
-
-
+  
 ``` 
-  本地SSD盘：20GB～1000GB
-  SSD云盘：20GB～4000GB
+本地SSD盘：20GB～1000GB
+SSD云盘：20GB～4000GB
 ```
 
 **系列1 GPU-K80**
@@ -242,26 +202,23 @@ UCloud云主机根据应用场景将主机区分为：**标准型N、高IO型I�
   - 配置范围：4核8G 1颗GPU - 16核64G 2颗GPU
   - 支持网络增强
   - 系统盘：
-
-
-
+  
 ``` 
-  本地SSD盘：默认大小Linux 20GB，Windows 40GB，支持创建后扩容到100GB
+本地SSD盘：默认大小Linux 20GB，Windows 40GB，支持创建后扩容到100GB
 ```
-
   - 数据盘：
-
-
-
+  
 ``` 
-  本地SSD盘：20GB～1000GB
+本地SSD盘：20GB～1000GB
 ```
 
 具体GPU卡的性能对比见 [GPU机型说明](..//../../../ai/gpu/type)
 
 ### 大数据型 D
 
-    目前大数据机型已停止对新客户开放
+``` 
+目前大数据机型已停止对新客户开放
+``` 
 
   - 机型特点：附带3T/4T独立磁盘
   - 适用场景：Hadoop/Spark等大数据应用
