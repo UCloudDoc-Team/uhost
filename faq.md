@@ -123,7 +123,9 @@ gem install foo
 
 登陆 <http://diy.hichina.com> -\> 域名管理
 
-![image](/images/wanwang01.png) 按照下图提示，填写DNSPod的2个DNS短地址（对应6台服务器）
+![image](/images/wanwang01.png)
+
+按照下图提示，填写DNSPod的2个DNS短地址（对应6台服务器）
 
 f1g1ns1.dnspod.net
 
@@ -227,19 +229,19 @@ UCloud上创建的Windows云主机，默认是自动激活的，用户无需再�
 
 - 进入命令目录
 
-用管理员身份打开cmd -\> cd C:\Windows\system32
+用管理员身份打开cmd -> cd C:\Windows\system32
 
 ![image](/images/02.png)
 
 - 清除密钥并重启
 
-执行 cscript.exe slmgr.vbs /rearm 来清除统一密钥。完成后重启操作系统。
+执行 cscript.exe slmgr.vbs /rearm 来清除统一密钥，完成后重启操作系统。
 
 ![image](/images/03.png)
 
 - 配置KMS
 
-用管理员身份打开cmd -\> cd C:Windowssystem32。执行cscript.exe slmgr.vbs /skms
+用管理员身份打开cmd -> cd C:\Windows\system32。执行cscript.exe slmgr.vbs /skms
 $kms\_name(见步骤1)
 
 ![image](/images/04.png)
