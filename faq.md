@@ -227,25 +227,25 @@ UCloud上创建的Windows云主机，默认是自动激活的，用户无需再�
 
 - 进入命令目录
 
-用管理员身份打开cmd -\> cd C:\\Windows\\system32
+用管理员身份打开cmd -\> cd C:\Windows\system32
 
-![image](/images/02.jpg)
+![image](/images/02.png)
 
 - 清除密钥并重启
 
 执行 cscript.exe slmgr.vbs /rearm 来清除统一密钥。完成后重启操作系统。
 
-![image](/images/03.jpg)
+![image](/images/03.png)
 
 - 配置KMS
 
 用管理员身份打开cmd -\> cd C:Windowssystem32。执行cscript.exe slmgr.vbs /skms
 $kms\_name(见步骤1)
 
-![image](/images/04.jpg)
+![image](/images/04.png)
 
 - 激活Windows
 
 执行cscript.exe slmgr.vbs /ato 激活windows
 
-![image](/images/05.jpg)
+![image](/images/05.png)
