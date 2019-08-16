@@ -22,7 +22,6 @@ Packer 是 Hashicorp 公司推出的自动化打包镜像的轻量级开源工�
 |  创建时间  |   长。流程化操作，需要人工值守，无法准确等待每个流程的执行   |  短。自动化工作流操作，完善的轮询等待机制，无缝衔接每个流程  |
 
 ### Packer 创建镜像的生命周期
-利用 Packer 创建镜像的生命周期如下：
 ![](/images/guide/image/packer生命周期.png)
 1.	用户通过构建JSON 模版，执行packer build 命令调用UCloud Builder；
 2.	参数提前校验保证可用性；
@@ -59,11 +58,11 @@ Packer 是 Hashicorp 公司推出的自动化打包镜像的轻量级开源工�
 
 **配置默认用户**
 
-设置密钥 *UCLOUD_PUBLIC_KEY*、 *UCLOUD_PRIVATE_KEY* 并设置项目 *UCLOUD_PROJECT_ID* 为全局环境变量（推荐），或在 json 文件中显式指定 *public_key*、 *private_key*、 *project_id*。
+设置密钥 *UCLOUD_PUBLIC_KEY*、 *UCLOUD_PRIVATE_KEY* 并设置项目ID *UCLOUD_PROJECT_ID* 为全局环境变量（推荐），或在 json 文件中显式指定 *public_key*、 *private_key*、 *project_id*。
 
 ### 编写 JSON 文件
 
-让我们以构建一个安装了 nginx 的自定义镜像为例。首先创建一个干净的空文件夹作为工作区，并且换到该目录下，编写一个Json规格文件(eg：*test.json*)，如下：
+让我们以构建一个安装了 nginx 的自定义镜像为例。首先创建一个干净的空文件夹作为工作区，并且切换到该目录下，编写一个 JSON 规格文件(eg：*test.json*)，如下：
 
 ```json
 {
