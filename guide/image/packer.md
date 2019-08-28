@@ -58,13 +58,13 @@ Packer 是 Hashicorp 公司推出的自动化打包镜像的轻量级开源工�
 
 **配置默认用户**
 
-设置密钥 *UCLOUD_PUBLIC_KEY*、 *UCLOUD_PRIVATE_KEY* 并设置项目ID *UCLOUD_PROJECT_ID* 为全局环境变量（推荐），或在 json 文件中显式指定 *public_key*、 *private_key*、 *project_id*。
+设置密钥   UCLOUD\_PUBLIC\_KEY   ， UCLOUD\_PRIVATE\_ KEY 并设置项目ID UCLOUD\_PROJECT\_ID 为全局环境变量（推荐），或在 json 文件中显式指定 public\_key、 private\_key、 project\_id。
 
 ### 编写 JSON 文件
 
-让我们以构建一个安装了 nginx 的自定义镜像为例。首先创建一个干净的空文件夹作为工作区，并且切换到该目录下，编写一个 JSON 规格文件(eg：*test.json*)，如下：
+让我们以构建一个安装了 nginx 的自定义镜像为例。首先创建一个干净的空文件夹作为工作区，并且切换到该目录下，编写一个 JSON 规格文件(eg：test.json)，如下：
 
-```json
+```
 {
   "variables": {
     "ucloud_public_key": "{{env `UCLOUD_PUBLIC_KEY`}}",
