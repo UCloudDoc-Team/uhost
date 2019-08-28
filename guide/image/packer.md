@@ -64,7 +64,7 @@ Packer 是 Hashicorp 公司推出的自动化打包镜像的轻量级开源工�
 
 让我们以构建一个安装了 nginx 的自定义镜像为例。首先创建一个干净的空文件夹作为工作区，并且切换到该目录下，编写一个 JSON 规格文件(eg：test.json)，如下：
 
-```
+```json
 {
   "variables": {
     "ucloud_public_key": "{{env `UCLOUD_PUBLIC_KEY`}}",
