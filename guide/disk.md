@@ -55,6 +55,7 @@ Ubuntu：
 
 **步骤2：扩容块设备并重启**
 
+    LANG=en_US.UTF-8
     growpart /dev/vda 1
     reboot
 
@@ -62,18 +63,14 @@ Ubuntu：
 
 虚拟机重启后执行:
 
-``` 
-resize2fs /dev/vda1 (ext4文件系统)
-xfs_growfs /dev/vda1 (xfs文件系统)
-```
+    resize2fs /dev/vda1 (ext4文件系统)
+    xfs_growfs /dev/vda1 (xfs文件系统)
 
 **步骤4：确认**
 
 查看是否扩容完成：
 
-``` 
-df -TH
-```
+    df -TH
 
 #### Windows
 
