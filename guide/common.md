@@ -108,6 +108,18 @@ UHost支持使用Web VNC终端登录云主机，适合临时性操作，点击�
   - 请勿在制作镜像过程中重置密码；
   - 若系统已经更改了管理员用户名，则无法进行重置；
   - 重置密码需要在关机状态下操作。
+  
+您还可以使用[reset-password](/software/cli/cmd/ucloud/uhost/reset-password)命令重置主机密码，并指定可用区和实例ID。请使用 --password参数按如下方式指定主机密码。
+例如：
+```
+ucloud uhost reset-password --zone cn-bj2-05 --uhost-id uhost-0a3gcvih --password test12345
+```
+以上示例输出如下：
+```
+uhost[uhost-0a3gcvih] will be stopped, can we do this? (y/n):y
+uhost[uhost-0a3gcvih] is shutting down...done
+uhost[uhost-0a3gcvih] reset password
+```
 
 ## 升级配置
 
