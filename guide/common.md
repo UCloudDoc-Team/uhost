@@ -186,6 +186,21 @@ UHost:[uhost-0a3gcvih] resized...done
   - 创建时长（删除时间-创建时间）\>7天的云主机被删除后将进入回收站，可以从回收站恢复；[详情](/compute/uhost/guide/recycle_bin)
   - 删除后，系统将自动退还租约中的剩余费用。
 
+
+您还可以使用[delete](/software/cli/cmd/ucloud/uhost/delete)命令删除主机，并指定实例ID。
+例如：
+```
+ucloud uhost delete --uhost-id uhost-0a3gcvih
+```
+
+以上示例输出如下：
+```
+Are you sure you want to delete the host(s)? (y/n):y
+uhost[uhost-0a3gcvih] is shutting down...done
+uhost[uhost-0a3gcvih] deleted
+```
+
+
 ## 开启/关闭网络增强
 
 若需开启网络增强功能，点击“详情”，在配置信息中找到网络增强即可开启。
