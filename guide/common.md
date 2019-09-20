@@ -159,6 +159,20 @@ uhost[uhost-0a3gcvih] reset password
   - 数据盘无法缩容；
   - 网络增强云主机无法修改配置到4核以下。
 
+
+您还可以使用[resize](/software/cli/cmd/ucloud/uhost/resize)命令升级配置，并指定实例ID。请使用 --cpu参数和 --memory-gb参数按如下方式指定CPU核数和内存大小。
+例如：
+```
+ucloud uhost resize --uhost-id uhost-0a3gcvih --cpu 2 --memory-gb 4
+```
+
+以上示例输出如下：
+```
+Resize uhost must be after stop it. Do you want to stop this uhost? (y/n):y
+uhost[uhost-0a3gcvih] is shutting down...done
+UHost:[uhost-0a3gcvih] resized...done
+```
+
 ## 删除主机
 
 若需删除云主机，点击“删除主机”，确认所有注意事项，此操作支持批量处理。
