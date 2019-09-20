@@ -109,9 +109,6 @@ UHost支持使用Web VNC终端登录云主机，适合临时性操作，点击�
   - 若系统已经更改了管理员用户名，则无法进行重置；
   - 重置密码需要在关机状态下操作。
   
-  
-  
-  
 您还可以使用[reset-password](/software/cli/cmd/ucloud/uhost/reset-password)命令重置主机密码，并指定可用区和实例ID。请使用 --password参数按如下方式指定主机密码。
 例如：
 
