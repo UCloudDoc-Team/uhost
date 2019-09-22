@@ -15,8 +15,29 @@
 
 若当前没有隔离组，可以点选“创建隔离组”，进入隔离组页面完成创建后，选择刷新此弹窗。
 
+您还可以使用[uhost create](/software/cli/cmd/ucloud/uhost/create)（UCloud CLI）命令创建主机。请使用 --isolation-group参数指定隔离组。
+例如：
+```
+ucloud uhost create --isolation-group ig-rhcq22xt/ig --memory-gb 1 --cpu 1 --password test1234 --zone cn-bj2-05 --image-id uimage-35pn5v/CentOS 7.6 64位
+```
+以上示例输出如下：
+```
+uhost[uhost-bh0fvsnh] is initializing...done
+```
+
 ## 查看隔离组
 
 通过硬件隔离组Tab，可以查看全部隔离组。
 
 在主机里列表，亦可以在“自定义列表”中将“硬件隔离组”列展开。支持通过隔离组筛选主机。
+
+您还可以使用isolation-group list（UCloud CLI）命令查看隔离组。
+例如：
+```
+ucloud uhost isolation-group list
+```
+以上示例输出如下：
+```
+ResourceID   Name  Remark  UHostCount
+ig-rhcq22xt  ig    ig      cn-bj2-05:1
+```
