@@ -15,7 +15,7 @@
 
 若当前没有隔离组，可以点选“创建隔离组”，进入隔离组页面完成创建后，选择刷新此弹窗。
 
-您还可以使用[uhost create](/software/cli/cmd/ucloud/uhost/create)（UCloud CLI）命令创建主机。请使用 --isolation-group参数指定隔离组。
+您还可以使用[uhost create](/developer/cli/cmd/ucloud/uhost/create)（UCloud CLI）命令创建主机。请使用 --isolation-group参数指定隔离组。
 例如：
 ```
 ucloud uhost create --isolation-group ig-rhcq22xt/ig --memory-gb 1 --cpu 1 --password test1234 --zone cn-bj2-05 --image-id uimage-35pn5v/CentOS 7.6 64位

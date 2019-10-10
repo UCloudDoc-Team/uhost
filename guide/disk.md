@@ -202,7 +202,7 @@ mount /dev/vdb /data/
 
 在控制台的云主机详情界面-\>绑定-\>云硬盘-\>挂载，进行挂载操作。
 
-您还可以使用[udisk attach](/software/cli/cmd/ucloud/udisk/attach)（UCloud CLI）命令挂载云硬盘，并指定可用区和云主机实例ID。请使用 --udisk-id参数指定云硬盘资源ID。
+您还可以使用[udisk attach](/developer/cli/cmd/ucloud/udisk/attach)（UCloud CLI）命令挂载云硬盘，并指定可用区和云主机实例ID。请使用 --udisk-id参数指定云硬盘资源ID。
 例如：
 ```
 ucloud udisk attach --udisk-id bsm-bagfqw5u --zone cn-bj2-05 --uhost-id uhost-bh0fvsnh/UHost
