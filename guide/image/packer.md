@@ -53,7 +53,7 @@ Packer 是 Hashicorp 公司推出的自动化打包镜像的轻量级开源工�
 **安装 Packer**
 
 - 参照[官方安装文档](https://www.packer.io/intro/getting-started/install.html#alternative-installation-methods)安装 Packer
-- 安装 [Cloud CLI 工具](https://docs.ucloud.cn/software/cli/intro)（非必要，便于查询基础镜像等信息）
+- 安装 [Cloud CLI 工具](https://docs.ucloud.cn/developer/cli/intro)（非必要，便于查询基础镜像等信息）
 - 安装 [Terraform](https://docs.ucloud.cn/compute/terraform/quickstart)（非必要，便于使用 packer制作的镜像进行资源编排）
 
 **配置默认用户**
