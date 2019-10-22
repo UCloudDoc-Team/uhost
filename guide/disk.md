@@ -245,7 +245,7 @@ Windows操作系统：
 
 在云主机详情界面-\>绑定-\>云硬盘-\>找到指定磁盘-\>卸载，进行卸载操作。
 
-您还可以使用[udisk detach](/developer/cli/cmd/ucloud/udisk/detach)（UCloud CLI）命令卸载云硬盘，并指定可用区和云主机实例ID。请使用 --udisk-id参数指定云硬盘资源ID。
+您还可以使用[udisk detach](/developer/cli/cmd/ucloud/udisk/detach)（UCloud CLI）命令卸载云硬盘，并指定可用区。请使用 --udisk-id参数指定云硬盘资源ID。
 例如：
 ```
 ucloud udisk detach --udisk-id bsm-bagfqw5u --zone cn-bj2-05
