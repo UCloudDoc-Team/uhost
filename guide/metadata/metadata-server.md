@@ -7,22 +7,20 @@
 元数据服务器是一个内网服务。通过该服务，能在主机内取得当前云主机实例的自身信息。
 
 UCloud的元数据服务器地址为（各可用区一致）：
-   
-       http://100.80.80.80/meta-data/
-       
+
+	http://100.80.80.80/meta-data/
 
 ## 元数据项
 
 （相对于：http://100.80.80.80/meta-data/latest/uhost）
 
 | 元数据项 | 说明 |
-| ----- | ---------------------|
 | /project-id | 项目ID |
 | /region | 地域 |
 | /zone   | 可用区 |
 | /uhost-id  | 云主机ID |
 | /name | 云主机名称 |
-| /remark |  云主机备注 |
+| /remark | 云主机备注 |
 | /tag  | 云主机业务组 |
 | /image-id | 镜像ID |
 | /os-name | 镜像操作系统名称 |
@@ -35,7 +33,7 @@ UCloud的元数据服务器地址为（各可用区一致）：
 | /hotplug | 热升级特性 |
 | /disks/N/ |（数组）磁盘 |
 | /disks/N/disk-id | 磁盘id |
-| /disks/N//name | 磁盘名称 |
+| /disks/N/name | 磁盘名称 |
 | /disks/N/is-boot | 是否为系统盘 |
 | /disks/N/disk-type | 磁盘类型 |
 | /disks/N/size | 磁盘容量（GB）|
@@ -46,7 +44,7 @@ UCloud的元数据服务器地址为（各可用区一致）：
 | /network-interfaces/N/vpc-id | VPC ID |
 | /network-interfaces/N/subnet-id | 子网ID |
 | /network-interfaces/N/mac | MAC地址 |
-| /network-interfaces/N/ips/N/ |（数组）IP地址
+| /network-interfaces/N/ips/N/ |（数组）IP地址 |
 | /network-interfaces/N/ips/N/ip-id |（仅当为EIP时有效）EIP ID |
 | /network-interfaces/N/ips/N/ip-address | IP地址 |
 | /network-interfaces/N/ips/N/type | IP类型 |
@@ -70,7 +68,7 @@ UCloud的元数据服务器地址为（各可用区一致）：
 	/disk-type
 	/drive
 	/is-boot
-    /name
+	/name
 	/size
 
 
@@ -80,5 +78,3 @@ UCloud的元数据服务器地址为（各可用区一致）：
  - 越南胡志明可用区A
 
 （其他可用区发布中）
-
-
