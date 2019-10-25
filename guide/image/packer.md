@@ -1,4 +1,4 @@
-{{indexmenu_n>20}}
+
 
 # 使用 Packer 创建自定义镜像
 

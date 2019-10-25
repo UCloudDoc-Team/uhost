@@ -1,6 +1,6 @@
 # 主机价格
 
-{{indexmenu_n>9}}
+
 
 > Note
 >
