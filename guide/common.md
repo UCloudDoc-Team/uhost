@@ -111,7 +111,7 @@ UHost支持使用Web VNC终端登录云主机，适合临时性操作，点击�
 
 
 
-您还可以使用[uhost reset-password](/developer/cli/cmd/ucloud/uhost/reset-password)（UCloud CLI）命令重置主机密码，并指定可用区和实例ID。请使用 --password参数按如下方式指定主机密码。
+您还可以使用[uhost reset-password](https://docs.ucloud.cn/developer/cli/cmd/ucloud/uhost/reset-password)（UCloud CLI）命令重置主机密码，并指定可用区和实例ID。请使用 --password参数按如下方式指定主机密码。
 例如：
 
 
@@ -160,7 +160,7 @@ uhost[uhost-0a3gcvih] reset password
   - 网络增强云主机无法修改配置到4核以下。
 
 
-您还可以使用[uhost resize](/developer/cli/cmd/ucloud/uhost/resize)（UCloud CLI）命令升级配置，并指定实例ID。请使用 --cpu参数和 --memory-gb参数按如下方式指定CPU核数和内存大小。
+您还可以使用[uhost resize](https://docs.ucloud.cn/developer/cli/cmd/ucloud/uhost/resize)（UCloud CLI）命令升级配置，并指定实例ID。请使用 --cpu参数和 --memory-gb参数按如下方式指定CPU核数和内存大小。
 例如：
 ```
 ucloud uhost resize --uhost-id uhost-0a3gcvih --cpu 2 --memory-gb 4
@@ -187,7 +187,7 @@ UHost:[uhost-0a3gcvih] resized...done
   - 删除后，系统将自动退还租约中的剩余费用。
 
 
-您还可以使用[uhost delete](/developer/cli/cmd/ucloud/uhost/delete)（UCloud CLI）命令删除主机，并指定实例ID。
+您还可以使用[uhost delete](https://docs.ucloud.cn/developer/cli/cmd/ucloud/uhost/delete)（UCloud CLI）命令删除主机，并指定实例ID。
 例如：
 ```
 ucloud uhost delete --uhost-id uhost-0a3gcvih
