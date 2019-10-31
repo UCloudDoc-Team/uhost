@@ -8,7 +8,7 @@
 
 1）选择地域/可用区，不同地域/可用区下的云主机可选配置稍有差异；
 
-![](/images/guide/create_uhost01.png)
+![](./../images/guide/create_uhost01.png)
 
 2）选择系列、机型、CPU、内存、镜像与磁盘配置；
 
