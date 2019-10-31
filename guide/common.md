@@ -12,7 +12,7 @@
 
 2）选择系列、机型、CPU、内存、镜像与磁盘配置；
 
-![](/images/guide/create_uhost02.png)
+![](./../images/guide/create_uhost02.png)
 
 3）选择所属VPC、所属子网、是否绑定外网弹性IP以及防火墙设置（绑定外网弹性IP可后续另行配置）；
 
