@@ -221,7 +221,7 @@ SSD云盘：20GB～4000GB
 本地SSD盘：20GB～1000GB
 ```
 
-具体GPU卡的性能对比见 [GPU机型说明](..//../../../ai/gpu/type)
+具体GPU卡的性能对比见 [GPU机型说明](https://docs.ucloud.cn/ai/gpu/type)
 
 ### 大数据型 D
 
