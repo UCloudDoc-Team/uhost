@@ -221,6 +221,7 @@ UGA是UCloud提供的主机内置代理程序。仅仅用于帮助用户结合�
 
 UCloud上创建的Windows云主机，默认是自动激活的，用户无需再操作。参考 [KMS激活说明](/compute/uhost/windows_op/kms)
 
+
 若遇特殊原因，需要手动激活一下，则步骤如下：
 
 1.KMS地址
