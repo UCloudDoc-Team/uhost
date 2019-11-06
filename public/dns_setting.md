@@ -1,12 +1,8 @@
-
-
 # 优化DNS配置方法
 
-## Step 1，配置冗余DNS Server地址
+## Step 1  配置冗余DNS Server地址
 
 可防止DNS Server单点故障后，域名无法解析的情况。
-
-### Linux操作步骤
 
 以CentOS为例：
 
@@ -25,28 +21,18 @@
 | 加州可用区A    | 10.11.255.1，10.11.255.2   |
 | 上海金融云可用区A | 10.15.255.2，10.15.255.1   |
 
-### Windows操作步骤
 
-系统中选择control panel(控制面板) -\> Network and Sharing Center (网络与共享中心) -\>
-选择当前网络连接 （如Ethernet 2）-\> Properies(属性)-\>双击Internet Protocol
-Version 4 (TCP/IPv4)
-
-在Perferred DNS Server（首选DNS服务器）和Alternate DNS
-Server（备用DNS服务器）中，按机房，配置上述表格中的两个IP。
-
-## Step 2， 开启NSCD服务
+## Step 2  开启NSCD服务
 
 在Linux中开启NSCD服务可在本地缓存DNS解析结果。在TTL时间内，无需去DNS服务器重复解析，从而加快DNS的解析速度，也缓解DNS服务器的压力。
 
-本操作步骤以CentOS为例。
+以CentOS为例：
 
-Windows中则无需额外配置，本地DNS缓存默认启用。
-
-### 1\. 安装
+### 1、安装
 
     yum install nscd
 
-### 2\. 增加配置文件 /etc/nscd.conf
+### 2、增加配置文件 /etc/nscd.conf
 
 内容如下：
 
@@ -113,6 +99,6 @@ Windows中则无需额外配置，本地DNS缓存默认启用。
 
     chkconfig nscd on
 
-如需要停止服务
+### 5、如需要停止服务
 
     service nscd stop
