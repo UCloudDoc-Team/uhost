@@ -58,7 +58,7 @@
     * [更新CentOS系统](compute/uhost/public/centos_update_version)
     * [优化DNS配置方法](compute/uhost/public/dns_setting)
 * Windows服务配置指南
-    * [KMS激活方式说明](compute/uhost/windows_op/kms).
+    * [KMS激活方式说明](compute/uhost/windows_op/kms)
     * [防火墙启用教程](compute/uhost/windows_op/win_firewall)
     * [优化DNS配置方法](compute/uhost/windows_op/dns_setting)
     
