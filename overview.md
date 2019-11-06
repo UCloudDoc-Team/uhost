@@ -46,7 +46,6 @@
     * [主机价格](compute/uhost/price.md) 
     * [FAQ](compute/uhost/faq) 
 * Linux服务配置指南
-    * [概览](compute/uhost/public/guide)
     * [CentOS 6.X下配置Keepalived VIP](compute/uhost/public/keepalived)
     * [CentOS KPTI关闭方法](compute/uhost/public/centos_kpti)
     * [MariaDB软件源配置](compute/uhost/public/mariadb)
@@ -57,9 +56,10 @@
     * [安装Systemtap](compute/uhost/public/systemtap)
     * [安装配置LNMP](compute/uhost/public/lnmp)
     * [更新CentOS系统](compute/uhost/public/centos_update_version)
+    * [优化DNS配置方法](compute/uhost/public/dns_setting)
 * Windows服务配置指南
-    * [概览](compute/uhost/windows_op/guide)
     * [KMS激活方式说明](compute/uhost/windows_op/kms)
     * [防火墙启用教程](compute/uhost/windows_op/win_firewall)
+    * [优化DNS配置方法](compute/uhost/windows_op/dns_setting)
     
         
