@@ -23,7 +23,9 @@ Packer 是 Hashicorp 公司推出的自动化打包镜像的轻量级开源工�
 ## 镜像导入示例
 
 下面将使用 Packer 制作并导入一个 CentOS 镜像。如下图所示:
+
 ![](/images/guide/image/packer-import.png)
+
 Packer 首先利用 [QEMU Builder](https://www.packer.io/docs/builders/qemu.html) 制作了一个 RAW 镜像，存放在本地配置的目录下，之后利用 *ucloud-import*[Post-Processors 后处理器](https://www.packer.io/docs/post-processors/index.html) 将本地的镜像存放到用户配置的 UFile 中，并自动化导入到 UCloud 云平台中。
 
 ### 环境配置
