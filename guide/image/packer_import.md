@@ -22,7 +22,9 @@ Packer 是 Hashicorp 公司推出的自动化打包镜像的轻量级开源工�
 
 ## 镜像导入示例
 
-下面将使用 Packer [QEMU Builder](https://www.packer.io/docs/builders/qemu.html) 利用 KVM 在本地制作一个 CentOS 镜像，然后使用 *ucloud-import* Post-Processor 将本地的镜像导入到 UCloud 云平台中。
+下面将使用 Packer 制作并导入一个 CentOS 镜像。如下图所示:
+![](/images/guide/image/packer-import.png)
+Packer 首先利用 [QEMU Builder](https://www.packer.io/docs/builders/qemu.html) 制作了一个 RAW 镜像，存放在本地配置的目录下，之后利用 *ucloud-import*[Post-Processors 后处理器](https://www.packer.io/docs/post-processors/index.html) 将本地的镜像存放到用户配置的 UFile 中，并自动化导入到 UCloud 云平台中。
 
 ### 环境配置
 
@@ -38,7 +40,7 @@ Packer 是 Hashicorp 公司推出的自动化打包镜像的轻量级开源工�
 
 - 参照[官方安装文档](https://www.qemu.org/download/), 其中使用命令行安装，MacOS: *brew install qemu*, CentOs: *yum install qemu-kvm*, Ubuntu: *apt-get install qemu*
 
-**创建一个 UFile 的 bucket**
+**创建一个 UFile 的 bucket 空间**
 
 - 参照[官方文档](https://docs.ucloud.cn/storage_cdn/ufile/guide/bucket/devguide)
 
@@ -105,7 +107,7 @@ Packer 是 Hashicorp 公司推出的自动化打包镜像的轻量级开源工�
   ]
 }
 ```
-如上定义了一个 *qemu* Builder 构建器 和一个 *ucloud-import* [provisioners 配置器](https://www.packer.io/docs/provisioners/index.html?spm=a2c4g.11186623.2.18.589f682bpAI1YK)。
+如上定义了一个 *qemu* Builder 构建器 和一个 *ucloud-import* [Post-Processors 后处理器](https://www.packer.io/docs/post-processors/index.html)，其中配置了UFile bucket name 等信息。
 
 ### 编写 Kickstart 文件
 
