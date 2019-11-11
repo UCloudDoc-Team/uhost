@@ -6,7 +6,7 @@
 
 [创建主机](/compute/uhost/guide/common#创建主机)
 
-[扩容磁盘](/compute/uhost/guide/disk#扩容磁盘)
+[扩容磁盘](/compute/uhost/guide/disk#系统盘扩容)
 
 ## 网络相关操作
 
