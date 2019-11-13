@@ -62,6 +62,4 @@ A：由于您的镜像进行了跨机房迁移，因此系统内部的KMS地址�
 
 ## 参考文档
 
-[微软官网：Windows激活技术](http://www.microsoft.com/china/smb/local/products/os/Windows7/activation/default.aspx)
-
 [微软官网：Windows激活FAQ](http://windows.microsoft.com/en-us/windows/activating-windows-faq#1TC=windows-7)
