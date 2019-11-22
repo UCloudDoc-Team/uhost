@@ -32,6 +32,7 @@
         * 镜像
             * [自定义镜像](compute/uhost/guide/image/common)
             * [使用 Packer 创建自定义镜像](compute/uhost/guide/image/packer)
+            * [使用 Packer 创建并导入本地镜像](compute/uhost/guide/image/packer_import)
             * [镜像上传](compute/uhost/guide/image/upload_image)
             * [复制镜像](compute/uhost/guide/image/copy)
         * 元数据与自定义数据
