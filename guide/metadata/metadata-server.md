@@ -12,9 +12,12 @@ UCloud的元数据服务器地址为（各可用区一致）：
 
 ## 元数据项
 
-（相对于：http://100.80.80.80/meta-data/latest/uhost）
+以下路径均相对于 `http://100.80.80.80/meta-data/latest/uhost`，例如：
+
+	http://100.80.80.80/meta-data/latest/uhost/project-id
 
 | 元数据项 | 说明 |
+|---------|-----|
 | /project-id | 项目ID |
 | /region | 地域 |
 | /zone   | 可用区 |
