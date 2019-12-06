@@ -17,7 +17,7 @@ UCloud的元数据服务器地址为（各可用区一致）：
 	http://100.80.80.80/meta-data/latest/uhost/project-id
 
 | 元数据项 | 说明 |
-|---------|-----|
+| -- | -- |
 | /project-id | 项目ID |
 | /region | 地域 |
 | /zone   | 可用区 |
