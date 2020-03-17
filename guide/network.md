@@ -52,8 +52,7 @@ UCloud为云主机提供防火墙功能，类似于IPsec/IPtables的功能，为
 ```
 ip route change default via $router_ip
 ```
-
-> 这里的$router\_ip为10.9.31.156，即转发路由器的内网IP地址。
+这里的$router\_ip为10.9.31.156，即转发路由器的内网IP地址。
 
 修改/etc/sysconfig/network-scripts/ifcfg-eth\* 中GATEWAY
 
@@ -71,8 +70,7 @@ n为网卡号码，单网卡不需要输入中括号中内容。可以通过在c
 
 ![image](/images/route_print.jpg)
 
-
-> 这里的$router\_ip为10.9.31.156，即转发路由器的内网IP地址。 /p参数保证路由配置在服务重启后不会失效。
+ 这里的$router\_ip为10.9.31.156，即转发路由器的内网IP地址。 /p参数保证路由配置在服务重启后不会失效。
 
 5.选择UNet-\>路由器-\>点击路由器ID-\>端口转发-\>添加转发规则，填入源端口(外网端口)及需要转发的主机内网IP及主机端口：
 
@@ -80,4 +78,4 @@ n为网卡号码，单网卡不需要输入中括号中内容。可以通过在c
 
 ![image](/images/bigdata5.png)
 
-> 为了安全起见，这里尽量使用非常规端口作为转发端口。
+为了安全起见，这里尽量使用非常规端口作为转发端口。
