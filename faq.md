@@ -31,7 +31,7 @@ CPU平台≥Broadwell即可。后台会根据实际资源情况，分配到原�
 
 您仍可以在新建主机时通过“返回旧版”，通过旧的产品概念进行创建；且公共API的现有字段并不会有任何变化，您仍可用之前的方式调用云主机相关API。
 
-新版主机概念详见：详见[机型与CPU平台](/compute/uhost/introduction/uhost/type_new#cpu平台)
+新版主机概念详见：详见[机型与CPU平台](uhost/introduction/uhost/type_new#cpu平台)
 
 ## 我该如何选择存储类型？
 
@@ -41,7 +41,7 @@ UCloud云主机可选三种类型的磁盘：云硬盘（UDisk），本地普通
 
 上述机型在部分机房未上线，或因库存原因而限制申请。若您发现无法选择所需的磁盘，请咨询客户经理。
 
-具体性能对比/价格对比请查看 [云主机磁盘简介](/compute/uhost/guide/disk)
+具体性能对比/价格对比请查看 [云主机磁盘简介](uhost/guide/disk)
 
 ## 在控制面板中设置的防火墙，是映射到了系统中的iptables么？
 
@@ -215,11 +215,11 @@ centos-release*，这样可以防止在装软件包时无意更新内核相关�
 
 ## /usr/bin/uga程序是什么？主机中的uga进程是什么？
 
-UGA是UCloud提供的主机内置代理程序。仅仅用于帮助用户结合主机控制台功能执行自动化操作，提升用户体验。无法通过UGA查、增、删、改用户文件。[详情](/compute/uhost/guide/uga)
+UGA是UCloud提供的主机内置代理程序。仅仅用于帮助用户结合主机控制台功能执行自动化操作，提升用户体验。无法通过UGA查、增、删、改用户文件。[详情](uhost/guide/uga)
 
 ## 如何激活UHost上的Windows Server?
 
-UCloud上创建的Windows云主机，默认是自动激活的，用户无需再操作。参考 [KMS激活说明](/compute/uhost/windows_op/kms)
+UCloud上创建的Windows云主机，默认是自动激活的，用户无需再操作。参考 [KMS激活说明](uhost/windows_op/kms)
 
 
 若遇特殊原因，需要手动激活一下，则步骤如下：

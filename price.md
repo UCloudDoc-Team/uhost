@@ -4,13 +4,13 @@
 
 > 文档中的价格以北京二可用区E为例
 
-其它可用区价格可查看[云主机控制台](https://console.ucloud.cn/uhost/uhost/create)或[价格计算器](https://www.ucloud.cn/site/calculator.html#!/uhost)，各机型详情可查看[机型与规格](https://docs.ucloud.cn/compute/uhost/introduction/uhost/type)。
+其它可用区价格可查看[云主机控制台](https://console.ucloud.cn/uhost/uhost/create)或[价格计算器](https://www.ucloud.cn/site/calculator.html#!/uhost)，各机型详情可查看[机型与规格](https://docs.ucloud.cn/uhost/introduction/uhost/type)。
 
 ## 1. 计费方式
 
 一台云主机费用为**CPU、内存、系统盘、数据盘、外网带宽、GPU、网络增强、数据方舟**等各单项价格叠加总和。
 
-外网带宽是单独订单，具体价格参见[外网弹性IP和带宽](https://docs.ucloud.cn/network/unet/eip_price)。
+外网带宽是单独订单，具体价格参见[外网弹性IP和带宽](https://docs.ucloud.cn/unet/eip_price)。
 
 云主机采用预付费的计费模式，支持**按小时、按月以及按年**支付，下文主要显示按月价格：
 
@@ -121,7 +121,7 @@
 
 ## 4. 外网弹性IP和带宽
 
-外网带宽支持带宽计费、流量计费以及共享带宽三种计费模式，具体价格参见[外网弹性IP和带宽](https://docs.ucloud.cn/network/unet/eip_price)。
+外网带宽支持带宽计费、流量计费以及共享带宽三种计费模式，具体价格参见[外网弹性IP和带宽](https://docs.ucloud.cn/unet/eip_price)。
 
 ## 5. GPU
 

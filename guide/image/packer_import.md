@@ -4,7 +4,7 @@
 
 ## 概述
 
-Packer 是 Hashicorp 公司推出的自动化打包镜像的轻量级开源工具（[详细介绍可参考上篇文档](https://docs.ucloud.cn/compute/uhost/guide/image/packer)）。UCloud 通过对的 Packer 的集成，目前已支持一键导入自制的本地镜像到 UCloud 云平台中。
+Packer 是 Hashicorp 公司推出的自动化打包镜像的轻量级开源工具（[详细介绍可参考上篇文档](https://docs.ucloud.cn/uhost/guide/image/packer)）。UCloud 通过对的 Packer 的集成，目前已支持一键导入自制的本地镜像到 UCloud 云平台中。
 
 ## 相关链接
 
@@ -44,7 +44,7 @@ Packer 首先利用 [QEMU Builder](https://www.packer.io/docs/builders/qemu.html
 
 **创建一个 UFile 的 bucket 空间**
 
-- 参照[官方文档](https://docs.ucloud.cn/storage_cdn/ufile/guide/bucket/devguide)
+- 参照[官方文档](https://docs.ucloud.cn/ufile/guide/bucket/devguide)
 
 
 ### 编写 JSON 文件 

@@ -6,4 +6,4 @@ UHub可以让用户自由创建和管理自己私有的镜像库。
 
 UHub镜像库为跨地域架构，在一个地域push的镜像可被其它地域访问，用户体验出色。
 
-前往了解：<https://docs.ucloud.cn/compute/uhub/index>
+前往了解：<https://docs.ucloud.cn/uhub/README>

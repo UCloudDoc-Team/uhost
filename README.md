@@ -1,6 +1,6 @@
-<div class="sidebar_title icon__uhost"> 云主机 UHost</div>
+# 概览
 
-* [概览](/uhost/README)
+
 * 产品简介
     * [什么是云主机](/uhost/introduction/concept)
     * [产品优势](/uhost/introduction/advantages)

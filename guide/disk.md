@@ -222,7 +222,7 @@ mount /dev/vdb /data/
 
 在控制台的云主机详情界面-\>绑定-\>云硬盘-\>挂载，进行挂载操作。
 
-您还可以使用[udisk attach](/developer/cli/cmd/ucloud/udisk/attach)（UCloud CLI）命令挂载云硬盘，并指定可用区和云主机实例ID。请使用 --udisk-id参数指定云硬盘资源ID。
+您还可以使用[udisk attach](cli/cmd/ucloud/udisk/attach)（UCloud CLI）命令挂载云硬盘，并指定可用区和云主机实例ID。请使用 --udisk-id参数指定云硬盘资源ID。
 例如：
 ```
 ucloud udisk attach --udisk-id bsm-bagfqw5u --zone cn-bj2-05 --uhost-id uhost-bh0fvsnh/UHost
@@ -265,14 +265,14 @@ Windows操作系统：
 
 在云主机详情界面-\>绑定-\>云硬盘-\>找到指定磁盘-\>卸载，进行卸载操作。
 
-您还可以使用[udisk detach](/developer/cli/cmd/ucloud/udisk/detach)（UCloud CLI）命令卸载云硬盘，并指定可用区。请使用 --udisk-id参数指定云硬盘资源ID。
+您还可以使用[udisk detach](cli/cmd/ucloud/udisk/detach)（UCloud CLI）命令卸载云硬盘，并指定可用区。请使用 --udisk-id参数指定云硬盘资源ID。
 例如：
 ```
 ucloud udisk detach --udisk-id bsm-bagfqw5u --zone cn-bj2-05
 ```
 以上示例输出如下：
 ```
-Please confirm that you have already unmounted file system corresponding to this hard drive,(See "https://docs.ucloud.cn/storage_cdn/udisk/userguide/umount" for help), otherwise it will cause file system damage and UHost cannot be normally shut down. Sure to detach? (y/n):y
+Please confirm that you have already unmounted file system corresponding to this hard drive,(See "https://docs.ucloud.cn/udisk/userguide/umount" for help), otherwise it will cause file system damage and UHost cannot be normally shut down. Sure to detach? (y/n):y
 udisk[bsm-bagfqw5u] is detaching from uhost[uhost-bh0fvsnh]…done
 ```
 **注意事项：系统盘无法被卸载。**

@@ -2,7 +2,7 @@
 
 # 机型与CPU平台
 
-*此文档适合于2019年5月后新上线的新版主机创建页，重新定义了大部分机型的概念，这些新概念被聚合为主机机型概念2.0。若您仍然使用旧版本的主机创建页，机型概念请参照主机概念1.0的文档[机型与规格](/compute/uhost/introduction/uhost/type)；若您希望了解2.0概念与1.0概念相比发生了哪些变化，请参照[FAQ](/compute/uhost/faq#主机机型概念10和20发生了哪些变化)。*
+*此文档适合于2019年5月后新上线的新版主机创建页，重新定义了大部分机型的概念，这些新概念被聚合为主机机型概念2.0。若您仍然使用旧版本的主机创建页，机型概念请参照主机概念1.0的文档[机型与规格](uhost/introduction/uhost/type)；若您希望了解2.0概念与1.0概念相比发生了哪些变化，请参照[FAQ](uhost/faq#主机机型概念10和20发生了哪些变化)。*
 
 ## 机型
 
@@ -15,7 +15,7 @@ UCloud云主机根据应用场景将主机区分为：**快杰型O、通用型N�
 | 高主频型 C      | 采用3.2GHz主频的CPU，计算性能强 | 高频交易，数据处理，图形渲染等  |
 | GPU型 G      | 搭载K80，P40或V100 GPU   | 人工智能，科学计算，图形渲染等  |
 
-价格详情请参见：[主机价格](https://docs.ucloud.cn/compute/uhost/price)
+价格详情请参见：[主机价格](https://docs.ucloud.cn/uhost/price)
 
 ### 快杰型 O
 
@@ -191,8 +191,8 @@ CPU平台选择最佳实践：
 
 ## 后续阅读
 
-[主机价格](https://docs.ucloud.cn/compute/uhost/price)
+[主机价格](https://docs.ucloud.cn/uhost/price)
 
-[主机磁盘简介](/compute/uhost/introduction/disk)
+[主机磁盘简介](/uhost/introduction/disk)
 
-[特性简介：网络增强、热升级与数据方舟](/compute/uhost/introduction/uhost/feature)
+[特性简介：网络增强、热升级与数据方舟](/uhost/introduction/uhost/feature)

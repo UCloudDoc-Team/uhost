@@ -76,7 +76,7 @@ cd netperf-netperf-2.5.0
 
 3）开启测试机网络增强功能
 
-在测试机上，参考文档开启网络增强功能：<https://docs.ucloud.cn/compute/uhost/guide/common>
+在测试机上，参考文档开启网络增强功能：<https://docs.ucloud.cn/uhost/guide/common>
 
 确认网络增强是否开启，执行命令：
 

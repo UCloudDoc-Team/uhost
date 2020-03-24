@@ -3,9 +3,9 @@
 # 机型与规格
 
 *注意：2019年5月上线新版主机创建页后，主机机型概念已升级到2.0版本。此文档描述的1.0版本概念将不再沿用。请参照
-[机型与CPU平台](/compute/uhost/introduction/uhost/type_new)
+[机型与CPU平台](/uhost/introduction/uhost/type_new)
 进行选型。控制台列表展示的机型也已全部采用了2.0版本机型概念，新旧版机型概念对比参照
-[FAQ](/compute/uhost/faq#主机机型概念10和20发生了哪些变化)。*
+[FAQ](/uhost/faq#主机机型概念10和20发生了哪些变化)。*
 
 以下为1.0版主机概念的文档：
 
@@ -20,7 +20,7 @@ UCloud云主机根据应用场景将主机区分为：**标准型N、高IO型I�
 | 高IO型I | 采用本地SSD磁盘，IO性能高      | 中大型数据库，核心业务服务器等     |
 | GPU型G | 搭载K80，P40或V100 GPU   | 人工智能，科学计算，图形渲染等     |
 
-价格详情请参见：[主机价格](https://docs.ucloud.cn/compute/uhost/price)
+价格详情请参见：[主机价格](https://docs.ucloud.cn/uhost/price)
 
 ### 标准型 N
 
@@ -221,7 +221,7 @@ SSD云盘：20GB～4000GB
 本地SSD盘：20GB～1000GB
 ```
 
-具体GPU卡的性能对比见 [GPU机型说明](https://docs.ucloud.cn/ai/gpu/type)
+具体GPU卡的性能对比见 [GPU机型说明](https://docs.ucloud.cn/gpu/type)
 
 ### 大数据型 D
 
@@ -241,6 +241,6 @@ SSD云盘：20GB～4000GB
 
 ### 后续阅读
 
-[主机磁盘简介](/compute/uhost/introduction/disk)
+[主机磁盘简介](/uhost/introduction/disk)
 
-[特性简介：网络增强、热升级与数据方舟](/compute/uhost/introduction/uhost/feature)
+[特性简介：网络增强、热升级与数据方舟](/uhost/introduction/uhost/feature)

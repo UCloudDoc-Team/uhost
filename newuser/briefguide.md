@@ -24,7 +24,7 @@
 
 ![](/images/newuser/unet01.png)
 
-1）默认为您绑定1Mb的[外网弹性IP](https://docs.ucloud.cn/network/unet/eip)，若暂无绑定外网IP的需求，可切换至自定义网络；
+1）默认为您绑定1Mb的[外网弹性IP](https://docs.ucloud.cn/unet/eip)，若暂无绑定外网IP的需求，可切换至自定义网络；
 
 2）防火墙有两种模式可供选择，若云主机希望开启http或https服务，请选择“Web推荐”。
 
@@ -58,15 +58,15 @@
 
 1）可选择标准镜像或自制镜像，使用自制镜像需先在云主机管理面板-镜像管理中导入镜像；
 
-2）可自定义选择[机型](https://docs.ucloud.cn/compute/uhost/introduction/uhost/type_new)、CPU、内存、[磁盘类型及大小](https://docs.ucloud.cn/compute/uhost/introduction/disk)。
+2）可自定义选择[机型](https://docs.ucloud.cn/uhost/introduction/uhost/type_new)、CPU、内存、[磁盘类型及大小](https://docs.ucloud.cn/uhost/introduction/disk)。
 
 ### 3 选择主机特性和CPU平台
 
 ![](/images/newuser/cpu_platform.png)
 
-1）可选择是否开启网络增强以及热升级特性，详情参见：[特性](https://docs.ucloud.cn/compute/uhost/introduction/uhost/feature)；
+1）可选择是否开启网络增强以及热升级特性，详情参见：[特性](https://docs.ucloud.cn/uhost/introduction/uhost/feature)；
 
-2）CPU平台为新推出的选型概念，可选择最低CPU平台或后台自动分配，详情参见：[CPU平台](https://docs.ucloud.cn/compute/uhost/introduction/uhost/type_new)。
+2）CPU平台为新推出的选型概念，可选择最低CPU平台或后台自动分配，详情参见：[CPU平台](https://docs.ucloud.cn/uhost/introduction/uhost/type_new)。
 
 ### 4 设置自定义网络
 
@@ -74,13 +74,13 @@
 
 1）可选择VPC和子网，也提供新建VPC和子网的链接可完成快速创建后刷新；
 
-2）带宽提供带宽计费、流量计费以及共享带宽三种计费模式，之间的差别参见：[带宽计费模式](https://docs.ucloud.cn/network/unet/index)。
+2）带宽提供带宽计费、流量计费以及共享带宽三种计费模式，之间的差别参见：[带宽计费模式](https://docs.ucloud.cn/unet/README)。
 
 ### 5 设置主机管理信息
 
 ![](/images/newuser/management02.png)
 
-自定义模式下新增主机名称、业务组以及硬件隔离组的设置，其中隔离组是云主机的逻辑分组，详情参见：[硬件隔离组](https://docs.ucloud.cn/compute/uhost/guide/isolationgroup)。
+自定义模式下新增主机名称、业务组以及硬件隔离组的设置，其中隔离组是云主机的逻辑分组，详情参见：[硬件隔离组](https://docs.ucloud.cn/uhost/guide/isolationgroup)。
 
 ### 6 选择计费方式
 
