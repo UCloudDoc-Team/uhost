@@ -72,10 +72,12 @@ UCloud的元数据服务器地址为（各可用区一致）：
 	/name
 	/size
 
+结合Cloud-Init，下面示例一段user-data的写法，这段脚本的目的为，当主机创建并且可用之后，就自动向服务器（1.2.3.4）上报主机id信息：
 
-## 已发布可用区
-
- - 泰国曼谷可用区A
- - 越南胡志明可用区A
-
-（其他可用区发布中）
+```bash
+#!/bin/sh
+md=http://100.80.80.80/meta-data/v1
+myserver=http://1.2.3.4/
+ID=$(curl -s $md/instance-id)
+curl -s $myserver/?id=$ID
+```
