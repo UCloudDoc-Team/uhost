@@ -12,7 +12,7 @@ UCloud的元数据服务器地址为（各可用区一致）：
 
 ## 元数据项
 
-（相对于：http://100.80.80.80/meta-data/latest/uhost）
+（相对于：http://100.80.80.80/meta-data/latest/uhost ）
 
 | 元数据项 | 说明 |
 | -- | -- |
