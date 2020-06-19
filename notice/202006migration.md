@@ -4,7 +4,7 @@
 
 具体操作为：
 
-  - 将寿命大于三年（多数CPU平台为Intel Ivybridge, Haswell, Broadwell）的物理宿主机上的云主机实例迁移到最新的物理宿主机(CPU平台为Intel Cascadelake)；
+  - 将寿命大于三年（多数CPU平台为Intel Ivybridge, Haswell, Broadwell）的物理宿主机上的云主机实例迁移到最新的物理宿主机（CPU平台为Intel Cascadelake）；
   - 将以SATA为介质的普通本地盘在线升级到以NVMe SSD为介质的SSD云盘
 
 升级过程相当于2次云主机**在线热迁移**，基本无感知，且升级后实例**费用不变**。
