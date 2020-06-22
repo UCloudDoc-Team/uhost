@@ -39,7 +39,6 @@
         * [元数据](/uhost/guide/metadata/metadata-server)
         * [自定义数据](/uhost/guide/metadata/userdata)            
     * [回收站](/uhost/guide/recycle_bin)
-    * [UGA](/uhost/guide/uga)
     * [硬件隔离组](/uhost/guide/isolationgroup)
 * 性能数据
     * [本地磁盘I/O性能测试](/uhost/testdata/io_uhost)
@@ -62,5 +61,4 @@
     * [KMS激活方式说明](/uhost/windows_op/kms)
     * [防火墙启用教程](/uhost/windows_op/win_firewall)
     * [优化DNS配置方法](/uhost/windows_op/dns_setting)
-    
         
