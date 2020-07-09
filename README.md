@@ -38,7 +38,6 @@
     * 元数据与自定义数据
         * [元数据](/uhost/guide/metadata/metadata-server)
         * [自定义数据](/uhost/guide/metadata/userdata)            
-    * [回收站](/uhost/guide/recycle_bin)
     * [硬件隔离组](/uhost/guide/isolationgroup)
 * 性能数据
     * [本地磁盘I/O性能测试](/uhost/testdata/io_uhost)
