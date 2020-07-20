@@ -150,9 +150,7 @@ Ubuntu：
 
 ![image](/images/disk_extend.png)
 
-#### 对于升级之前无数据盘的主机
-
-（限本地磁盘）
+### 3、扩容前无本地数据盘的主机
 
 ##### Linux操作系统
 
@@ -167,7 +165,7 @@ mkfs -t ext4 /dev/vdb
 mount /dev/vdb /data/
 ```
 
-编辑/etc/fstab，将对应配置写入fatab
+编辑/etc/fstab，将对应配置写入fstab
 
 ``` 
 /dev/vdb   /data  ext4  defaults,noatime 0 0
@@ -186,21 +184,21 @@ mount /dev/vdb /data/
 
 在主机上操作，cmd中输入diskpart.exe
 
-1）输入list disk，select disk n (请根据实际情况，填写n的具体数值），选中数据盘。
+1）输入list disk，select disk n (请根据实际情况，填写n的具体数值），选中数据盘;
 
-2）输入create partition primary，创建分区。
+2）输入create partition primary，创建分区;
 
-3）输入list volume，可看到创建的卷。输入format fs=ntfs quick 进行分区
+3）输入list volume，可看到创建的卷。输入format fs=ntfs quick 进行分区;
 
-4）输入assign。分配驱动器号。
+4）输入assign。分配驱动器号;
 
 5）输入exit退出。系统中已可看到已创建的磁盘。
 
 ![image](/images/create_new_disk.png)
 
-## 挂载云硬盘
+## 四、挂载云硬盘
 
-在控制台的云主机详情界面-\>绑定-\>云硬盘-\>挂载，进行挂载操作。
+在控制台主机管理页面->挂载云硬盘，进行挂载操作。
 
 您还可以使用[udisk attach](cli/cmd/ucloud/udisk/attach)（UCloud CLI）命令挂载云硬盘，并指定可用区和云主机实例ID。请使用 --udisk-id参数指定云硬盘资源ID。
 例如：
@@ -217,9 +215,9 @@ udisk[bsm-bagfqw5u] is attaching to uhost uhost[uhost-bh0fvsnh]...done
     mount /dev/vdc /udisk
     df -h
 
-## 卸载云硬盘
+## 五、卸载云硬盘
 
-### Step 1 系统内卸载云盘
+### 1、系统内卸载云盘
 
 Linux操作系统：
 
@@ -241,9 +239,9 @@ Windows操作系统：
 
 在控制台云硬盘列表页选择需要扩容的云硬盘，将其卸载。这时云硬盘状态会从“已挂载”变为“可用”。
 
-### Step 2 控制台操作
+### 2、控制台操作
 
-在云主机详情界面-\>绑定-\>云硬盘-\>找到指定磁盘-\>卸载，进行卸载操作。
+在控制台主机管理页面->云盘管理->卸载，进行卸载操作。
 
 您还可以使用[udisk detach](cli/cmd/ucloud/udisk/detach)（UCloud CLI）命令卸载云硬盘，并指定可用区。请使用 --udisk-id参数指定云硬盘资源ID。
 例如：
@@ -257,11 +255,11 @@ udisk[bsm-bagfqw5u] is detaching from uhost[uhost-bh0fvsnh]…done
 ```
 **注意事项：系统盘无法被卸载。**
 
-## 本地磁盘“缩容”
+## 六、本地磁盘“缩容”
 
-控制台不支持本地磁盘的“缩容”。但可以通过以下步骤变相实现“缩容”。**请注意，此操作会完全抹去数据，请先进行数据备份后操作！！！**
+控制台不支持本地磁盘的“缩容”，但可通过以下步骤变相实现“缩容”。**请注意，此操作会完全抹去数据，请先进行数据备份后操作！！！**
 
-### Step 1 删除本地盘
+### 1、删除本地盘
 
 首先进入系统内部进行卸载操作，操作步骤：
 
@@ -285,7 +283,7 @@ Windows操作系统：
 
 ![](/images/guide/jietu20181227-174630.jpg)
 
-### Step 2 添加本地盘
+### 2、添加本地盘
 
 请在控制台选择 指定主机-\>详情-\>磁盘与恢复-\>新建本地盘，选择适合大小。
 
@@ -293,7 +291,7 @@ Windows操作系统：
 
 新建后，请进入主机内部进行如下操作：
 
-**Linux操作系统：**
+**Linux操作系统**
 
 升级后，需在云主机内做如下操作：
 
@@ -306,7 +304,7 @@ mkfs -t ext4 /dev/vdb
 mount /dev/vdb /data/
 ```
 
-编辑/etc/fstab，将对应配置写入fatab
+编辑/etc/fstab，将对应配置写入fstab
 
 ``` 
 /dev/vdb   /data  ext4  defaults,noatime 0 0
