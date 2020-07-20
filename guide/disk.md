@@ -53,7 +53,7 @@ Windows:
 
 ### 3、系统内扩容步骤
 
-若为在线扩容磁盘，则需要执行**系统内扩容步骤**：
+如文件系统并未扩容完毕，则需要执行**系统内扩容步骤**：
 
 #### Linux
 
@@ -68,11 +68,10 @@ Ubuntu：
 
     sudo apt-get install cloud-initramfs-growroot
 
-**步骤2：扩容块设备并重启**
+**步骤2：扩容分区表**
 
     LANG=en_US.UTF-8
     growpart /dev/vda 1
-    reboot
 
 **步骤3：扩容文件系统**
 
@@ -110,19 +109,19 @@ Ubuntu：
 
 ## 三、数据盘扩容
 
-### 1、离线扩容磁盘
+### 1、扩容步骤
 
 #### 磁盘类型：本地盘和云硬盘
 
 ![](/images/reconfignew.png)
 
-离线扩容磁盘，在控制台选择“更改配置”，关机升级后，重新开机即可。
+在控制台选择“更改配置”，关机升级后，重新开机即可。
 
-### 2、在线扩容磁盘
+### 2、系统内扩容步骤
+
+如文件系统并未扩容完毕，则需要执行**系统内扩容步骤**：
 
 ##### Linux操作系统
-
-在线扩容磁盘后，需在云主机内执行如下操作：
 
     //查看数据盘的文件系统类型（升级操作需要针对ext4和xfs两种文件系统采取不同的操作）
     df -ihT
@@ -132,15 +131,11 @@ Ubuntu：
 ![image](/images/xfs.png)
 
     //针对ext4文件格式的操作系统（如CentOS6）
-    umount /dev/vdb
     e2fsck -f /dev/vdb
     resize2fs /dev/vdb
-    mount /dev/vdb /data
 
     //针对xfs文件格式的操作系统（如CentOS7）
-    umount /dev/vdb
     xfs_repair /dev/vdb
-    mount /dev/vdb /data
     xfs_growfs /data
 
 ##### Windows操作系统
