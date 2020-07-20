@@ -51,9 +51,9 @@ Windows:
 
     这台电脑->查看C盘大小是否与控制台一致
 
-若文件系统未完成扩容，则需要执行**系统内扩容步骤**
-
 ### 3、系统内扩容步骤
+
+若为在线扩容磁盘，则需要执行**系统内扩容步骤**：
 
 #### Linux
 
@@ -110,50 +110,34 @@ Ubuntu：
 
 ## 三、数据盘扩容
 
-### 1、控制台操作
+### 1、离线扩容磁盘
 
-#### 磁盘类型：本地盘
+#### 磁盘类型：本地盘和云硬盘
 
 ![](/images/reconfignew.png)
 
-对于本地盘的磁盘扩容，在控制台，选择“更改配置”，关机升级后，重新开机即可。
+离线扩容磁盘，在控制台选择“更改配置”，关机升级后，重新开机即可。
 
-#### 磁盘类型：云硬盘
-
-对于云硬盘（UDisk）的磁盘扩容，请先在主机内部完成卸载操作。
-
-    mount -l //查看当前卷，假设/dev/vdb为云盘
-    umount /dev/vdb
-    fsck.ext4 /dev/vdb
-
-然后在控制台选中磁盘，执行卸载操作：
-
-![image](/images/udisk_del1.png)
-
-在云硬盘控制面板完成扩容，并重新挂载，在主机内执行下述Step 2步骤的操作：
-
-### Step2 命令行操作
-
-#### 对于有数据盘扩容的主机
+### 2、在线扩容磁盘
 
 ##### Linux操作系统
 
-关机升级后，需在云主机内做如下操作：
+在线扩容磁盘后，需在云主机内执行如下操作：
 
-    //查看数据盘的文件系统类型（升级操作需要针对ext4和xfs两种文件系统采取不同的操作）//
+    //查看数据盘的文件系统类型（升级操作需要针对ext4和xfs两种文件系统采取不同的操作）
     df -ihT
 
 ![image](/images/ext4.png)
 
 ![image](/images/xfs.png)
 
-    //针对ext4文件格式的操作系统（如CentOS6）：//
+    //针对ext4文件格式的操作系统（如CentOS6）
     umount /dev/vdb
     e2fsck -f /dev/vdb
     resize2fs /dev/vdb
     mount /dev/vdb /data
 
-    //针对xfs文件格式的操作系统（如CentOS7）//
+    //针对xfs文件格式的操作系统（如CentOS7）
     umount /dev/vdb
     xfs_repair /dev/vdb
     mount /dev/vdb /data
