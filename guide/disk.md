@@ -75,8 +75,6 @@ Ubuntu：
 
 **步骤3：扩容文件系统**
 
-虚拟机重启后执行:
-
     resize2fs /dev/vda1 (ext4文件系统)
     xfs_growfs /dev/vda1 (xfs文件系统)
 
