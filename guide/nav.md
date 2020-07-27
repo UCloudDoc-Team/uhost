@@ -10,12 +10,11 @@
 
 ## 网络相关操作
 
-弹性IP： [EIP管理](https://docs.ucloud.cn/unet/eip)
+弹性IP： [EIP管理](https://docs.ucloud.cn/unet/eip/introduction)
 
-防火墙： [外网防火墙管理](https://docs.ucloud.cn/firewall/README)
+防火墙： [外网防火墙管理](https://docs.ucloud.cn/unet/firewall/introduction)
 
-虚拟IP： [VIP管理](https://docs.ucloud.cn/vip/guide)
-[KeepAlived配置](/uhost/public/keepalived)
+虚拟IP：[KeepAlived配置](/uhost/public/keepalived)
 
 私有网络： [私有网络](https://docs.ucloud.cn/vpc/README)
 
