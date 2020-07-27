@@ -17,7 +17,7 @@ UDB，UMem。
 
 外网IP地址是用户访问云主机以及主机实例对外提供服务的主要方式。在UCloud，外网IP是可弹性迁移的，当一台主机出现故障时可以轻松的将外网IP迁移到别的主机，即“弹性IP”。在您创建主机的时候，如果选择了同时购买弹性IP以及外网带宽额度，即会同时分配一个弹性IP，并和您的主机完成了绑定。您可以同时在网络产品的资料面板中查找到此IP资源信息。
 
-[如何管理弹性IP](https://docs.ucloud.cn/unet/eip)
+[如何管理弹性IP](https://docs.ucloud.cn/unet/eip/introduction)
 
 ### 组播和广播
 
@@ -28,4 +28,4 @@ UDB，UMem。
 为主机提供防火墙功能，通过将防火墙规则绑定到云主机，即能对主机公网访问进行控制管理，为主机安全提供必要的保障。防火墙支持TCP／UDP／ICMP/GRE协议。
 我们为您创建了几组缺省的防火墙，默认开通了TCP的22、3389端口和PING，您可根据业务情况自行调整或创建更多的防火墙策略。
 
-[如何管理防火墙](https://docs.ucloud.cn/firewall/README)
+[如何管理防火墙](https://docs.ucloud.cn/unet/firewall/introduction)
