@@ -11,7 +11,6 @@ UDB，UMem。
 
 此外，UCloud还支持内网虚拟IP，申请后可以直接设置在主机上。
 
-[如何管理内网虚拟IP](https://docs.ucloud.cn/vip/README)
 
 ### 外网IP
 
