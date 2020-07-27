@@ -24,7 +24,7 @@
 
 ![](/images/newuser/unet01.png)
 
-1）默认为您绑定1Mb的[外网弹性IP](https://docs.ucloud.cn/unet/eip)，若暂无绑定外网IP的需求，可切换至自定义网络；
+1）默认为您绑定1Mb的[外网弹性IP](https://docs.ucloud.cn/unet/eip/introduction)，若暂无绑定外网IP的需求，可切换至自定义网络；
 
 2）防火墙有两种模式可供选择，若云主机希望开启http或https服务，请选择“Web推荐”。
 
