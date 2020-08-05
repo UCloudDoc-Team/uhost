@@ -59,6 +59,8 @@ Windows:
 
 **步骤1：安装growpart**
 
+Cloud-init支持版镜像中已默认安装growpart，其余版本需要自行安装，过程如下：
+
 CentOS：
 
     yum install -y epel-release
@@ -75,8 +77,10 @@ Ubuntu：
 
 **步骤3：扩容文件系统**
 
-    resize2fs /dev/vda1 (ext4文件系统)
-    xfs_growfs /dev/vda1 (xfs文件系统)
+命令的操作目标必须是文件系统挂载点，不可以是设备名称。
+
+    resize2fs / (ext4文件系统)
+    xfs_growfs / (xfs文件系统)
 
 **步骤4：确认**
 
