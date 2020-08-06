@@ -75,12 +75,12 @@ Ubuntu：
     LANG=en_US.UTF-8
     growpart /dev/vda 1
 
+CentOS6和Debian8，可能会遇到内核以及工具链不支持热重载分区表的情况，如遇此情况，扩容分区表后需重启一次操作系统。
+
 **步骤3：扩容文件系统**
 
-命令的操作目标必须是文件系统挂载点，不可以是设备名称。
-
-    resize2fs / (ext4文件系统)
-    xfs_growfs / (xfs文件系统)
+    resize2fs /dev/vda1 (ext4文件系统)
+    xfs_growfs /dev/vda1 (xfs文件系统) 或xfs_growfs /
 
 **步骤4：确认**
 
