@@ -59,7 +59,7 @@ UCloud云主机根据应用场景将主机区分为：**快杰型、快杰S型�
 - 计算性能更佳同时，价格只比快杰型提升5%，保持卓越的性价比。
 - 最大网络性能达到1000W PPS，最大存储性能达到120W IOPS。
 
-2）CPU平台支持：Intel Cascadelake-Refresh
+2）CPU平台支持：Intel CascadelakeR
 
 3）CPU内存组合（支持配比1:1-1:8）：
 
@@ -231,7 +231,7 @@ CPU平台选择最佳实践：
 | AMD/EPYC2         | √   | √     |         |
 | Intel/Skylake     | √   | √     | √       |
 | Intel/Cascadelake | √   | √     | √       |
-| Intel/CascadelakeRefresh | √   | √     | √       |
+| Intel/CascadelakeR | √   | √     | √       |
 
 3）对计算性能有明确要求的业务，推荐选择当前可用区的最新一代。
 
