@@ -12,7 +12,6 @@
         * [特性](/uhost/introduction/uhost/feature)
         * [订单构成](/uhost/introduction/uhost/lifecycle)
         * [配额](/uhost/introduction/uhost/quota)
-        * [机型与规格](/uhost/introduction/uhost/type)
     * [磁盘](/uhost/introduction/disk)
     * [镜像](/uhost/introduction/image)
     * [网络](/uhost/introduction/network)
