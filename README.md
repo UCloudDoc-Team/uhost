@@ -50,6 +50,7 @@
     * [MariaDB软件源配置](/uhost/public/mariadb)
     * [PostgreSQL软件源配置](/uhost/public/postgre)
     * [UCloud Docker 公共镜像仓库](/uhost/public/docker)
+    * [UCloud PyPI私有源配置](/uhost/public/pypi)
     * [安装Cloudera](/uhost/public/cloudera)
     * [安装Perf](/uhost/public/perf)
     * [安装Systemtap](/uhost/public/systemtap)
