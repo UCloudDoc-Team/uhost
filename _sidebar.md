@@ -1,4 +1,3 @@
-<div class="sidebar_title icon__uhost"> 云主机 UHost</div>
 
 * [概览](/uhost/README)
 * 产品简介
