@@ -16,7 +16,7 @@
     * 网络
         * [内网](/uhost/introduction/network/vpc.md)
         * [弹性外网IP](/uhost/introduction/network/eip.md)
-        * [域名加速](/uhost/introduction/network/domainaccleration)
+        * [域名加速](/uhost/introduction/network/domainacceleration.md)
     * [监控](/uhost/introduction/monitor)
 * 购买指导
     * [计费模式](/uhost/buy/charge)
