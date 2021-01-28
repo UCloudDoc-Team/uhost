@@ -23,7 +23,6 @@
 |               | nvcr.io                                                 |
 |               | *.nvcr.io                                               |
 |               | helm.ngc.nvidia.com                                     |
-|               | api.ngc.nvidia.com                                      |
 |               | *.ngc.nvidia.com                                        |
 | **docker**    | download.docker.com                                     |
 
