@@ -1,4 +1,4 @@
-# 概览.
+# 概览
 
 * 产品简介
     * [什么是云主机](/uhost/introduction/concept)
