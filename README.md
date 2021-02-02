@@ -1,7 +1,7 @@
 # 概览
 
 * 产品简介
-    * [什么是云主机.](/uhost/introduction/concept)
+    * [什么是云主机..](/uhost/introduction/concept)
     * [产品优势](/uhost/introduction/advantages)
     * [功能简介](/uhost/introduction/functions)
     * [计费说明](/uhost/introduction/charge)
