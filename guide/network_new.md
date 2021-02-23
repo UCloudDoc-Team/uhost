@@ -1,6 +1,6 @@
 # 网络
 
-见基础网络Unet。
+如您需要详细了解uhost网络相关功能及信息，请阅读[基础网络](https://docs.ucloud.cn/unet/README)。
 * 外网弹性IP
      * [产品简介](/unet/eip/introduction)
      * [操作指南](/unet/eip/guide)
