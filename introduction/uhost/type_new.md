@@ -2,7 +2,7 @@
 
 ## 机型
 
-UCloud云主机根据应用场景将主机区分为：**快杰S型、快杰PRO型、快杰MAX型、快杰型、通用型、高主频型、GPU型**总计5种机型。
+UCloud云主机根据应用场景将主机区分为：**快杰S型、快杰PRO型、快杰MAX型、快杰型、通用型、高主频型、GPU型**总计7种机型。
 
 |             | 分类 | CPU主频 | 内网带宽 | 特点                   | 适用场景             |
 | ----------- | ---------|--------------------|  -------- | -------------------- | ---------------- |
@@ -12,7 +12,7 @@ UCloud云主机根据应用场景将主机区分为：**快杰S型、快杰PRO�
 | 快杰型 O  | 快杰系列 | Intel Cascadelake: 2.5GHz-3.9GHz <br> AMD EPYC2: 2.9GHz-3.4GHz | 25GbE | 计算、存储、网络性能卓越，性价比出众的云主机 | 全面场景  |
 | 通用型 N       | 上一代系列 | Intel Skylake: 2.6GHz-3.7GHz <br> Intel Broadwell: 2.2GHz-2.9GHz| 10GbE | 配置自由灵活，选择丰富          | 企业级应用，内存服务，数据分析等 |
 | 高主频型 C      | 上一代系列 | Intel Skylake:  3.2GHz-4.2GHz | 10GbE |采用3.2GHz主频的CPU，单核计算性能最高 | 高频交易，数据处理，EDA等  |
-| GPU型 G      | 上一代系列 | Intel Skylake: 2.6GHz-3.7GHz <br> Intel Broadwell: 2.2GHz-2.9GHz | 10GbE |搭载Nvdia Tesla K80，P40或V100 GPU | 人工智能，科学计算，图形渲染等  |
+| GPU型 G      | 上一代系列 | Intel Skylake: 2.6GHz-3.7GHz <br> Intel Broadwell: 2.2GHz-2.9GHz | 10GbE |搭载Nvidia Tesla K80，P40，V100或T4 GPU | 人工智能，科学计算，图形渲染等  |
 
 - 快杰系列：UCloud旗舰云主机系列，支持网络增强2.0与RSSD云盘，因此最大网络性能达到1000W PPS，最大存储性能达到120W IOPS。
 - 上一代系列：旧款云主机，支持本地盘/普通云盘/SSD云盘。在已上线快杰系列的可用区，上一代系列将不会持续供应。
@@ -282,13 +282,18 @@ UCloud云主机根据应用场景将主机区分为：**快杰S型、快杰PRO�
 
 ## CPU平台
 
-CPU平台属性是指云主机所在宿主机的CPU微架构版本，包含以下选项：Intel IvyBridge (V2), Intel Haswell
-(V3)，Intel Broadwell (V4)，Intel Skylake (V5)，Intel
-Cascadelake（V6），Intel
-Cascadelake-Refresh（V6）。每代CPU平台的主要差异为硬件架构不同、指令集不同。**不同CPU平台的云主机价格相同。**
+CPU平台属性是指云主机所在宿主机的CPU微架构版本，包含以下选项：
+- Intel IvyBridge,
+- Intel Haswell
+- Intel Broadwell
+- Intel Skylake
+- Intel Cascadelake
+- Intel Cascadelake-Refresh
+- AMD EPYC2
 
-创建时可选定最低的CPU平台，或让后台完全自动分配。例如，用户创建时选择了通用型，CPU平台≥Intel Haswell
-(V3)，后台调度系统可能将主机调度到Haswell、Broadwell或是Skylake平台的宿主机上。
+每代CPU平台的主要差异为硬件架构不同、指令集不同。**不同CPU平台的云主机价格相同。**
+
+创建时可选定最低的CPU平台，或让后台完全自动分配。例如，用户创建时选择了通用型，CPU平台≥Intel Haswell (V3)，后台调度系统可能将主机调度到Haswell、Broadwell或是Skylake平台的宿主机上。
 
 CPU平台选择最佳实践：
 
