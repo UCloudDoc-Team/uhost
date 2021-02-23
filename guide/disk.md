@@ -27,19 +27,19 @@
 
 #### 创建/重装主机时扩容：
 
-1）在创建/重装主机页面，选择系统盘大小；
+1.在创建/重装主机页面，选择系统盘大小；
 
-2）等待创建/重装完毕，此时底层块设备已扩容完成；
+2.等待创建/重装完毕，此时底层块设备已扩容完成；
 
-3）进入主机查看文件系统是否已扩容完毕。
+3.进入主机查看文件系统是否已扩容完毕。
 
 #### 创建后通过更改配置扩容：
 
-1）选择“更改配置” -> “更改磁盘容量” -> 系统盘 （注意：本地系统盘扩容时间较长，扩容至100G可能需要关机等待30分钟）；
+1.选择“更改配置” -> “更改磁盘容量” -> 系统盘 （注意：本地系统盘扩容时间较长，扩容至100G可能需要关机等待30分钟）；
 
-2）等待扩容结束，主机进入关机状态，此时底层块设备已扩容完成；
+2.等待扩容结束，主机进入关机状态，此时底层块设备已扩容完成；
 
-3）开机，进入主机查看文件系统是否已扩容完毕。
+3.开机，进入主机查看文件系统是否已扩容完毕。
 
 #### 查看文件系统是否扩容完毕：
 
@@ -54,7 +54,7 @@ Windows:
 ### 3、系统内扩容步骤
 
 如文件系统并未扩容完毕，则需要执行**系统内扩容步骤**：
-
+    
 #### Linux
 
 **步骤1：安装growpart**
@@ -181,15 +181,15 @@ mount /dev/vdb /data/
 
 在主机上操作，cmd中输入diskpart.exe
 
-1）输入list disk，select disk n (请根据实际情况，填写n的具体数值），选中数据盘;
+1.输入list disk，select disk n (请根据实际情况，填写n的具体数值），选中数据盘;
 
-2）输入create partition primary，创建分区;
+2.输入create partition primary，创建分区;
 
-3）输入list volume，可看到创建的卷。输入format fs=ntfs quick 进行分区;
+3.输入list volume，可看到创建的卷。输入format fs=ntfs quick 进行分区;
 
-4）输入assign。分配驱动器号;
+4.输入assign。分配驱动器号;
 
-5）输入exit退出。系统中已可看到已创建的磁盘。
+5.输入exit退出。系统中已可看到已创建的磁盘。
 
 ![image](/images/create_new_disk.png)
 
@@ -213,8 +213,8 @@ udisk[bsm-bagfqw5u] is attaching to uhost uhost[uhost-bh0fvsnh]...done
     df -h
 
 ## 五、卸载云硬盘
-**说明**<br>
-您只能操作卸载数据盘，系统盘不能被卸载。同时本地盘不支持卸载，不支持单独释放。
+
+>您只能操作卸载数据盘，系统盘不能被卸载。同时本地盘不支持卸载，不支持单独释放。
 
 ### 1、系统内卸载云盘
 
@@ -323,15 +323,15 @@ mount /dev/vdb /data/
 
 在主机上操作，cmd中输入diskpart.exe
 
-1）输入list disk，select disk n (请根据实际情况，填写n的具体数值），选中数据盘。
+1）输入    list disk，select disk n     (请根据实际情况，填写n的具体数值），选中数据盘。
 
-2）输入create partition primary，创建分区。
+2）输入    create partition primary    ，创建分区。
 
-3）输入list volume，可看到创建的卷。输入format fs=ntfs quick 进行分区
+3）输入    list volume ，可看到创建的卷。输入format fs=ntfs quick 进行分区
 
-4）输入assign。分配驱动器号。
+4）输入    assign  。分配驱动器号。
 
-5）输入exit退出。系统中已可看到已创建的磁盘。
+5）输入    exit    退出。系统中已可看到已创建的磁盘。
 
 ![image](/images/create_new_disk.png)
 
