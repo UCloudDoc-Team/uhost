@@ -3,6 +3,7 @@
 
 # 管理主机
 如果您登录[uhost控制台](https://console.ucloud.cn/uhost/uhost)，可以进行主机登录、关闭、重启以及删除主机等操作。<br>
+
 ![img](/guide/image/manage00.png)<br>
 
 同时，您还可以使用[uhost delete](https://docs.ucloud.cn/cli/cmd/ucloud/uhost/delete)（UCloud CLI）命令删除主机，并指定实例ID。
@@ -27,19 +28,23 @@ uhost[uhost-0a3gcvih] deleted
 
 
 如果您点击【详情】，进入主机详情页面，展示当前选择主机的基本信息、配置信息、付费信息以及监控相关信息。
+
 ![img](/guide/image/manage01.png)
 
 ![img](/guide/image/manage02.png)
 
 ## 基本信息模块
 ![img](/guide/image/manage03.png)<br>
+
 基本信息模块包括资源ID、资源名、业务组、可用区以及内网ip等基本信息，其中资源名称、业务组名称可即时更改。
 
 ## 配置信息模块
 ![img](/guide/image/manage04.png)<br>
+
 配置信息模块包含机型、cpu平台、机型、CPU及内存等主机配置相关信息，点击【更改配置】，进入配置更改页面，支持更改内存和CPU规格、调整磁盘容量、升级外网弹性IP带宽。
 ### 更改规格
 操作路径：选择云主机——>【更改配置】——>【更改规格】——>【继续】——>分别选择CPU和内存需要升级数据——>【确定】——>补缴差价，完成支付。
+
 ![img](/guide/image/manage06.png)<br>
 
 ![img](/guide/image/manage07.png)<br>
@@ -59,6 +64,7 @@ UHost:[uhost-0a3gcvih] resized...done
 ```
 ### 调整磁盘容量
 操作路径：选择云主机——>【更改配置】——>【调整磁盘容量】——>【继续】——>选择调整磁盘的容量值——>【确定】——>补缴差价，完成支付。
+
 ![img](/guide/image/manage08.png)<br>
 
 ![img](/guide/image/manage09.png)<br>
@@ -67,6 +73,7 @@ UHost:[uhost-0a3gcvih] resized...done
 
 ### 升级外网弹性IP带宽
 操作路径：选择云主机——>【更改配置】——>【升级外网弹性IP带宽】——>选择需要升级的ip地址——>【继续】——>调整带宽值——>【确定】——>补缴差价，完成支付。
+
 ![img](/guide/image/manage10.png)<br>
 
 ![img](/guide/image/manage11.png)<br>
@@ -90,9 +97,11 @@ UHost:[uhost-0a3gcvih] resized...done
 
 # 更多操作
 除以上功能外，控制台列表还支持更改业务组、制作镜像等更多操作。
+
 ![img](/guide/image/manage12.png)<br>
 ## 更改业务组
 操作路径：选择主机——>【…】——>【更多操作】——>【更改业务组】
+
 ![img](/guide/image/group01.png)<br>
 
 您可对云主机进行分组，使得某些操作能以业务组为单位进行，省去逐个操作的繁琐，便于资源集中管理。后续查看监控数据或修改规则时，即可以组为单位进行操作。
@@ -104,6 +113,7 @@ UHost:[uhost-0a3gcvih] resized...done
 如您需要详细了解镜像相关操作，请阅读[镜像操作指南](https://docs.ucloud.cn/uhost/guide/image/upload_image)
 ## 重置密码
 操作路径：选择主机——>【…】——>【更多操作】——>【重置密码】<br>
+
 ![img](/guide/image/pwd.png)<br>
 
 同时，您还可以使用[uhost reset-password](https://docs.ucloud.cn/cli/cmd/ucloud/uhost/reset-password)（UCloud CLI）命令重置主机密码，并指定可用区和实例ID。
