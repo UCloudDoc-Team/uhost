@@ -323,15 +323,15 @@ mount /dev/vdb /data/
 
 在主机上操作，cmd中输入diskpart.exe
 
-1）输入    list disk，select disk n     (请根据实际情况，填写n的具体数值），选中数据盘。
+1.输入list disk，select disk n (请根据实际情况，填写n的具体数值），选中数据盘。
 
-2）输入    create partition primary    ，创建分区。
+2.输入    create partition primary    ，创建分区。
 
-3）输入    list volume ，可看到创建的卷。输入format fs=ntfs quick 进行分区
+3.输入    list volume ，可看到创建的卷。输入format fs=ntfs quick 进行分区
 
-4）输入    assign  。分配驱动器号。
+4.输入    assign  。分配驱动器号。
 
-5）输入    exit    退出。系统中已可看到已创建的磁盘。
+5.输入    exit    退出。系统中已可看到已创建的磁盘。
 
 ![image](/images/create_new_disk.png)
 
