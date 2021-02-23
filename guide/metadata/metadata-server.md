@@ -49,7 +49,7 @@ UCloud的元数据服务器地址为（各可用区一致）：
 | /network-interfaces/N/ips/N/ip-id |（仅当为EIP时有效）EIP ID |
 | /network-interfaces/N/ips/N/ip-address | IP地址 |
 | /network-interfaces/N/ips/N/type | IP类型 |
-| /network-interfaces/N/ips/N/bandwitdh | 带宽大小（MB）|
+| /network-interfaces/N/ips/N/width | 带宽大小（MB）|
 
 ## 查看元数据
 
