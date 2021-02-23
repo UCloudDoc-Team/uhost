@@ -213,6 +213,8 @@ udisk[bsm-bagfqw5u] is attaching to uhost uhost[uhost-bh0fvsnh]...done
     df -h
 
 ## 五、卸载云硬盘
+**说明**<br>
+您只能操作卸载数据盘，系统盘不能被卸载。同时本地盘不支持卸载，不支持单独释放。
 
 ### 1、系统内卸载云盘
 
@@ -250,7 +252,8 @@ ucloud udisk detach --udisk-id bsm-bagfqw5u --zone cn-bj2-05
 Please confirm that you have already unmounted file system corresponding to this hard drive,(See "https://docs.ucloud.cn/udisk/userguide/umount" for help), otherwise it will cause file system damage and UHost cannot be normally shut down. Sure to detach? (y/n):y
 udisk[bsm-bagfqw5u] is detaching from uhost[uhost-bh0fvsnh]…done
 ```
-**注意事项：系统盘无法被卸载。**
+
+
 
 ## 六、本地磁盘“缩容”
 
@@ -333,3 +336,5 @@ mount /dev/vdb /data/
 ![image](/images/create_new_disk.png)
 
 同理，云盘亦不支持直接“缩容”，但可以在卸载后新建容量较小的云盘，直接挂载。
+
+如您还想了解更多磁盘相关功能及信息，请阅读[云硬盘UDisk](udisk/userguide/create)。
