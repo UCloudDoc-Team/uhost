@@ -358,10 +358,12 @@ server 0.cn.pool.ntp.org iburst minpoll 3 maxpoll 4
     
 #### ** Windows **
 * **修改方法**<br>
+
 修改Windows Time服务为自动启动 <br>
 ```
  1.在终端里输入"services.msc"，弹出服务列表，找到"Windows Time"将启动类型改为"自动"，并启动该服务；（如已启动则忽略）。
- 2.针对2008和2012用户，64位机器，需要在终端中输入"sc triggerinfo w32time start/networkon stop/networkoff"（以上命令为cmd命令，不可运行于powershell）。
+ 2.针对2008和2012用户，64位机器，需要在终端中输入`sc triggerinfo w32time start/networkon stop/networkoff`
+ （以上命令为cmd命令，不可运行于powershell）。
 ```
 
 修改组策略<br>
