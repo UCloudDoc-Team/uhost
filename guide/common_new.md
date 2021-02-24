@@ -282,7 +282,7 @@ Debian:
 如显示表格中UCloud server IP,则表示ntp配置正确
 ```
  
-?> 确保机器在能够跳跃对时的情况下，先执行ntpdate或者date命令来设置时间，再启动ntp对时服务
+?> 确保机器在能够跳跃对时的情况下，先执行ntpdate或者date命令来设置时间，再启动ntp对时服务。
 
 ```
 具体操作:
@@ -344,7 +344,7 @@ server 0.cn.pool.ntp.org iburst minpoll 3 maxpoll 4
 如显示表格中UCloud server IP,则表示ntp配置正确
 ```
 
-> 确保机器在能够跳跃对时的情况下，先执行ntpdate或者date命令来设置时间，再启动ntp对时服务
+?> 确保机器在能够跳跃对时的情况下，先执行ntpdate或者date命令来设置时间，再启动ntp对时服务。
 
 ```
 具体操作:
@@ -359,21 +359,26 @@ server 0.cn.pool.ntp.org iburst minpoll 3 maxpoll 4
 #### ** Windows **
 * **修改方法**<br>
 修改Windows Time服务为自动启动<br>
-> 1.在终端里输入"services.msc"，弹出服务列表，找到"Windows Time"将启动类型改为"自动"，并启动该服务；（如已启动则忽略）<br>
-> 2.针对2008和2012用户，64位机器，需要在终端中输入"sc triggerinfo w32time start/networkon stop/networkoff"（以上命令为cmd命令，不可运行于powershell）。
+```
+ 1.在终端里输入"services.msc"，弹出服务列表，找到"Windows Time"将启动类型改为"自动"，并启动该服务；（如已启动则忽略）<br>
+ 2.针对2008和2012用户，64位机器，需要在终端中输入"sc triggerinfo w32time start/networkon stop/networkoff"（以上命令为cmd命令，不可运行于powershell）。
+```
 
 修改组策略<br>
 
-> 1.启动Windows NTP客户端<br>
+ 1.启动Windows NTP客户端<br>
+ ```
     1.在终端中输入"gpedit.msc"，弹出组策略编辑器;<br>
     2."计算机配置\\管理模板\\系统\\Windows时间服务\\时间提供程序\\配置Windows NTP客户端"，将其状态修改为"已启用"。<br>
+  ```
 
-> 2.配置Windows NTP客户端参数<br>
+ 2.配置Windows NTP客户端参数<br>
+ ```
     1.配置对应可用区的"NtpServer"值为"upstream1,0x9 upstream2, 0x9official_upstream3,0x9"；<br>
     2.修改"类型"值为NTP；<br>
     3.修改"SpecialPollInterval"为30-60s之间的数值。<br>
-
-> 3.启用全局配置(计算机配置管理模板系统Windows时间服务全局配置设置)
+```
+ 3.启用全局配置(计算机配置管理模板系统Windows时间服务全局配置设置)
 
 ```
 修改"MaxAllowPhaseOffset"为3600
@@ -385,9 +390,9 @@ server 0.cn.pool.ntp.org iburst minpoll 3 maxpoll 4
 ```
 * **测试方法**
 
-> 1.命令行执行 gpupdate /force 强制更新组策略；
-> 2.按照以上配置完成后，确保机器可以跳跃对时的情况下，能够在终端执行"w32tm/resync"使客户端向服务器端发送时钟同步请求，完成立即对时；  
-> 3.在终端命令行中输入"w32tm /query /status" 查看同步信息。
+ 1.命令行执行 gpupdate /force 强制更新组策略；<br>
+ 2.按照以上配置完成后，确保机器可以跳跃对时的情况下，能够在终端执行"w32tm/resync"使客户端向服务器端发送时钟同步请求，完成立即对时； <br> 
+ 3.在终端命令行中输入"w32tm /query /status" 查看同步信息。
 
 <!-- tabs:end -->
 
