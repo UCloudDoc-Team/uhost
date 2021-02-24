@@ -51,14 +51,14 @@ Windows:
 
     这台电脑->查看C盘大小是否与控制台一致
 
+?> 如文件系统并未扩容完毕，则需要执行**系统内扩容步骤**。
+
 ### 3、系统内扩容步骤
 
-如文件系统并未扩容完毕，则需要执行**系统内扩容步骤**：
-    
-#### Linux
+<!-- tabs:start -->
+#### ** Linux **
 
-**步骤1：安装growpart**
-
+* 步骤1：安装growpart
 Cloud-init支持版镜像中已默认安装growpart，其余版本需要自行安装，过程如下：
 
 CentOS：
@@ -69,27 +69,25 @@ CentOS：
 Ubuntu：
 
     sudo apt-get install cloud-initramfs-growroot
-
-**步骤2：扩容分区表**
-
+    
+    
+* 步骤2：扩容分区表
     LANG=en_US.UTF-8
     growpart /dev/vda 1
 
 CentOS6和Debian8，可能会遇到内核以及工具链不支持热重载分区表的情况，如遇此情况，扩容分区表后需重启一次操作系统。
-
-**步骤3：扩容文件系统**
+* 步骤3：扩容文件系统
 
     resize2fs /dev/vda1 (ext4文件系统)
     xfs_growfs /dev/vda1 (xfs文件系统) 或xfs_growfs /
 
-**步骤4：确认**
+* 步骤4：确认
 
 查看是否扩容完成：
 
     df -TH
-
-#### Windows
-
+    
+#### ** Windows **
 在“计算机管理”中选择扩展卷，即可完成扩容。具体操作步骤如下：
 
 ![](/images/guide/sysdisk_step1.jpg)
@@ -108,6 +106,8 @@ CentOS6和Debian8，可能会遇到内核以及工具链不支持热重载分区
 
 ![](/images/guide/sysdisk_step8.jpg)
 
+<!-- tabs:end -->
+    
 
 ## 三、数据盘扩容
 
@@ -119,11 +119,12 @@ CentOS6和Debian8，可能会遇到内核以及工具链不支持热重载分区
 
 在控制台选择“更改配置”，关机升级后，重新开机即可。
 
+?> 如文件系统并未扩容完毕，则需要执行**系统内扩容步骤**。
+
 ### 2、系统内扩容步骤
 
-如文件系统并未扩容完毕，则需要执行**系统内扩容步骤**：
-
-##### Linux操作系统
+ <!-- tabs:start -->
+#### ** Linux **
 
     //查看数据盘的文件系统类型（升级操作需要针对ext4和xfs两种文件系统采取不同的操作）
     df -ihT
@@ -139,18 +140,20 @@ CentOS6和Debian8，可能会遇到内核以及工具链不支持热重载分区
     //针对xfs文件格式的操作系统（如CentOS7）
     xfs_repair /dev/vdb
     xfs_growfs /data
-
-##### Windows操作系统
-
+    
+#### ** Windows **
 在主机上操作，cmd中输入diskpart.exe，list volume，选择要扩展大小的逻辑卷，输入要扩展大小extend
-\[size=n\]， 或extend将所有未分配大小扩展到选择的逻辑卷
+\[size=n\]， 或extend将所有未分配大小扩展到选择的逻辑卷。
 
 ![image](/images/disk_extend.png)
+    
+<!-- tabs:end -->
 
 ### 3、扩容前无本地数据盘的主机
 
-##### Linux操作系统
 
+<!-- tabs:start -->
+#### ** Linux **
 升级后，需在云主机内做如下操作：
 
 可选择ext4或xfs两种文件系统格式来格式化数据盘
@@ -175,10 +178,8 @@ mount /dev/vdb /data/
 
 编辑/etc/fstab，加入如下内容
 
-    /dev/vdb /data xfs defaults,noatime 0 0
-
-##### Windows操作系统
-
+    /dev/vdb /data xfs defaults,noatime 0 0  
+#### ** Windows **
 在主机上操作，cmd中输入diskpart.exe
 
 1.输入list disk，select disk n (请根据实际情况，填写n的具体数值），选中数据盘;
@@ -192,6 +193,9 @@ mount /dev/vdb /data/
 5.输入exit退出。系统中已可看到已创建的磁盘。
 
 ![image](/images/create_new_disk.png)
+
+<!-- tabs:end -->
+
 
 ## 四、挂载云硬盘
 
@@ -217,12 +221,13 @@ udisk[bsm-bagfqw5u] is attaching to uhost uhost[uhost-bh0fvsnh]...done
 >您只能操作卸载数据盘，系统盘不能被卸载。同时本地盘不支持卸载，不支持单独释放。
 
 ### 1、系统内卸载云盘
-
-Linux操作系统：
+<!-- tabs:start -->
+#### ** Linux **
+Linux操作系统执行以下语句：
 
     umount /dev/vdc
 
-Windows操作系统：
+#### ** Windows操作系统 **
 
 首先在磁盘管理器中选中云磁盘，右键选择“脱机”。
 
@@ -238,6 +243,7 @@ Windows操作系统：
 
 在控制台云硬盘列表页选择需要扩容的云硬盘，将其卸载。这时云硬盘状态会从“已挂载”变为“可用”。
 
+<!-- tabs:end -->
 ### 2、控制台操作
 
 在控制台主机管理页面->云盘管理->卸载，进行卸载操作。
@@ -290,8 +296,9 @@ Windows操作系统：
 ![](/images/guide/jietu20181227-174714.jpg)
 
 新建后，请进入主机内部进行如下操作：
+<!-- tabs:start -->
 
-**Linux操作系统**
+#### **Linux操作系统**
 
 升级后，需在云主机内做如下操作：
 
@@ -319,25 +326,27 @@ mount /dev/vdb /data/
 
     /dev/vdb /data xfs defaults,noatime 0 0
 
-**Windows操作系统：**
+#### **Windows操作系统：**
 
 在主机上操作，cmd中输入diskpart.exe
 
 1.输入list disk，select disk n (请根据实际情况，填写n的具体数值），选中数据盘。
 
-2.输入    create partition primary    ，创建分区。
+2.输入create partition primary，创建分区。
 
-3.输入    list volume ，可看到创建的卷。输入format fs=ntfs quick 进行分区
+3.输入list volume，可看到创建的卷。输入format fs=ntfs quick 进行分区
 
-4.输入    assign  。分配驱动器号。
+4.输入 assign。分配驱动器号。
 
-5.输入    exit    退出。系统中已可看到已创建的磁盘。
+5.输入 exit 退出。系统中已可看到已创建的磁盘。
 
 ![image](/images/create_new_disk.png)
 
 同理，云盘亦不支持直接“缩容”，但可以在卸载后新建容量较小的云盘，直接挂载。
 
 如您还想了解更多磁盘相关功能及信息，请阅读[云硬盘UDisk](udisk/userguide/create)。
+
+<!-- tabs:end -->
 
 ## 七、磁盘快照
 磁盘快照服务（USnap）是基于数据方舟CDP技术为全系列云硬盘数据盘（普通/SSD/RSSD）提供了创建快照的能力。快照是一种便捷高效的数据容灾手段，常用于数据备份、制作自定义镜像、应用容灾等。
