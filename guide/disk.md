@@ -131,18 +131,18 @@ Ubuntu：
  <!-- tabs:start -->
 #### ** Linux **
 
-    //查看数据盘的文件系统类型（升级操作需要针对ext4和xfs两种文件系统采取不同的操作）
-    df -ihT
+* 查看数据盘的文件系统类型（升级操作需要针对ext4和xfs两种文件系统采取不同的操作） 
+        df -ihT
 
 ![image](/images/ext4.png)
 
 ![image](/images/xfs.png)
 
-    //针对ext4文件格式的操作系统（如CentOS6）
+* 针对ext4文件格式的操作系统（如CentOS6）  
     e2fsck -f /dev/vdb
     resize2fs /dev/vdb
 
-    //针对xfs文件格式的操作系统（如CentOS7）
+* 针对xfs文件格式的操作系统（如CentOS7）  
     xfs_repair /dev/vdb
     xfs_growfs /data
     
@@ -186,15 +186,15 @@ mount /dev/vdb /data/
 #### ** Windows **
 在主机上操作，cmd中输入diskpart.exe
 
-1.输入'list disk'，'select disk n' (请根据实际情况，填写n的具体数值），选中数据盘;
+1.输入`list disk`，`select disk n` (请根据实际情况，填写n的具体数值），选中数据盘;
 
-2.输入'create partition primary'，创建分区;
+2.输入`create partition primary`，创建分区;
 
-3.输入'list volume'，可看到创建的卷。输入'format fs=ntfs quick' 进行分区;
+3.输入`list volume`，可看到创建的卷。输入`format fs=ntfs quick` 进行分区;
 
-4.输入'assign',分配驱动器号;
+4.输入`assign`,分配驱动器号;
 
-5.输入'exit'退出，系统中已可看到已创建的磁盘。
+5.输入`exit`退出，系统中已可看到已创建的磁盘。
 
 ![image](/images/create_new_disk.png)
 
@@ -222,7 +222,7 @@ udisk[bsm-bagfqw5u] is attaching to uhost uhost[uhost-bh0fvsnh]...done
 
 ## 五、卸载云硬盘
 
-> 您只能操作卸载数据盘，系统盘不能被卸载。同时本地盘不支持卸载，不支持单独释放。
+> 您只能操作卸载数据盘，系统盘不能被卸载。同时本地盘也不支持卸载，不支持单独释放。
 
 ### 1、系统内卸载云盘
 <!-- tabs:start -->
@@ -243,7 +243,7 @@ Linux操作系统执行以下语句：
 
 这两个操作相当于在Windows系统中对云硬盘进行了dismount操作。
 
-> 如果只有一个C盘，此时第二个便是云硬盘，建议在扩容前对云硬盘进行备份（如快照和克隆）。
+> 如果只有一个C盘，此时第二个便是云硬盘，建议在扩容前对云硬盘进行备份（如快照和克隆）。<br>
 > 在控制台云硬盘列表页选择需要扩容的云硬盘，将其卸载。这时云硬盘状态会从“已挂载”变为“可用”。
 
 <!-- tabs:end -->
@@ -270,7 +270,7 @@ udisk[bsm-bagfqw5u] is detaching from uhost[uhost-bh0fvsnh]…done
 
 !> 请注意，此操作会完全抹去数据，请先进行数据备份后操作！！！
 
-### 1、删除本地盘
+### 1.删除本地盘
 
 ?> 本地盘的删除需要关机进行。
 首先进入系统内部进行卸载操作，操作步骤：
@@ -294,7 +294,7 @@ udisk[bsm-bagfqw5u] is detaching from uhost[uhost-bh0fvsnh]…done
 ![](/images/guide/jietu20181227-174630.jpg)
 <!-- tabs:end -->
 
-### 2、添加本地盘
+### 2.添加本地盘
 
 请在控制台选择 指定主机-\>详情-\>磁盘与恢复-\>新建本地盘，选择适合大小。
 
@@ -303,7 +303,7 @@ udisk[bsm-bagfqw5u] is detaching from uhost[uhost-bh0fvsnh]…done
 新建后，请进入主机内部进行如下操作：
 <!-- tabs:start -->
 
-#### **Linux操作系统**
+#### **Linux**
 
 升级后，需在云主机内做如下操作：
 
@@ -331,7 +331,7 @@ mount /dev/vdb /data/
 
     /dev/vdb /data xfs defaults,noatime 0 0
 
-#### **Windows操作系统：**
+#### **Windows：**
 
 在主机上操作，cmd中输入`diskpart.exe`
 
