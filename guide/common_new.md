@@ -24,7 +24,7 @@ uhost[uhost-0a3gcvih] deleted
 > 2.如您已删除云主机，EIP仍将被保留，并持续计费，若不再需要，需至EIP页面删除。<br>
 > 3.如您已删除云主机，挂载的UDisk数据盘仍将被保留，并持续计费，若不再需要，需至UDisk页面删除。<br>
 > 4.创建时长（删除时间-创建时间）7天的云主机被删除后将进入回收站，可以从回收站恢复,如您想详细了解，请阅读[详情](uhost/guide/recycle_bin)。<br>
-> 5.资源删除后，系统将自动退还租约中的剩余费用。<br>
+> 5.资源删除后，系统将自动退还租约中的剩余费用，如您想了解具体的退费规则，请阅读[退费明细](https://docs.ucloud.cn/charge/refund)。<br>
 
 
 如果您点击【详情】，进入主机详情页面，展示当前选择主机的基本信息、配置信息、付费信息以及监控相关信息。
@@ -358,25 +358,25 @@ server 0.cn.pool.ntp.org iburst minpoll 3 maxpoll 4
     
 #### ** Windows **
 * **修改方法**<br>
-修改Windows Time服务为自动启动<br>
+修改Windows Time服务为自动启动 <br>
 ```
- 1.在终端里输入"services.msc"，弹出服务列表，找到"Windows Time"将启动类型改为"自动"，并启动该服务；（如已启动则忽略）<br>
+ 1.在终端里输入"services.msc"，弹出服务列表，找到"Windows Time"将启动类型改为"自动"，并启动该服务；（如已启动则忽略）。
  2.针对2008和2012用户，64位机器，需要在终端中输入"sc triggerinfo w32time start/networkon stop/networkoff"（以上命令为cmd命令，不可运行于powershell）。
 ```
 
 修改组策略<br>
 
  1.启动Windows NTP客户端<br>
- ```
-    1.在终端中输入"gpedit.msc"，弹出组策略编辑器;<br>
-    2."计算机配置\\管理模板\\系统\\Windows时间服务\\时间提供程序\\配置Windows NTP客户端"，将其状态修改为"已启用"。<br>
-  ```
+```
+    1.在终端中输入"gpedit.msc"，弹出组策略编辑器。
+    2."计算机配置\\管理模板\\系统\\Windows时间服务\\时间提供程序\\配置Windows NTP客户端"，将其状态修改为"已启用"。
+```
 
  2.配置Windows NTP客户端参数<br>
  ```
-    1.配置对应可用区的"NtpServer"值为"upstream1,0x9 upstream2, 0x9official_upstream3,0x9"；<br>
-    2.修改"类型"值为NTP；<br>
-    3.修改"SpecialPollInterval"为30-60s之间的数值。<br>
+    1.配置对应可用区的"NtpServer"值为"upstream1,0x9 upstream2, 0x9official_upstream3,0x9"。
+    2.修改"类型"值为NTP。
+    3.修改"SpecialPollInterval"为30-60s之间的数值。
 ```
  3.启用全局配置(计算机配置管理模板系统Windows时间服务全局配置设置)
 
