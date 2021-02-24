@@ -373,7 +373,7 @@ server 0.cn.pool.ntp.org iburst minpoll 3 maxpoll 4
 ```
 
  2.配置Windows NTP客户端参数<br>
- ```
+```
     1.配置对应可用区的"NtpServer"值为"upstream1,0x9 upstream2, 0x9official_upstream3,0x9"。
     2.修改"类型"值为NTP。
     3.修改"SpecialPollInterval"为30-60s之间的数值。
