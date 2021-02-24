@@ -347,8 +347,7 @@ mount /dev/vdb /data/
 
 ![image](/images/create_new_disk.png)
 
-> 同理，云盘亦不支持直接“缩容”，但可以在卸载后新建容量较小的云盘，直接挂载。
-
+> 同理，云盘亦不支持直接“缩容”，但可以在卸载后新建容量较小的云盘，直接挂载。<br>
 > 如您还想了解更多磁盘相关功能及信息，请阅读[云硬盘UDisk](udisk/userguide/create)。
 
 <!-- tabs:end -->
