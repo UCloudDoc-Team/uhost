@@ -24,13 +24,13 @@
 
 ![基础配置](/images/newuser/image01.png)<br>
 
-> 1.基础配置默认机型为通用型N，镜像支持目前仅支持ucloud提供的标准镜像，如您还有其他需求，请切换至自定义配置；<br>
+> 1.基础配置默认机型为通用型N，镜像支持目前仅支持ucloud提供的标准镜像，如您还有其他需求，请切换至自定义配置。<br>
 > 2.推荐配置目前组合展示四款（1核1G、1核2G、2核4G、4核8G），如您还有其他需求，请切换至自定义配置。
           
 ![自定义配置](/images/newuser/image02.png)<br>
 
-> 1.可自定义选择[机型](https://docs.ucloud.cn/uhost/introduction/uhost/type_new)、CPU、内存、[磁盘类型及大小](https://docs.ucloud.cn/uhost/introduction/disk)；<br>
-> 2.可选择是否开启网络增强以及热升级特性，部分镜像及机型可能不支持网络增强和热升级特性，如您想详情了解，请阅读[云主机特性](https://docs.ucloud.cn/uhost/introduction/uhost/feature)；<br>
+> 1.可自定义选择[机型](https://docs.ucloud.cn/uhost/introduction/uhost/type_new)、CPU、内存、[磁盘类型及大小](https://docs.ucloud.cn/uhost/introduction/disk)。<br>
+> 2.可选择是否开启网络增强以及热升级特性，部分镜像及机型可能不支持网络增强和热升级特性，如您想详情了解，请阅读[云主机特性](https://docs.ucloud.cn/uhost/introduction/uhost/feature)。<br>
 > 3.CPU平台是指云主机所在宿主机的CPU微架构版本，每代CPU平台主要升级了硬件架构。如您想详情了解，请阅读[CPU平台](https://docs.ucloud.cn/uhost/introduction/uhost/type_new)。
 
 ### 3.配置网络
