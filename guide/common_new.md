@@ -223,29 +223,11 @@ uhost[uhost-0a3gcvih] reset password
 
 > 每台机器至少配置两个UCloud NTP server IP 和 一个外部NTP server, 分别对应下述文档中的 upstream1,upstream2, 和offical\_upstream3.
 
+### 各操作系统修改NTP
  <!-- tabs:start -->
-#### ** CentOS/Ubuntu/Redhat/Debian/Gentoo操作系统修改NTP **
-?> NTP配置文件位置: /etc/ntp.conf
-* 修改方法
-
-* 测试方法
-    
-#### ** OpenSUSE **
-第二个标签的内容：
-* 标题1
-* 标题2
-    
-#### ** Windows **
-第三个标签的内容：
-* 标题1
-* 标题2
-<!-- tabs:end -->
-
-**CentOS/Ubuntu/Redhat/Debian/Gentoo操作系统修改NTP**
-
-**NTP配置文件位置: /etc/ntp.conf**
-
-修改方法
+#### ** **CentOS/Ubuntu/Redhat/Debian/Gentoo** **
+> **NTP配置文件位置: /etc/ntp.conf**
+**修改方法**
 
 根据所在可用区添加对应的NTP服务器IP
 
@@ -278,8 +260,9 @@ server 0.cn.pool.ntp.org iburst minpoll 3 maxpoll 4
 作用: 加速微调，控制微调范围
 ```
 
-#### 测试方法
-* 重启ntp服务
+* **测试方法**
+
+重启ntp服务
 
 ```
 CentOS/Redhat/Gentoo:
@@ -307,14 +290,11 @@ Debian:
 # ntpdate upstream1 或 # date -s "Y-m-D H:M:S"
 # service ntpd start
 ```
-
-### OpenSUSE
-
-**NTP配置文件位置: /etc/ntp.conf**
-
-
-#### 修改方法
-* 添加 restrict参数
+    
+#### ** OpenSUSE **
+> **NTP配置文件位置: /etc/ntp.conf**
+* **修改方法**
+添加 restrict参数
 
 ```
 restrict -4 default kod notrap nomodify nopeer noquery
@@ -350,9 +330,8 @@ server 0.cn.pool.ntp.org iburst minpoll 3 maxpoll 4
 
 作用: 加速微调，控制微调范围
 ```
-
-#### 测试方法
-* 重启ntp服务
+* **测试方法**
+重启ntp服务
 
 ```
 # service ntp restart
@@ -376,28 +355,27 @@ server 0.cn.pool.ntp.org iburst minpoll 3 maxpoll 4
 
 可以下载并运行脚本以完成配置，参见
 [mod\_ntp.sh](http://static.ucloud.cn/1314eec96e414fcb3daca5124dee4112.sh)
+    
+#### ** Windows **
+* **修改方法**
+** 修改Windows Time服务为自动启动
+> 1.在终端里输入"services.msc"，弹出服务列表，找到"Windows Time"将启动类型改为"自动"，并启动该服务；（如已启动则忽略）
+> 2.针对2008和2012用户，64位机器，需要在终端中输入"sc triggerinfo w32time start/networkon stop/networkoff"（以上命令为cmd命令，不可运行于powershell）。
 
-### Windows
+** 修改组策略
 
-修改Windows Time服务为自动启动
+> 启动Windows NTP客户端
 
-1. 在终端里输入"services.msc"，弹出服务列表，找到"Windows Time"将启动类型改为"自动"，并启动该服务；（如已启动则忽略）
-2. 针对2008和2012用户，64位机器，需要在终端中输入"sc triggerinfo w32time start/networkon stop/networkoff"（以上命令为cmd命令，不可运行于powershell）。
+ 1.在终端中输入"gpedit.msc"，弹出组策略编辑器；
+ 2."计算机配置\\管理模板\\系统\\Windows时间服务\\时间提供程序\\配置Windows NTP客户端"，将其状态修改为"已启用"。
 
-修改组策略
+> 配置Windows NTP客户端参数
 
-**启动Windows NTP客户端**
+ 1.配置对应可用区的"NtpServer"值为"upstream1,0x9 upstream2, 0x9official_upstream3,0x9"；
+ 2.修改"类型"值为NTP；
+ 3.修改"SpecialPollInterval"为30-60s之间的数值。
 
-1. 在终端中输入"gpedit.msc"，弹出组策略编辑器；
-2. "计算机配置\\管理模板\\系统\\Windows时间服务\\时间提供程序\\配置Windows NTP客户端"，将其状态修改为"已启用"。
-
-**配置Windows NTP客户端参数**
-
-1. 配置对应可用区的"NtpServer"值为"upstream1,0x9 upstream2, 0x9official_upstream3,0x9"；
-2. 修改"类型"值为NTP；
-3.  修改"SpecialPollInterval"为30-60s之间的数值。
-
-**启用全局配置(计算机配置管理模板系统Windows时间服务全局配置设置)**
+> 启用全局配置(计算机配置管理模板系统Windows时间服务全局配置设置)
 
 ```
 修改"MaxAllowPhaseOffset"为3600
@@ -407,11 +385,14 @@ server 0.cn.pool.ntp.org iburst minpoll 3 maxpoll 4
 修改"MinPollInterval"值为"3"
 修改"MaxPollInterval"值为"4"
 ```
+* **测试方法**
 
-#### 测试方法
-1. 命令行执行 gpupdate /force 强制更新组策略；
-2.  按照以上配置完成后，确保机器可以跳跃对时的情况下，能够在终端执行"w32tm/resync"使客户端向服务器端发送时钟同步请求，完成立即对时；  
-3. 在终端命令行中输入"w32tm /query /status" 查看同步信息。
+1.命令行执行 gpupdate /force 强制更新组策略；
+2.按照以上配置完成后，确保机器可以跳跃对时的情况下，能够在终端执行"w32tm/resync"使客户端向服务器端发送时钟同步请求，完成立即对时；  
+3.在终端命令行中输入"w32tm /query /status" 查看同步信息。
+
+<!-- tabs:end -->
+
 
 
 
