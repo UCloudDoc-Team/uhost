@@ -279,7 +279,7 @@ udisk[bsm-bagfqw5u] is detaching from uhost[uhost-bh0fvsnh]…done
 
     umount /dev/vdc
 
-#### ** Windows**
+#### ** Windows **
 
 首先在磁盘管理器中选中云磁盘，右键选择“脱机”。
 
@@ -331,7 +331,7 @@ mount /dev/vdb /data/
 
     /dev/vdb /data xfs defaults,noatime 0 0
 
-#### **Windows：**
+#### ** Windows **
 
 在主机上操作，cmd中输入`diskpart.exe`
 
@@ -348,7 +348,7 @@ mount /dev/vdb /data/
 ![image](/images/create_new_disk.png)
 
 > 同理，云盘亦不支持直接“缩容”，但可以在卸载后新建容量较小的云盘，直接挂载。<br>
-> 如您还想了解更多磁盘相关功能及信息，请阅读[云硬盘UDisk](udisk/userguide/create)。
+  如您还想了解更多磁盘相关功能及信息，请阅读[云硬盘UDisk](udisk/userguide/create)。
 
 <!-- tabs:end -->
 
