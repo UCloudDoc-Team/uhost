@@ -27,20 +27,16 @@
 
 #### 创建/重装主机时扩容：
 
-1.在创建/重装主机页面，选择系统盘大小；
-
-2.等待创建/重装完毕，此时底层块设备已扩容完成；
-
-3.进入主机查看文件系统是否已扩容完毕。
+1. 在创建/重装主机页面，选择系统盘大小；
+2. 等待创建/重装完毕，此时底层块设备已扩容完成；
+3. 进入主机查看文件系统是否已扩容完毕。
 
 #### 创建后通过更改配置扩容：
 
 !> 本地系统盘扩容时间较长，扩容至100G可能需要关机等待30分钟。
 
 1.选择“更改配置” -> “更改磁盘容量” -> 系统盘；
-
 2.等待扩容结束，主机进入关机状态，此时底层块设备已扩容完成；
-
 3.开机，进入主机查看文件系统是否已扩容完毕。
 
 #### 查看文件系统是否扩容完毕：
@@ -64,6 +60,7 @@
 #### ** Linux **
 
 * 步骤1：安装growpart
+
 Cloud-init支持版镜像中已默认安装growpart，其余版本需要自行安装，过程如下：
 
 CentOS：
@@ -77,10 +74,12 @@ Ubuntu：
     
     
 * 步骤2：扩容分区表
+
     LANG=en_US.UTF-8
     growpart /dev/vda 1
 
 ?> CentOS6和Debian8，可能会遇到内核以及工具链不支持热重载分区表的情况，如遇此情况，扩容分区表后需重启一次操作系统。
+
 * 步骤3：扩容文件系统
 
     resize2fs /dev/vda1 (ext4文件系统)
@@ -187,13 +186,9 @@ mount /dev/vdb /data/
 在主机上操作，cmd中输入diskpart.exe
 
 1.输入`list disk`，`select disk n` (请根据实际情况，填写n的具体数值），选中数据盘;
-
 2.输入`create partition primary`，创建分区;
-
 3.输入`list volume`，可看到创建的卷。输入`format fs=ntfs quick` 进行分区;
-
 4.输入`assign`,分配驱动器号;
-
 5.输入`exit`退出，系统中已可看到已创建的磁盘。
 
 ![image](/images/create_new_disk.png)
@@ -336,13 +331,9 @@ mount /dev/vdb /data/
 在主机上操作，cmd中输入`diskpart.exe`
 
 1.输入`list disk`，`select disk n`(请根据实际情况，填写n的具体数值），选中数据盘。
-
 2.输入`create partition primary`，创建分区。
-
 3.输入`list volume`，可看到创建的卷。输入`format fs=ntfs quick` 进行分区
-
 4.输入 `assign`。分配驱动器号。
-
 5.输入`exit`退出。系统中已可看到已创建的磁盘。
 
 ![image](/images/create_new_disk.png)
