@@ -20,12 +20,9 @@ uhost[uhost-0a3gcvih] is shutting down...done
 uhost[uhost-0a3gcvih] deleted
 ```
 
-> 1.关机和重启都是虚机层面的，如果遇到重启或者关机无效的情况，可以使用断电看下，断电操作相当于宿主层面的关机，较为彻底。<br>
-> 2.如您已删除云主机，EIP仍将被保留，并持续计费，若不再需要，需至EIP页面删除。<br>
-> 3.如您已删除云主机，挂载的UDisk数据盘仍将被保留，并持续计费，若不再需要，需至UDisk页面删除。<br>
-> 4.创建时长（删除时间-创建时间）7天的云主机被删除后将进入回收站，可以从回收站恢复,如您想详细了解，请阅读[详情](uhost/guide/recycle_bin)。<br>
-> 5.资源删除后，系统将自动退还租约中的剩余费用，如您想了解具体的退费规则，请阅读[退费明细](https://docs.ucloud.cn/charge/refund)。<br>
-
+> 1. 关机和重启都是虚机层面的，如果遇到重启或者关机无效的情况，可以使用断电操作、断电是宿主层面的关机，相当于强制关闭电源，较为彻底。<br>
+> 2. 如您通过控制台删除云主机，主机关联的EIP与UDisk将被同步删除，不会继续计费。如果使用API，由字段ReleaseEIP和ReleaseUDisk决定是否同步删除EIP与UDisk，请参考[TerminateUHostInstance](https://docs.ucloud.cn/api/uhost-api/terminate_uhost_instance)<br>
+> 3. 资源删除后，系统将自动退还租约中的剩余费用，如您想了解具体的退费规则，请阅读[退费明细](https://docs.ucloud.cn/charge/refund)。<br>
 
 如果您点击【详情】，进入主机详情页面，展示当前选择主机的基本信息、配置信息、付费信息以及监控相关信息。
 
@@ -183,11 +180,10 @@ uhost[uhost-0a3gcvih] reset password
 ![img](/guide/image/reset.png)<br>
 
 
-> 1.如您重装系统时，免费镜像重装为收费镜像，需补足差价，收费镜像重装为免费镜像，系统会发起退费,详情请查看[退费说明](https://docs.ucloud.cn/charge/refund)；<br>
+> 1.如您重装系统时，系统盘大小和原主机不一致，相当于系统盘大小变配，需补足差价或发起退费, 详情请查看[退费说明](https://docs.ucloud.cn/charge/refund)；<br>
 > 2.重装主机重装系统需要在关机条件下进行，不会引起内网和外网IP的变更；<br>
-> 3.重装系统时请注意文件系统的变更，如CentOS 6.x重装为7.x，可能引起数据盘无法识别；<br>
+> 3.重装系统时请注意文件系统的变更，如CentOS 6.x重装为7.x，或Linux与Windows互相重装，可能引起数据盘无法识别；<br>
 > 4.开启网络增强的云主机无法重装为不支持网络增强的系统（如Windows）；<br>
-> 5.GPU型云主机无法重装为不支持GPU的系统（如Redhat）。<br>
 
 ## 主机NTP配置操作指南
 ### 各地域NTP服务器IP
