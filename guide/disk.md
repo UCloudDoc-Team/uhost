@@ -1,6 +1,6 @@
 # 磁盘
 
-## 一、查看硬盘分区
+## 查看硬盘分区
 
 登陆云主机后，使用`fdisk -l`命令查看云主机的硬盘分区（Ubuntu中需要root权限）。
 
@@ -12,9 +12,9 @@
     
     数据盘2：/dev/vdc
 
-## 二、系统盘扩容
+## 系统盘扩容
 
-### 1、扩容规则
+### 1. 扩容规则
 
 不同磁盘类型，遵循不同的磁盘扩容规则：
 
@@ -23,7 +23,7 @@
 | 本地磁盘 (普通本地盘，SSD本地盘) | 100GB | 更改配置 |
 | 云盘 |  500GB | 创建主机、更改配置、重装系统 |
 
-### 2、扩容步骤
+### 2. 扩容步骤
 
 #### 创建/重装主机时扩容：
 
@@ -35,9 +35,9 @@
 
 !> 本地系统盘扩容时间较长，扩容至100G可能需要关机等待30分钟。
 
-1.选择“更改配置” -> “更改磁盘容量” -> 系统盘；
-2.等待扩容结束，主机进入关机状态，此时底层块设备已扩容完成；
-3.开机，进入主机查看文件系统是否已扩容完毕。
+1. 选择“更改配置” -> “更改磁盘容量” -> 系统盘；<br>
+2. 等待扩容结束，主机进入关机状态，此时底层块设备已扩容完成；<br>
+3. 开机，进入主机查看文件系统是否已扩容完毕。<br>
 
 #### 查看文件系统是否扩容完毕：
 <!-- tabs:start -->
@@ -54,7 +54,7 @@
 
 ?> 如文件系统并未扩容完毕，则需要执行**系统内扩容步骤**。
 
-### 3、系统内扩容步骤
+### 3. 系统内扩容步骤
 
 <!-- tabs:start -->
 #### ** Linux **
@@ -113,9 +113,9 @@ Ubuntu：
 <!-- tabs:end -->
     
 
-## 三、数据盘扩容
+## 数据盘扩容
 
-### 1、扩容步骤
+### 1. 扩容步骤
 
 #### 磁盘类型：本地盘和云硬盘
 
@@ -125,7 +125,7 @@ Ubuntu：
 
 ?> 如文件系统并未扩容完毕，则需要执行**系统内扩容步骤**。
 
-### 2、系统内扩容步骤
+### 2. 系统内扩容步骤
 
  <!-- tabs:start -->
 #### ** Linux **
@@ -153,50 +153,50 @@ Ubuntu：
     
 <!-- tabs:end -->
 
-### 3、扩容前无本地数据盘的主机
+### 3. 扩容前无本地数据盘的主机
 
 <!-- tabs:start -->
 #### ** Linux **
 升级后，需在云主机内做如下操作：
 
-1.可选择ext4或xfs两种文件系统格式来格式化数据盘
+1. 可选择ext4或xfs两种文件系统格式来格式化数据盘
 
-2.将数据盘设置为ext4文件格式（CentOS6的默认文件系统格式）：
+2. 将数据盘设置为ext4文件格式（CentOS6的默认文件系统格式）：
 
 ``` 
 mkfs -t ext4 /dev/vdb 
 mount /dev/vdb /data/
 ```
 
-3.编辑/etc/fstab，将对应配置写入fstab
+3. 编辑/etc/fstab，将对应配置写入fstab
 
 ``` 
 /dev/vdb   /data  ext4  defaults,noatime 0 0
 ```
 
-4.将数据盘设置为xfs格式（CentOS7的默认文件系统格式）：
+4. 将数据盘设置为xfs格式（CentOS7的默认文件系统格式）：
 
     mkfs.xfs /dev/vdb
     mount -t xfs /dev/vdb /data
 
-5.编辑/etc/fstab，加入如下内容
+5. 编辑/etc/fstab，加入如下内容
 
     /dev/vdb /data xfs defaults,noatime 0 0  
 #### ** Windows **
 在主机上操作，cmd中输入diskpart.exe
 
-1.输入`list disk`，`select disk n` (请根据实际情况，填写n的具体数值），选中数据盘;
-2.输入`create partition primary`，创建分区;
-3.输入`list volume`，可看到创建的卷。输入`format fs=ntfs quick` 进行分区;
-4.输入`assign`,分配驱动器号;
-5.输入`exit`退出，系统中已可看到已创建的磁盘。
+1. 输入`list disk`，`select disk n` (请根据实际情况，填写n的具体数值），选中数据盘;
+2. 输入`create partition primary`，创建分区;
+3. 输入`list volume`，可看到创建的卷。输入`format fs=ntfs quick` 进行分区;
+4. 输入`assign`,分配驱动器号;
+5. 输入`exit`退出，系统中已可看到已创建的磁盘。
 
 ![image](/images/create_new_disk.png)
 
 <!-- tabs:end -->
 
 
-## 四、挂载云硬盘
+## 挂载云硬盘
 
 在控制台主机管理页面->挂载云硬盘，进行挂载操作。
 
@@ -215,11 +215,11 @@ udisk[bsm-bagfqw5u] is attaching to uhost uhost[uhost-bh0fvsnh]...done
     mount /dev/vdc /udisk
     df -h
 
-## 五、卸载云硬盘
+## 卸载云硬盘
 
 > 您只能操作卸载数据盘，系统盘不能被卸载。同时本地盘也不支持卸载，不支持单独释放。
 
-### 1、系统内卸载云盘
+### 1. 系统内卸载云盘
 <!-- tabs:start -->
 #### ** Linux **
 Linux操作系统执行以下语句：
@@ -242,7 +242,7 @@ Linux操作系统执行以下语句：
 > 在控制台云硬盘列表页选择需要扩容的云硬盘，将其卸载。这时云硬盘状态会从“已挂载”变为“可用”。
 
 <!-- tabs:end -->
-### 2、控制台操作
+### 2. 控制台操作
 
 在控制台主机管理页面->云盘管理->卸载，进行卸载操作。
 
@@ -259,13 +259,13 @@ udisk[bsm-bagfqw5u] is detaching from uhost[uhost-bh0fvsnh]…done
 
 
 
-## 六、本地磁盘“缩容”
+## 本地磁盘“缩容”
 
 控制台不支持本地磁盘的“缩容”，但可通过以下步骤变相实现“缩容”。
 
 !> 请注意，此操作会完全抹去数据，请先进行数据备份后操作！！！
 
-### 1.删除本地盘
+### 1. 删除本地盘
 
 ?> 本地盘的删除需要关机进行。
 首先进入系统内部进行卸载操作，操作步骤：
@@ -289,7 +289,7 @@ udisk[bsm-bagfqw5u] is detaching from uhost[uhost-bh0fvsnh]…done
 ![](/images/guide/jietu20181227-174630.jpg)
 <!-- tabs:end -->
 
-### 2.添加本地盘
+### 2. 添加本地盘
 
 请在控制台选择 指定主机-\>详情-\>磁盘与恢复-\>新建本地盘，选择适合大小。
 
@@ -302,27 +302,27 @@ udisk[bsm-bagfqw5u] is detaching from uhost[uhost-bh0fvsnh]…done
 
 升级后，需在云主机内做如下操作：
 
-1.可选择ext4或xfs两种文件系统格式来格式化数据盘
+1. 可选择ext4或xfs两种文件系统格式来格式化数据盘
 
-2.将数据盘设置为ext4文件格式（CentOS6的默认文件系统格式）：
+2. 将数据盘设置为ext4文件格式（CentOS6的默认文件系统格式）：
 
 ``` 
 mkfs -t ext4 /dev/vdb 
 mount /dev/vdb /data/
 ```
 
-3.编辑/etc/fstab，将对应配置写入fstab
+3. 编辑/etc/fstab，将对应配置写入fstab
 
 ``` 
 /dev/vdb   /data  ext4  defaults,noatime 0 0
 ```
 
-4.将数据盘设置为xfs格式（CentOS7的默认文件系统格式）：
+4. 将数据盘设置为xfs格式（CentOS7的默认文件系统格式）：
 
     mkfs.xfs /dev/vdb
     mount -t xfs /dev/vdb /data
 
-5.编辑/etc/fstab，加入如下内容
+5. 编辑/etc/fstab，加入如下内容
 
     /dev/vdb /data xfs defaults,noatime 0 0
 
@@ -330,11 +330,11 @@ mount /dev/vdb /data/
 
 在主机上操作，cmd中输入`diskpart.exe`
 
-1.输入`list disk`，`select disk n`(请根据实际情况，填写n的具体数值），选中数据盘。
-2.输入`create partition primary`，创建分区。
-3.输入`list volume`，可看到创建的卷。输入`format fs=ntfs quick` 进行分区
-4.输入 `assign`。分配驱动器号。
-5.输入`exit`退出。系统中已可看到已创建的磁盘。
+1. 输入`list disk`，`select disk n`(请根据实际情况，填写n的具体数值），选中数据盘。
+2. 输入`create partition primary`，创建分区。
+3. 输入`list volume`，可看到创建的卷。输入`format fs=ntfs quick` 进行分区
+4. 输入 `assign`。分配驱动器号。
+5. 输入`exit`退出。系统中已可看到已创建的磁盘。
 
 ![image](/images/create_new_disk.png)
 
