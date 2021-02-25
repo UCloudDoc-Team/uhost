@@ -5,7 +5,7 @@
 ## 管理主机
 如果您登录[uhost控制台](https://console.ucloud.cn/uhost/uhost)，可以进行主机登录、关闭、重启以及断电操作。<br>
 
-![img](/guide/image/manage00.png)<br>
+![img](/images/common/manage00.png)<br>
 
 > 关机和重启都是虚机层面的，如果遇到重启或者关机无效的情况，可以使用断电操作，断电是宿主层面的关机，相当于强制关闭电源，较为彻底。<br>
 
@@ -30,9 +30,9 @@ uhost[uhost-0a3gcvih] deleted
 
 如果您点击【详情】，将进入主机详情页面，展示当前选择主机的基本信息、配置信息、付费信息以及监控相关信息。
 
-![img](/guide/image/manage01.png)
+![img](/images/common/manage01.png)
 
-![img](/guide/image/manage02.png)
+![img](/images/common/manage02.png)
 
 ### 基本信息模块
 ![img](/guide/image/manage03.png)<br>
