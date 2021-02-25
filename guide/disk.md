@@ -146,7 +146,7 @@ Ubuntu：
     xfs_growfs /data
     
 #### ** Windows **
-在主机上操作，cmd中输入diskpart.exe，list volume，选择要扩展大小的逻辑卷，输入要扩展大小extend
+在主机上操作，cmd中输入`diskpart.exe`，`list volume`，选择要扩展大小的逻辑卷，输入要扩展大小extend
 \[size=n\]， 或extend将所有未分配大小扩展到选择的逻辑卷。
 
 ![image](/images/disk_extend.png)
@@ -183,7 +183,7 @@ mount /dev/vdb /data/
 
     /dev/vdb /data xfs defaults,noatime 0 0  
 #### ** Windows **
-在主机上操作，cmd中输入diskpart.exe
+在主机上操作，cmd中输入`diskpart.exe`
 
 1. 输入`list disk`，`select disk n` (请根据实际情况，填写n的具体数值），选中数据盘;
 2. 输入`create partition primary`，创建分区;
