@@ -35,12 +35,12 @@ uhost[uhost-0a3gcvih] deleted
 ![img](/images/common/manage02.png)
 
 ### 基本信息模块
-![img](/guide/image/manage03.png)<br>
+![img](/images/common/manage03.png)<br>
 
 基本信息模块包括资源ID、资源名、业务组、可用区以及内网ip等基本信息，其中资源名称、业务组名称可即时更改。
 
 ### 配置信息模块
-![img](/guide/image/manage04.png)<br>
+![img](/images/common/manage04.png)<br>
 
 配置信息模块包含机型、cpu平台、机型、CPU及内存等主机配置相关信息，点击【更改配置】，进入配置更改页面，支持更改内存和CPU规格、调整磁盘容量、升级外网弹性IP带宽。
 ### 更改规格
@@ -50,9 +50,9 @@ uhost[uhost-0a3gcvih] deleted
 > 3. 分别选择CPU和内存需要升级数据<br>
 > 4. 点击【确定】，补缴差价，完成支付<br>
 
-![img](/guide/image/manage06.png)<br>
+![img](/images/common/manage06.png)<br>
 
-![img](/guide/image/manage07.png)<br>
+![img](/images/common/manage07.png)<br>
 
 同时，您还可以使用[uhost resize](https://docs.ucloud.cn/cli/cmd/ucloud/uhost/resize)（UCloud CLI）命令升级配置，并指定实例ID。
 请使用 --cpu参数和 --memory-gb参数按如下方式指定CPU核数和内存大小。
@@ -74,9 +74,9 @@ UHost:[uhost-0a3gcvih] resized...done
 > 3. 选择调整磁盘的容量值<br>
 > 4. 点击【确定】，补缴差价，完成支付<br>
 
-![img](/guide/image/manage08.png)<br>
+![img](/images/common/manage08.png)<br>
 
-![img](/guide/image/manage09.png)<br>
+![img](/images/common/manage09.png)<br>
 
 ?> 若当前磁盘支持在线扩容，扩容后无需重启主机，但需要进入主机内部进行相关配置，详情见[磁盘配置](https://docs.ucloud.cn/uhost/guide/disk)
 
@@ -88,12 +88,12 @@ UHost:[uhost-0a3gcvih] resized...done
 > 4. 点击【确定】，补缴差价，完成支付<br>
 
 
-![img](/guide/image/manage10.png)<br>
+![img](/images/common/manage10.png)<br>
 
-![img](/guide/image/manage11.png)<br>
+![img](/images/common/manage11.png)<br>
 
 ### 付费信息模块
-![img](/guide/image/manage05.png)<br>
+![img](/images/common/manage05.png)<br>
 
 付费信息模块包含创建时间、到期时间以及付费方式，点击【付费】，支持一键续费。
  
@@ -121,7 +121,7 @@ UHost:[uhost-0a3gcvih] resized...done
 ## 更多操作
 除以上功能外，控制台列表还支持更改业务组、制作镜像等更多操作。
 
-![img](/guide/image/manage12.png)<br>
+![img](/images/common/manage12.png)<br>
 
 ### 更改业务组
 **操作路径**<br>
@@ -129,7 +129,7 @@ UHost:[uhost-0a3gcvih] resized...done
 > 2. 点击【…】，下拉框选择【更多操作】<br>
 > 3. 点击【更改业务组】操作<br>
 
-![img](/guide/image/group01.png)<br>
+![img](/images/common/group01.png)<br>
 
 您可对云主机进行分组，使得某些操作能以业务组为单位进行，省去逐个操作的繁琐，便于资源集中管理。后续查看监控数据或修改规则时，即可以组为单位进行操作。
 
@@ -153,7 +153,7 @@ UHost:[uhost-0a3gcvih] resized...done
 > 2. 点击【…】，下拉框选择【更多操作】<br>
 > 3. 点击【重置密码】<br>
 
-![img](/guide/image/pwd.png)<br>
+![img](/images/common/pwd.png)<br>
 
 同时，您还可以使用[uhost reset-password](https://docs.ucloud.cn/cli/cmd/ucloud/uhost/reset-password)（UCloud CLI）命令重置主机密码，并指定可用区和实例ID。
 请使用 --password参数按如下方式指定主机密码。
@@ -181,7 +181,7 @@ uhost[uhost-0a3gcvih] reset password
 > 2. 点击【…】，下拉框选择【更多操作】<br>
 > 3. 点击【重装系统】<br>
 
-![img](/guide/image/reset.png)<br>
+![img](/images/common/reset.png)<br>
 
 
 > 1. 如您重装系统时，系统盘大小和原主机不一致，相当于系统盘大小变配，需补足差价或发起退费, 详情请查看[退费说明](https://docs.ucloud.cn/charge/refund)。<br>
