@@ -7,11 +7,11 @@
 
 ![img](/guide/image/manage00.png)<br>
 
-> 关机和重启都是虚机层面的，如果遇到重启或者关机无效的情况，可以使用断电操作、断电是宿主层面的关机，相当于强制关闭电源，较为彻底。<br>
+> 关机和重启都是虚机层面的，如果遇到重启或者关机无效的情况，可以使用断电操作，断电是宿主层面的关机，相当于强制关闭电源，较为彻底。<br>
 
 ## 删除主机
 
-您可以登录[[uhost控制台](https://console.ucloud.cn/uhost/uhost)],选择主机，点击【删除主机】，即可删除当前主机。
+您可以登录[uhost控制台](https://console.ucloud.cn/uhost/uhost),选择主机，点击【删除主机】，即可删除当前主机。
 同时，您还可以使用[uhost delete](https://docs.ucloud.cn/cli/cmd/ucloud/uhost/delete)（UCloud CLI）命令删除主机，并指定实例ID。
 例如：
 ```
