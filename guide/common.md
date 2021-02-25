@@ -11,7 +11,7 @@
 
 ## 删除主机
 
-您可以登录[uhost控制台](https://console.ucloud.cn/uhost/uhost),选择主机，点击【删除主机】，即可删除当前主机。
+您可以登录[uhost控制台](https://console.ucloud.cn/uhost/uhost),选择主机，点击【删除主机】，即可删除当前主机。<br>
 同时，您还可以使用[uhost delete](https://docs.ucloud.cn/cli/cmd/ucloud/uhost/delete)（UCloud CLI）命令删除主机，并指定实例ID。
 例如：
 ```
@@ -184,10 +184,10 @@ uhost[uhost-0a3gcvih] reset password
 ![img](/guide/image/reset.png)<br>
 
 
-> 1. 如您重装系统时，系统盘大小和原主机不一致，相当于系统盘大小变配，需补足差价或发起退费, 详情请查看[退费说明](https://docs.ucloud.cn/charge/refund)；<br>
-> 2. 重装主机重装系统需要在关机条件下进行，不会引起内网和外网IP的变更；<br>
-> 3. 重装系统时请注意文件系统的变更，如CentOS 6.x重装为7.x，或Linux与Windows互相重装，可能引起数据盘无法识别；<br>
-> 4. 开启网络增强的云主机无法重装为不支持网络增强的系统（如Windows）；<br>
+> 1. 如您重装系统时，系统盘大小和原主机不一致，相当于系统盘大小变配，需补足差价或发起退费, 详情请查看[退费说明](https://docs.ucloud.cn/charge/refund)。<br>
+> 2. 重装主机重装系统需要在关机条件下进行，不会引起内网和外网IP的变更。<br>
+> 3. 重装系统时请注意文件系统的变更，如CentOS 6.x重装为7.x，或Linux与Windows互相重装，可能引起数据盘无法识别。<br>
+> 4. 开启网络增强的云主机无法重装为不支持网络增强的系统（如Windows）。<br>
 
 ## 主机NTP配置操作指南
 ### 各地域NTP服务器IP
