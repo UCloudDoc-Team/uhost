@@ -3,10 +3,15 @@
 如您想详细了解如何创建一台主机，请参考[快速上手创建云主机](uhost/newuser/briefguide.md)。<br>
 
 ## 管理主机
-如果您登录[uhost控制台](https://console.ucloud.cn/uhost/uhost)，可以进行主机登录、关闭、重启以及删除主机等操作。<br>
+如果您登录[uhost控制台](https://console.ucloud.cn/uhost/uhost)，可以进行主机登录、关闭、重启以及断电操作。<br>
 
 ![img](/guide/image/manage00.png)<br>
 
+> 关机和重启都是虚机层面的，如果遇到重启或者关机无效的情况，可以使用断电操作、断电是宿主层面的关机，相当于强制关闭电源，较为彻底。<br>
+
+## 删除主机
+
+您可以登录[[uhost控制台](https://console.ucloud.cn/uhost/uhost)],选择主机，点击【删除主机】，即可删除当前主机。
 同时，您还可以使用[uhost delete](https://docs.ucloud.cn/cli/cmd/ucloud/uhost/delete)（UCloud CLI）命令删除主机，并指定实例ID。
 例如：
 ```
@@ -20,11 +25,10 @@ uhost[uhost-0a3gcvih] is shutting down...done
 uhost[uhost-0a3gcvih] deleted
 ```
 
-> 1. 关机和重启都是虚机层面的，如果遇到重启或者关机无效的情况，可以使用断电操作、断电是宿主层面的关机，相当于强制关闭电源，较为彻底。<br>
-> 2. 如您通过控制台删除云主机，主机关联的EIP与UDisk将被同步删除，不会继续计费。如果使用API，由字段ReleaseEIP和ReleaseUDisk决定是否同步删除EIP与UDisk，请参考[TerminateUHostInstance](https://docs.ucloud.cn/api/uhost-api/terminate_uhost_instance)<br>
-> 3. 资源删除后，系统将自动退还租约中的剩余费用，如您想了解具体的退费规则，请阅读[退费明细](https://docs.ucloud.cn/charge/refund)。<br>
+> 1. 如您通过控制台删除云主机，主机关联的EIP与UDisk将被同步删除，不会继续计费。如果使用API，由字段ReleaseEIP和ReleaseUDisk决定是否同步删除EIP与UDisk，请参考[TerminateUHostInstance](https://docs.ucloud.cn/api/uhost-api/terminate_uhost_instance)。<br>
+> 2. 资源删除后，系统将自动退还租约中的剩余费用，如您想了解具体的退费规则，请阅读[退费明细](https://docs.ucloud.cn/charge/refund)。<br>
 
-如果您点击【详情】，进入主机详情页面，展示当前选择主机的基本信息、配置信息、付费信息以及监控相关信息。
+如果您点击【详情】，将进入主机详情页面，展示当前选择主机的基本信息、配置信息、付费信息以及监控相关信息。
 
 ![img](/guide/image/manage01.png)
 
@@ -39,12 +43,12 @@ uhost[uhost-0a3gcvih] deleted
 ![img](/guide/image/manage04.png)<br>
 
 配置信息模块包含机型、cpu平台、机型、CPU及内存等主机配置相关信息，点击【更改配置】，进入配置更改页面，支持更改内存和CPU规格、调整磁盘容量、升级外网弹性IP带宽。
-#### 更改规格
+### 更改规格
 **操作路径**<br>
-> 1.选择云主机<br>
-> 2.点击选择【更改配置】，其后点击【更改规格】，点击【继续】进入下一页面<br>
-> 3.分别选择CPU和内存需要升级数据<br>
-> 4.点击【确定】，补缴差价，完成支付<br>
+> 1. 选择云主机<br>
+> 2. 点击选择【更改配置】，其后点击【更改规格】，点击【继续】进入下一页面<br>
+> 3. 分别选择CPU和内存需要升级数据<br>
+> 4. 点击【确定】，补缴差价，完成支付<br>
 
 ![img](/guide/image/manage06.png)<br>
 
@@ -63,12 +67,12 @@ Resize uhost must be after stop it. Do you want to stop this uhost? (y/n):y
 uhost[uhost-0a3gcvih] is shutting down...done
 UHost:[uhost-0a3gcvih] resized...done
 ```
-#### 调整磁盘容量
+### 调整磁盘容量
 **操作路径**<br>
-> 1.选择云主机<br>
-> 2.点击选择【更改配置】，其后点击【调整磁盘容量】，选择您想调整的磁盘，点击【继续】进入下一页面<br>
-> 3.选择调整磁盘的容量值<br>
-> 4.点击【确定】，补缴差价，完成支付<br>
+> 1. 选择云主机<br>
+> 2. 点击选择【更改配置】，其后点击【调整磁盘容量】，选择您想调整的磁盘，点击【继续】进入下一页面<br>
+> 3. 选择调整磁盘的容量值<br>
+> 4. 点击【确定】，补缴差价，完成支付<br>
 
 ![img](/guide/image/manage08.png)<br>
 
@@ -76,12 +80,12 @@ UHost:[uhost-0a3gcvih] resized...done
 
 ?> 若当前磁盘支持在线扩容，扩容后无需重启主机，但需要进入主机内部进行相关配置，详情见[磁盘配置](https://docs.ucloud.cn/uhost/guide/disk)
 
-#### 升级外网弹性IP带宽
+### 升级外网弹性IP带宽
 **操作路径**<br>
-> 1.选择云主机<br>
-> 2.点击选择【更改配置】，其后点击【升级外网弹性IP带宽】，选择需要升级的ip地址，点击【继续】进入下一页<br>
-> 3.调整您所需的带宽值<br>
-> 4.点击【确定】，补缴差价，完成支付<br>
+> 1. 选择云主机<br>
+> 2. 点击选择【更改配置】，其后点击【升级外网弹性IP带宽】，选择需要升级的ip地址，点击【继续】进入下一页<br>
+> 3. 调整您所需的带宽值<br>
+> 4. 点击【确定】，补缴差价，完成支付<br>
 
 
 ![img](/guide/image/manage10.png)<br>
@@ -96,9 +100,9 @@ UHost:[uhost-0a3gcvih] resized...done
 ## 网络配置
 控制台主机列表页面提供更改外网防火墙、绑定弹性IP、挂载云硬盘入口。<br>
 **操作路径**<br>
-> 1.选择主机<br>
-> 2.点击【…】，下拉框选择【关联产品操作】<br>
-> 3.点击【更换外网防火墙】/【绑定弹性IP】操作<br>
+> 1. 选择主机<br>
+> 2. 点击【…】，下拉框选择【关联产品操作】<br>
+> 3. 点击【更换外网防火墙】/【绑定弹性IP】操作<br>
 
 ### 更换外网防火墙
 如您需要重新调整外网防火墙策略，请阅读[防火墙操作指南](https://docs.ucloud.cn/unet/firewall/guide)
@@ -108,9 +112,9 @@ UHost:[uhost-0a3gcvih] resized...done
 
 ## 磁盘配置 
 **操作路径**<br>
-> 1.选择主机<br>
-> 2.点击【…】，下拉框选择【关联产品操作】<br>
-> 3.点击【挂载云硬盘】操作<br>
+> 1. 选择主机<br>
+> 2. 点击【…】，下拉框选择【关联产品操作】<br>
+> 3. 点击【挂载云硬盘】操作<br>
 
 如您需要详细了解云硬盘相关信息，请阅读[云硬盘操作指南](https://docs.ucloud.cn/udisk/userguide/mount)
 
@@ -121,9 +125,9 @@ UHost:[uhost-0a3gcvih] resized...done
 
 ### 更改业务组
 **操作路径**<br>
-> 1.选择主机<br>
-> 2.点击【…】，下拉框选择【更多操作】<br>
-> 3.点击【更改业务组】操作<br>
+> 1. 选择主机<br>
+> 2. 点击【…】，下拉框选择【更多操作】<br>
+> 3. 点击【更改业务组】操作<br>
 
 ![img](/guide/image/group01.png)<br>
 
@@ -131,23 +135,23 @@ UHost:[uhost-0a3gcvih] resized...done
 
 ### 查看/修改自定义数据
 **操作路径**<br>
-> 1.选择主机<br>
-> 2.点击【…】，下拉框选择【更多操作】<br>
-> 3.点击【查看/修改自定义数据】<br>
+> 1. 选择主机<br>
+> 2. 点击【…】，下拉框选择【更多操作】<br>
+> 3. 点击【查看/修改自定义数据】<br>
 如您需要详细了解元数据及自定义数据相关操作，请阅读[元数据及自定义数据](https://docs.ucloud.cn/uhost/guide/metadata/metadata-server)
 
 ### 制作镜像
 **操作路径**<br>
-> 1.选择主机<br>
-> 2.点击【…】，下拉框选择【更多操作】<br>
-> 3.点击【制作镜像】<br>
+> 1. 选择主机<br>
+> 2. 点击【…】，下拉框选择【更多操作】<br>
+> 3. 点击【制作镜像】<br>
 如您需要详细了解镜像相关操作，请阅读[镜像操作指南](https://docs.ucloud.cn/uhost/guide/image/upload_image)
 
 ### 重置密码
 **操作路径**<br>
-> 1.选择主机<br>
-> 2.点击【…】，下拉框选择【更多操作】<br>
-> 3.点击【重置密码】<br>
+> 1. 选择主机<br>
+> 2. 点击【…】，下拉框选择【更多操作】<br>
+> 3. 点击【重置密码】<br>
 
 ![img](/guide/image/pwd.png)<br>
 
@@ -168,22 +172,22 @@ uhost[uhost-0a3gcvih] is shutting down...done
 uhost[uhost-0a3gcvih] reset password
 ```
 
-!> 1.目前仍需要关机进行密码的重置；<br>
-   2.若主机修改了默认账户，则重置密码可能无法生效。<br>
+!> 1. 目前仍需要关机进行密码的重置；<br>
+   2. 若主机修改了默认账户，则重置密码可能无法生效。<br>
 
 ## 重装系统
 **操作路径**<br>
-> 1.选择主机<br>
-> 2.点击【…】，下拉框选择【更多操作】<br>
-> 3.点击【重装系统】<br>
+> 1. 选择主机<br>
+> 2. 点击【…】，下拉框选择【更多操作】<br>
+> 3. 点击【重装系统】<br>
 
 ![img](/guide/image/reset.png)<br>
 
 
-> 1.如您重装系统时，系统盘大小和原主机不一致，相当于系统盘大小变配，需补足差价或发起退费, 详情请查看[退费说明](https://docs.ucloud.cn/charge/refund)；<br>
-> 2.重装主机重装系统需要在关机条件下进行，不会引起内网和外网IP的变更；<br>
-> 3.重装系统时请注意文件系统的变更，如CentOS 6.x重装为7.x，或Linux与Windows互相重装，可能引起数据盘无法识别；<br>
-> 4.开启网络增强的云主机无法重装为不支持网络增强的系统（如Windows）；<br>
+> 1. 如您重装系统时，系统盘大小和原主机不一致，相当于系统盘大小变配，需补足差价或发起退费, 详情请查看[退费说明](https://docs.ucloud.cn/charge/refund)；<br>
+> 2. 重装主机重装系统需要在关机条件下进行，不会引起内网和外网IP的变更；<br>
+> 3. 重装系统时请注意文件系统的变更，如CentOS 6.x重装为7.x，或Linux与Windows互相重装，可能引起数据盘无法识别；<br>
+> 4. 开启网络增强的云主机无法重装为不支持网络增强的系统（如Windows）；<br>
 
 ## 主机NTP配置操作指南
 ### 各地域NTP服务器IP
@@ -364,19 +368,19 @@ server 0.cn.pool.ntp.org iburst minpoll 3 maxpoll 4
 
 修改组策略<br>
 
- 1.启动Windows NTP客户端<br>
+ 1. 启动Windows NTP客户端<br>
 ```
     1.在终端中输入"gpedit.msc"，弹出组策略编辑器。
     2."计算机配置\\管理模板\\系统\\Windows时间服务\\时间提供程序\\配置Windows NTP客户端"，将其状态修改为"已启用"。
 ```
 
- 2.配置Windows NTP客户端参数<br>
+ 2. 配置Windows NTP客户端参数<br>
 ```
     1.配置对应可用区的"NtpServer"值为"upstream1,0x9 upstream2, 0x9official_upstream3,0x9"。
     2.修改"类型"值为NTP。
     3.修改"SpecialPollInterval"为30-60s之间的数值。
 ```
- 3.启用全局配置(计算机配置管理模板系统Windows时间服务全局配置设置)
+ 3. 启用全局配置(计算机配置管理模板系统Windows时间服务全局配置设置)
 
 ```
 修改"MaxAllowPhaseOffset"为3600
@@ -388,9 +392,9 @@ server 0.cn.pool.ntp.org iburst minpoll 3 maxpoll 4
 ```
 * **测试方法**
 
- 1.命令行执行 gpupdate /force 强制更新组策略；<br>
- 2.按照以上配置完成后，确保机器可以跳跃对时的情况下，能够在终端执行"w32tm/resync"使客户端向服务器端发送时钟同步请求，完成立即对时； <br> 
- 3.在终端命令行中输入"w32tm /query /status" 查看同步信息。
+ 1. 命令行执行 gpupdate /force 强制更新组策略；<br>
+ 2. 按照以上配置完成后，确保机器可以跳跃对时的情况下，能够在终端执行"w32tm/resync"使客户端向服务器端发送时钟同步请求，完成立即对时； <br> 
+ 3. 在终端命令行中输入"w32tm /query /status" 查看同步信息。
 
 <!-- tabs:end -->
 
