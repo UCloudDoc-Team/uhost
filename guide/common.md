@@ -392,9 +392,9 @@ server 0.cn.pool.ntp.org iburst minpoll 3 maxpoll 4
 ```
 * **测试方法**
 
- 1. 命令行执行 gpupdate /force 强制更新组策略；<br>
- 2. 按照以上配置完成后，确保机器可以跳跃对时的情况下，能够在终端执行"w32tm/resync"使客户端向服务器端发送时钟同步请求，完成立即对时； <br> 
- 3. 在终端命令行中输入"w32tm /query /status" 查看同步信息。
+ 1. 命令行执行`gpupdate /force` 强制更新组策略；<br>
+ 2. 按照以上配置完成后，确保机器可以跳跃对时的情况下，能够在终端执行`w32tm/resync`使客户端向服务器端发送时钟同步请求，完成立即对时； <br> 
+ 3. 在终端命令行中输入`w32tm /query /status` 查看同步信息。
 
 <!-- tabs:end -->
 
