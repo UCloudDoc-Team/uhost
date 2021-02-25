@@ -9,25 +9,6 @@
 
 > 关机和重启都是虚机层面的，如果遇到重启或者关机无效的情况，可以使用断电操作，断电是宿主层面的关机，相当于强制关闭电源，较为彻底。<br>
 
-## 删除主机
-
-您可以登录[uhost控制台](https://console.ucloud.cn/uhost/uhost),选择主机，点击【删除主机】，即可删除当前主机。<br>
-同时，您还可以使用[uhost delete](https://docs.ucloud.cn/cli/cmd/ucloud/uhost/delete)（UCloud CLI）命令删除主机，并指定实例ID。
-例如：
-```
-ucloud uhost delete --uhost-id uhost-0a3gcvih
-```
-
-以上示例输出如下：
-```
-Are you sure you want to delete the host(s)? (y/n):y
-uhost[uhost-0a3gcvih] is shutting down...done
-uhost[uhost-0a3gcvih] deleted
-```
-
-> 1. 如您通过控制台删除云主机，主机关联的EIP与UDisk将被同步删除，不会继续计费。如果使用API，由字段ReleaseEIP和ReleaseUDisk决定是否同步删除EIP与UDisk，请参考[TerminateUHostInstance](https://docs.ucloud.cn/api/uhost-api/terminate_uhost_instance)。<br>
-> 2. 资源删除后，系统将自动退还租约中的剩余费用，如您想了解具体的退费规则，请阅读[退费明细](https://docs.ucloud.cn/charge/refund)。<br>
-
 如果您点击【详情】，将进入主机详情页面，展示当前选择主机的基本信息、配置信息、付费信息以及监控相关信息。
 
 ![img](/images/common/manage01.png)
@@ -96,6 +77,25 @@ UHost:[uhost-0a3gcvih] resized...done
 ![img](/images/common/manage05.png)<br>
 
 付费信息模块包含创建时间、到期时间以及付费方式，点击【付费】，支持一键续费。
+
+## 删除主机
+
+您可以登录[uhost控制台](https://console.ucloud.cn/uhost/uhost),选择主机，点击【删除主机】，即可删除当前主机。<br>
+同时，您还可以使用[uhost delete](https://docs.ucloud.cn/cli/cmd/ucloud/uhost/delete)（UCloud CLI）命令删除主机，并指定实例ID。
+例如：
+```
+ucloud uhost delete --uhost-id uhost-0a3gcvih
+```
+
+以上示例输出如下：
+```
+Are you sure you want to delete the host(s)? (y/n):y
+uhost[uhost-0a3gcvih] is shutting down...done
+uhost[uhost-0a3gcvih] deleted
+```
+
+> 1. 如您通过控制台删除云主机，主机关联的EIP与UDisk将被同步删除，不会继续计费。如果使用API，由字段ReleaseEIP和ReleaseUDisk决定是否同步删除EIP与UDisk，请参考[TerminateUHostInstance](https://docs.ucloud.cn/api/uhost-api/terminate_uhost_instance)。<br>
+> 2. 资源删除后，系统将自动退还租约中的剩余费用，如您想了解具体的退费规则，请阅读[退费明细](https://docs.ucloud.cn/charge/refund)。<br>
  
 ## 网络配置
 控制台主机列表页面提供更改外网防火墙、绑定弹性IP、挂载云硬盘入口。<br>
