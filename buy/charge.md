@@ -22,7 +22,7 @@
 此类计费方式适用于长期稳定的业务。
 
 如您在资源缴费到期后未主动删除资源，且开通了自动续费功能，在账号余额充足的情况下，系统将默认为您扣除下一期的费用，资源有效期延长,具体细则见[资源续费](https://docs.ucloud.cn/uhost/buy/renew)。<br>
-若账户余额不足，则资源到期后状态为已过期，具体规则见[资源回收](https://docs.ucloud.cn/uhost/buy/recycle)。如您还需要保留这台云主机，请及时充值，手动续费，详细操作方式见[资源续费](https://docs.ucloud.cn/uhost/buy/renew)。
+若账户余额不足，则资源到期后状态为已过期，具体规则见[资源回收](https://docs.ucloud.cn/uhost/buy/recycle)。如您还需要保留这台云主机，请及时充值，手动续费的详细操作方式见[资源续费](https://docs.ucloud.cn/uhost/buy/renew)。
 
 
 目前主机推出的年付优惠策略如下：
