@@ -4,7 +4,6 @@
     * [什么是云主机](/uhost/introduction/concept)
     * [产品优势](/uhost/introduction/advantages)
     * [功能简介](/uhost/introduction/functions)
-    * [计费说明](/uhost/introduction/charge)
     * 主机
         * [地域与可用区](/uhost/introduction/uhost/az)
         * [机型与CPU平台](/uhost/introduction/uhost/type_new)
@@ -19,7 +18,7 @@
         * [域名加速](/uhost/introduction/network/domainacceleration.md)
     * [监控](/uhost/introduction/monitor)
 * 计费说明
-    * [计费模式](/uhost/buy/charge)
+    * [计费指南](/uhost/buy/charge)
     * [配置变更](/uhost/buy/configuration)
     * [续费](/uhost/buy/renew)
     * [回收](/uhost/buy/recycle)
