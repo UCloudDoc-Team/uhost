@@ -6,7 +6,7 @@
 
 所有通知消息将通过邮件、短信以及站内信的方式通知到您设置的通知接收人。
 
-设置通知人：<https://consolev3.ucloud.cn/umon/contact>
+设置通知人：<https://console.ucloud.cn/umon/contact>
 
 ## 预付费模式的回收
 ### 按年付/按月付
