@@ -18,7 +18,7 @@
         * [弹性外网IP](/uhost/introduction/network/eip.md)
         * [域名加速](/uhost/introduction/network/domainacceleration.md)
     * [监控](/uhost/introduction/monitor)
-* 购买指导
+* 计费说明
     * [计费模式](/uhost/buy/charge)
     * [配置变更](/uhost/buy/configuration)
     * [续费](/uhost/buy/renew)
