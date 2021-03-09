@@ -76,8 +76,8 @@ Ubuntu：
 * 步骤2：扩容分区表
 
 ```
-    LANG=en_US.UTF-8
-    growpart /dev/vda 1
+LANG=en_US.UTF-8
+growpart /dev/vda 1
 ```
 
 ?> CentOS6和Debian8，可能会遇到内核以及工具链不支持热重载分区表的情况，如遇此情况，扩容分区表后需重启一次操作系统。
@@ -85,8 +85,8 @@ Ubuntu：
 * 步骤3：扩容文件系统
 
 ```
-    resize2fs /dev/vda1 (ext4文件系统)
-    xfs_growfs /dev/vda1 (xfs文件系统) 或xfs_growfs /
+resize2fs /dev/vda1 (ext4文件系统)
+xfs_growfs /dev/vda1 (xfs文件系统) 或xfs_growfs /
 ```
 
 * 步骤4：确认
@@ -189,13 +189,13 @@ mount /dev/vdb /data/
 4. 将数据盘设置为xfs格式（CentOS7的默认文件系统格式）：
 
 ```
-    mkfs.xfs /dev/vdb
-    mount -t xfs /dev/vdb /data
+mkfs.xfs /dev/vdb
+mount -t xfs /dev/vdb /data
 ```
 
 5. 编辑/etc/fstab，加入如下内容
 ```
-    /dev/vdb /data xfs defaults,noatime 0 0  
+/dev/vdb /data xfs defaults,noatime 0 0  
 ```
 
 #### ** Windows **
