@@ -138,13 +138,19 @@ Ubuntu：
 ![image](/images/xfs.png)
 
 * 针对ext4文件格式的操作系统（如CentOS6）  
-    e2fsck -f /dev/vdb
-    resize2fs /dev/vdb
+
+``` 
+e2fsck -f /dev/vdb
+resize2fs /dev/vdb
+``` 
 
 * 针对xfs文件格式的操作系统（如CentOS7）  
-    xfs_repair /dev/vdb
-    xfs_growfs /data
-    
+
+``` 
+xfs_repair /dev/vdb
+xfs_growfs /data
+``` 
+
 #### ** Windows **
 在主机上操作，cmd中输入`diskpart.exe`，`list volume`，选择要扩展大小的逻辑卷，输入要扩展大小extend
 \[size=n\]， 或extend将所有未分配大小扩展到选择的逻辑卷。
@@ -272,7 +278,9 @@ udisk[bsm-bagfqw5u] is detaching from uhost[uhost-bh0fvsnh]…done
 <!-- tabs:start -->
 #### ** Linux **
 
-    umount /dev/vdc
+``` 
+umount /dev/vdc
+``` 
 
 #### ** Windows **
 
@@ -319,12 +327,16 @@ mount /dev/vdb /data/
 
 4. 将数据盘设置为xfs格式（CentOS7的默认文件系统格式）：
 
-    mkfs.xfs /dev/vdb
-    mount -t xfs /dev/vdb /data
+``` 
+mkfs.xfs /dev/vdb
+mount -t xfs /dev/vdb /data
+``` 
 
 5. 编辑/etc/fstab，加入如下内容
 
-    /dev/vdb /data xfs defaults,noatime 0 0
+``` 
+/dev/vdb /data xfs defaults,noatime 0 0
+``` 
 
 #### ** Windows **
 
