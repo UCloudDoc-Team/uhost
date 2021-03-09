@@ -174,13 +174,10 @@ xfs_growfs /data
 1. 可选择ext4或xfs两种文件系统格式来格式化数据盘
 
 2. 将数据盘设置为ext4文件格式（CentOS6的默认文件系统格式）：
-
 ``` 
 mkfs -t ext4 /dev/vdb 
 mount /dev/vdb /data/
 ```
-
-
 
 3. 编辑/etc/fstab，将对应配置写入fstab
 
@@ -188,24 +185,16 @@ mount /dev/vdb /data/
 /dev/vdb   /data  ext4  defaults,noatime 0 0
 ```
 
-
-
-
 4. 将数据盘设置为xfs格式（CentOS7的默认文件系统格式）：
-
 ```
 mkfs.xfs /dev/vdb
 mount -t xfs /dev/vdb /data
 ```
 
-
-
 5. 编辑/etc/fstab，加入如下内容
-
 ```
 /dev/vdb /data xfs defaults,noatime 0 0  
 ```
-
 
 
 #### ** Windows **
