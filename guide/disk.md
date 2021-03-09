@@ -180,11 +180,16 @@ mkfs -t ext4 /dev/vdb
 mount /dev/vdb /data/
 ```
 
+
+
 3. 编辑/etc/fstab，将对应配置写入fstab
 
 ``` 
 /dev/vdb   /data  ext4  defaults,noatime 0 0
 ```
+
+
+
 
 4. 将数据盘设置为xfs格式（CentOS7的默认文件系统格式）：
 
@@ -193,11 +198,15 @@ mkfs.xfs /dev/vdb
 mount -t xfs /dev/vdb /data
 ```
 
+
+
 5. 编辑/etc/fstab，加入如下内容
 
 ```
 /dev/vdb /data xfs defaults,noatime 0 0  
 ```
+
+
 
 #### ** Windows **
 在主机上操作，cmd中输入`diskpart.exe`
