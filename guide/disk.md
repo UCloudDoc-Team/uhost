@@ -194,6 +194,7 @@ mount -t xfs /dev/vdb /data
 ```
 
 5. 编辑/etc/fstab，加入如下内容
+
 ```
 /dev/vdb /data xfs defaults,noatime 0 0  
 ```
