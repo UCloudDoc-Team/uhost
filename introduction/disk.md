@@ -45,7 +45,7 @@ UCloud云主机目前可选五种类型的磁盘：本地普通盘、本地SSD�
 | 顺序写 (MBps) | min{120+0.5 * 容量，4800}MBps | min{80+0.5 * 容量，260}MBps | 100       | 1000      | 150       |
 | 平均延迟       | 0.1ms                       | 0.5-3ms                   | 10ms      | 0.3ms     | 0.3ms     |
 
-注：RSSD云盘的性能同时与主机配置有关联，详情请参考[RSSD实例和性能关系](udisk/introduction/performance/account#RSSD实例和性能关系)
+注：RSSD云盘的性能同时与主机配置有关联，详情请参考[RSSD性能和实例性能关系](udisk/introduction/performance/account#RSSD性能和实例性能关系)
 
 ### 测试方法
 
