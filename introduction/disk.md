@@ -49,7 +49,7 @@ UCloud云主机目前可选五种类型的磁盘：本地普通盘、本地SSD�
 
 ### 测试方法
 
-参考[UDisk测试工具](introduction/performance/rssd)
+参考[UDisk测试工具](udisk/introduction/performance/rssd)
 
 ## 机型/特性支持
 
