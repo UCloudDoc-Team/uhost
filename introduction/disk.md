@@ -45,23 +45,11 @@ UCloud云主机目前可选五种类型的磁盘：本地普通盘、本地SSD�
 | 顺序写 (MBps) | min{120+0.5 * 容量，4800}MBps | min{80+0.5 * 容量，260}MBps | 100       | 1000      | 150       |
 | 平均延迟       | 0.1ms                       | 0.5-3ms                   | 10ms      | 0.3ms     | 0.3ms     |
 
+注：RSSD云盘的性能同时与主机配置有关联，详情请参考[RSSD实例和性能关系](udisk/introduction/performance/account#RSSD实例和性能关系)
+
 ### 测试方法
 
-随机写：fio -direct=1 -iodepth=128 -rw=randwrite -ioengine=libaio -bs=4k
--size=10G -numjobs=1 -runtime=1000 -group\_reporting
--name=/path/testfile
-
-顺序写：fio -direct=1 -iodepth=128 -rw=write -ioengine=libaio -bs=64k
--size=10G -numjobs=1 -runtime=1000 -group\_reporting
--name=/path/testfile
-
-随机读：fio -direct=1 -iodepth=128 -rw=randread -ioengine=libaio -bs=4k
--size=10G -numjobs=1 -runtime=1000 -group\_reporting
--name=/path/testfile
-
-顺序读：fio -direct=1 -iodepth=128 -rw=read -ioengine=libaio -bs=64k
--size=10G -numjobs=1 -runtime=1000 -group\_reporting
--name=/path/testfile
+参考[UDisk测试工具](introduction/performance/rssd)
 
 ## 机型/特性支持
 
@@ -76,8 +64,7 @@ UCloud云主机目前可选五种类型的磁盘：本地普通盘、本地SSD�
 | GPU型 G  | SSD云盘  | 普通云盘/SSD云盘        |
 | GPU型 G | SSD本地盘 | 1块SSD本地盘，可叠加多块云盘  |
 | GPU型 G | SSD云盘  | 普通云盘/SSD云盘        |
-| 快杰型 O  | RSSD云盘  | RSSD云盘            |
-| 快杰型 OS  | RSSD云盘  | RSSD云盘            |
+| 快杰型/快杰S型/快杰PRO型/快杰MAX型  | RSSD云盘  | RSSD云盘            |
 
 ### 特性支持
 
