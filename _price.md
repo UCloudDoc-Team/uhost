@@ -8,7 +8,7 @@
 <!-- udocs:active -->
 | 活动名称 | 详情 |
 | :---- | :---- |
-| UCloud“11.11”大促 | [了解详情](https://www.ucloud.cn/site/active/kuaijie.html) |
+| UCloud全球大促| [了解详情](https://www.ucloud.cn/site/active/kuaijie.html) |
 
 
 ## 产品价格
