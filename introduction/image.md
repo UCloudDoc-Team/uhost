@@ -12,7 +12,7 @@
 
 ## 快杰专用镜像
 
-[快杰云主机系列](/uhost/introduction/uhost/type_new)由于采用了[网络增强2.0](/uhost/introduction/uhost/feature)与[RSSD云盘](/uhost/introduction/disk)技术，针对Linux镜像，对镜像的内核有一定要求，即至少为4.19内核。因此，对于CentOS 8.0以下/Ubuntu 20.04以下/Debian 10.0以下的标准镜像，UCloud将其均升级到了4.19内核，取代了其原生内核。该高版本内核不会影响上层应用程序的使用，并且通常比低版本内核的安全性更高。
+[快杰云主机系列](/uhost/introduction/uhost/type_new#机型)由于采用了[网络增强2.0](/uhost/introduction/uhost/feature)与[RSSD云盘](/uhost/introduction/disk#磁盘对比概览)技术，针对Linux镜像，对镜像的内核有一定要求，即至少为4.19内核。因此，对于CentOS 8.0以下/Ubuntu 20.04以下/Debian 10.0以下的标准镜像，UCloud将其均升级到了4.19内核，取代了其原生内核。该高版本内核不会影响上层应用程序的使用，并且通常比低版本内核的安全性更高。
 
 对于上传后无法支持快杰云主机的镜像，请联系技术支持指导内核版本的升级。
 
