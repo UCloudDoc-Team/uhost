@@ -15,7 +15,6 @@
 
 ![img](/images/newuser/console.png)<br>
 
-![img](/images/画板.pdf)<br>
 ### 1. 选择可用区
 ![img](/images/newuser/region.png)<br>
 
