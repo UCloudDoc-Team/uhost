@@ -14,6 +14,8 @@
 首先登录并前往[控制台页面](https://console.ucloud.cn/)，选择uhost产品，点击创建主机，进入主机配置信息页面。
 
 ![img](/images/newuser/console.png)<br>
+
+![img](/images/画板.pdf)<br>
 ### 1. 选择可用区
 ![img](/images/newuser/region.png)<br>
 
