@@ -326,8 +326,9 @@ CPU平台属性是指云主机所在宿主机的CPU微架构版本，包含以�
 - Intel Cascadelake
 - Intel Cascadelake-Refresh
 - AMD EPYC2
+- Arm Altra
 
-每代CPU平台的主要差异为硬件架构不同、指令集不同。**不同CPU平台的云主机价格相同。**
+每代CPU平台的主要差异为硬件架构不同、指令集不同。**同个CPU架构下，不同CPU平台的云主机价格相同。**
 
 创建时可选定最低的CPU平台，或让后台完全自动分配。例如，用户创建时选择了通用型，CPU平台≥Intel Haswell (V3)，后台调度系统可能将主机调度到Haswell、Broadwell或是Skylake平台的宿主机上。
 
@@ -346,13 +347,6 @@ CPU平台选择最佳实践：
 | Intel/Skylake     | √   | √     | √       |
 | Intel/Cascadelake | √   | √     | √       |
 | Intel/CascadelakeR | √   | √     | √       |
+| Arm/Altra |    |      |        |
 
 3）对计算性能有明确要求的业务，推荐选择当前可用区的最新一代。
-
-## 后续阅读
-
-[主机价格](https://docs.ucloud.cn/uhost/price)
-
-[主机磁盘简介](/uhost/introduction/disk)
-
-[特性简介：网络增强、热升级与数据方舟](/uhost/introduction/uhost/feature)
