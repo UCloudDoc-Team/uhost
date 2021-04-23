@@ -121,7 +121,7 @@
 
 ## 4. 外网弹性IP和带宽
 
-外网带宽支持带宽计费、流量计费以及共享带宽三种计费模式，具体价格参见[外网弹性IP和带宽](https://docs.ucloud.cn/unet/eip_price)。
+外网带宽支持带宽计费、流量计费以及共享带宽三种计费模式，具体价格参见[外网弹性IP和带宽](https://docs.ucloud.cn/unet/eip_price/compare)。
 
 ## 5. GPU
 
