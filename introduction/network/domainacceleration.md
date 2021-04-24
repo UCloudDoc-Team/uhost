@@ -25,6 +25,9 @@
 |               | helm.ngc.nvidia.com                                     |
 |               | *.ngc.nvidia.com                                        |
 | **docker**    | download.docker.com                                     |
+| **go**        | golang.org                                              |
+|               | go.googlesource.com                                     |
+
 
 ## 加速效果
 
