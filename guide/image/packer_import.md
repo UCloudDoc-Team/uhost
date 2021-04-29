@@ -22,11 +22,11 @@ Packer 是 Hashicorp 公司推出的自动化打包镜像的轻量级开源工�
 
 ## 镜像导入示例
 
-下面将使用 Packer 制作并导入一个 CentOS 镜像。如下图所示:
+下面将使用 Packer 制作并导入一个 CentOS 镜像。如下图所示，其中 UFile 现名 US3:
 
 ![](/images/guide/image/packer-import.png)
 
-Packer 首先利用 [QEMU Builder](https://www.packer.io/docs/builders/qemu.html) 制作了一个 RAW 镜像，存放在本地配置的目录下，之后利用 *ucloud-import* [Post-Processors 后处理器](https://www.packer.io/docs/post-processors/index.html) 将本地的镜像存放到用户配置的 UFile 中，并自动化导入到 UCloud 云平台中。
+Packer 首先利用 [QEMU Builder](https://www.packer.io/docs/builders/qemu.html) 制作了一个 RAW 镜像，存放在本地配置的目录下，之后利用 *ucloud-import* [Post-Processors 后处理器](https://www.packer.io/docs/post-processors/index.html) 将本地的镜像存放到用户配置的 US3 (原名 UFile) 中，并自动化导入到 UCloud 云平台中。
 
 ### 环境配置
 
@@ -42,14 +42,14 @@ Packer 首先利用 [QEMU Builder](https://www.packer.io/docs/builders/qemu.html
 
 - 参照[官方安装文档](https://www.qemu.org/download/), 其中使用命令行安装，MacOS: *brew install qemu*, CentOs: *yum install qemu-kvm*, Ubuntu: *apt-get install qemu*
 
-**创建一个 UFile 的 bucket 空间**
+**创建一个 US3 的 bucket 空间**
 
 - 参照[官方文档](https://docs.ucloud.cn/ufile/guide/bucket/devguide)
 
 
 ### 编写 JSON 文件 
 
-让我们基于 MacOs 系统使用 QEMU 创建并导入一个 CentOS 6.10 的自定义镜像为例，[示例链接](https://github.com/hashicorp/packer/tree/master/examples/ucloud/local)。首先创建一个干净的空文件夹作为工作区，并且切换到该目录下，编写一个 JSON 规格文件(eg：local.json)，如下 ：
+让我们基于 MacOs 系统使用 QEMU 创建并导入一个 CentOS 6.10 的自定义镜像为例，[示例链接](https://github.com/hashicorp/packer-plugin-ucloud/tree/main/builder/ucloud/examples/local)。首先创建一个干净的空文件夹作为工作区，并且切换到该目录下，编写一个 JSON 规格文件(eg：local.json)，如下 ：
 
 ```json
 {"variables": {
@@ -109,7 +109,7 @@ Packer 首先利用 [QEMU Builder](https://www.packer.io/docs/builders/qemu.html
   ]
 }
 ```
-如上定义了一个 *qemu* Builder 构建器 和一个 *ucloud-import* [Post-Processors 后处理器](https://www.packer.io/docs/post-processors/index.html)，其中配置了UFile bucket name 等信息。
+如上定义了一个 *qemu* Builder 构建器 和一个 *ucloud-import* [Post-Processors 后处理器](https://www.packer.io/docs/post-processors/index.html)，其中配置了 US3 bucket name 等信息。
 
 ### 编写 Kickstart 文件
 
