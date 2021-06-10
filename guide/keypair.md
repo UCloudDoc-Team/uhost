@@ -35,7 +35,7 @@
 ```bash
 chmod  400 ucloud-test.pem
 ```
-*连接到您的实例， 示例：
+* 连接到您的实例，示例：
 ```bash
 ssh -i  ~/Desktop/ucloud-test.pem  root@ 113.31.112.80 
 ```
