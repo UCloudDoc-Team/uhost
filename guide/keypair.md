@@ -32,7 +32,7 @@
 >您需要下载并妥善保管私钥。私钥使用未加密的PEM（Privacy-Enhanced Mail）编码的PKCS#8格式。
 
 * 创建/重装系统时选择密码登录，选择刚刚创建的密钥。
-![](../logmodselect.png)
+![](../logmod.png)
 
 * 打开SSH客户端
 * 查找您的私钥文件。例如私钥文件为```ucloud-test.cer```
