@@ -25,10 +25,12 @@
 
 ## 使用方法
 * 创建/导入密钥对
+![](../createkeypair.png)
 >**注意**：
 >成功创建SSH密钥对后，UCloud会保存SSH密钥对的公钥部分。在Linux实例中，公钥内容放在```~/.ssh/authorized_keys```文件内。
 >您需要下载并妥善保管私钥。私钥使用未加密的PEM（Privacy-Enhanced Mail）编码的PKCS#8格式。
 * 创建/重装系统时选择密码登录，选择刚刚创建的密钥。
+![](../logmodselect.png)
 * 打开SSH客户端
 * 查找您的私钥文件。例如私钥文件为```ucloud-test.cer```
 * 如有需要，运行此命令，以确保您的密钥不可见，示例：
