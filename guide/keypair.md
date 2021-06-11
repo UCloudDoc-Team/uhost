@@ -38,9 +38,9 @@
 * 查找您的私钥文件。例如私钥文件为```ucloud-test.cer```
 * 如有需要，运行此命令，以确保您的密钥不可见，示例：
 ```bash
-chmod  400 ucloud-test.pem
+chmod 400 ucloud-test.pem
 ```
 * 连接到您的实例，示例：
 ```bash
-ssh -i  ~/Desktop/ucloud-test.pem  root@ 113.31.112.80 
+ssh -i ~/Desktop/ucloud-test.pem  root@113.31.112.80 
 ```
