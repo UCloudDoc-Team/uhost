@@ -19,7 +19,7 @@
 * 如果您有使用多个密钥对登录实例的需求，可以在实例内部手动修改```~/.ssh/authorized_keys```文件，添加多个密钥对。
 
 ## 生成方式
-* UCloud云提供的接口生成。默认采用RSA 2048位的加密方式。具体操作参见[创建主机密钥对](https://uxiao.ucloudadmin.com/#/api-manager/api/detail/UHost/CreateUHostKeyPair)。
+* UCloud云提供的接口生成。默认采用RSA 2048位的加密方式。具体操作参见[创建主机密钥对](https://docs.ucloud.cn/api/uhost-api/create_uhost_key_pair)。
 >注意：如果您的密钥对由控制台的创建密钥对功能生成，那么在首次生成密钥对时，请务必下载并妥善保存私钥。当该密钥对绑定某台实例时，如果没有私钥，您将无法登录实例。
 * 用户采用SSH密钥对生成器生成。导入的密钥对仅支持ssh-rsa加密方式。
 
