@@ -330,6 +330,12 @@ server 0.cn.pool.ntp.org iburst minpoll 3 maxpoll 4
 
 作用: 加速微调，控制微调范围
 ```
+>注意：针对CentOS系统，上述微调参数适用于CentOS 6.x，针对对于CentOS 7.x需要执行下面两行命令
+```
+tinker dispersion 100
+tinker stepout 3600
+```
+
 * **测试方法**<br>
 重启ntp服务
 
