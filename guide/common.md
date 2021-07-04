@@ -252,14 +252,19 @@ server 0.cn.pool.ntp.org iburst minpoll 3 maxpoll 4
 
 添加微调参数
 
-```
+** CentOS 6.x**
+``` 
 添加 tinker dispersion 100
 添加 tinker step 1800
 添加 tinker stepout 3600
-
-作用: 加速微调，控制微调范围
+作用：加速微调，控制微调范围
 ```
->注意：针对CentOS系统，CentOS 7.x不需要添加`tinker step 1800`
+** CentOS 7.x**
+``` 
+添加 tinker dispersion 100
+添加 tinker stepout 3600
+作用：加速微调，控制微调范围
+```
 
 
 * **测试方法**
@@ -321,16 +326,6 @@ server 10.255.255.2 iburst minpoll 3 maxpoll 4 prefer
 server 0.cn.pool.ntp.org iburst minpoll 3 maxpoll 4
 
 作用: 缩短对时轮询周期，并首选UCloud的NTP服务
-```
-
-添加微调参数
-
-```
-添加 tinker dispersion 100
-添加 tinker step 1800
-添加 tinker stepout 3600
-
-作用: 加速微调，控制微调范围
 ```
 
 * **测试方法**<br>
