@@ -259,6 +259,8 @@ server 0.cn.pool.ntp.org iburst minpoll 3 maxpoll 4
 
 作用: 加速微调，控制微调范围
 ```
+>注意：针对CentOS系统，CentOS 7.x不需要添加`tinker step 1800`
+
 
 * **测试方法**
 
@@ -329,11 +331,6 @@ server 0.cn.pool.ntp.org iburst minpoll 3 maxpoll 4
 添加 tinker stepout 3600
 
 作用: 加速微调，控制微调范围
-```
->注意：针对CentOS系统，上述微调参数适用于CentOS 6.x，针对对于CentOS 7.x需要执行下面两行命令
-```
-tinker dispersion 100
-tinker stepout 3600
 ```
 
 * **测试方法**<br>
