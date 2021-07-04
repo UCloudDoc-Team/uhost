@@ -252,14 +252,14 @@ server 0.cn.pool.ntp.org iburst minpoll 3 maxpoll 4
 
 添加微调参数
 
-** CentOS 6.x**
+**CentOS 6.x**
 ``` 
 添加 tinker dispersion 100
 添加 tinker step 1800
 添加 tinker stepout 3600
 作用：加速微调，控制微调范围
 ```
-** CentOS 7.x**
+**CentOS 7.x**
 ``` 
 添加 tinker dispersion 100
 添加 tinker stepout 3600
