@@ -37,7 +37,7 @@ enabled=1
 | 数据中心    | 仓库URL                                                     |
 | ------- | --------------------------------------------------------- |
 | 北京一可用区A | centos.mirror.ucloud.cn 或者 centos.mirrors.ucloud.cn       |
-| 北京二可用区B | centos.mirror.cs.ucloud.cn 或者 centos.mirrors.cs.ucloud.cn |
-| 北京二可用区C | centos.mirror.yg.ucloud.cn 或者 centos.mirrors.yg.ucloud.cn |
+| 华北（北京）可用区B | centos.mirror.cs.ucloud.cn 或者 centos.mirrors.cs.ucloud.cn |
+| 华北（北京）可用区C | centos.mirror.yg.ucloud.cn 或者 centos.mirrors.yg.ucloud.cn |
 | 亚太      | centos.mirror.hk.ucloud.cn 或者 centos.mirrors.hk.ucloud.cn |
 | 北美      | centos.mirror.la.ucloud.cn 或者 centos.mirrors.la.ucloud.cn |
