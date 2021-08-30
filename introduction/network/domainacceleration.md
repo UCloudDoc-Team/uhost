@@ -27,6 +27,9 @@
 | **docker**    | download.docker.com                                     |
 | **go**        | golang.org                                              |
 |               | go.googlesource.com                                     |
+| **其他**       | conda.anaconda.org                                      |
+|               | conda.io                                                |
+|               | repo.anaconda.com                                       |
 
 
 ## 加速效果
