@@ -7,6 +7,7 @@
 
 ### 机型
 Ucloud云服务器类型详情：
+
 |             | 分类 | CPU主频 | 内网带宽 | 特点                   | 适用场景             |
 | ----------- | ---------|-----------------------------|  -------- | -------------------- | ---------------- |
 | 快杰O型  | 快杰系列 | Intel CascadeLake: 2.5GHz-3.9GHz <br> Intel CascadelakeR: 3.0GHz-4.0GHz <br> Intel IceLake: 2.6GHz-3.4GHz <br>  AMD EPYC2: 2.9GHz-3.4GHz <br> Ampere Altra: 3.0GHz-3.3GHz | 25GbE  | 提供基于x86和Arm两种架构的CPU平台可选 <br> 计算、存储、网络性能卓越 | 全面场景  |
@@ -16,6 +17,7 @@ Ucloud云服务器类型详情：
 | 通用型 N       | 上一代系列 | Intel Skylake: 2.6GHz-3.7GHz <br> Intel Broadwell: 2.2GHz-2.9GHz| 10GbE | 配置自由灵活，选择丰富          | 企业级应用，内存服务，数据分析等 |
 | 高主频型 C      | 上一代系列 | Intel Skylake:  3.2GHz-4.2GHz | 10GbE |采用3.2GHz主频的CPU，单核计算性能最高 | 高频交易，数据处理，EDA等  |
 | GPU型 G      | 上一代系列 | Intel Skylake: 2.6GHz-3.7GHz <br> Intel Broadwell: 2.2GHz-2.9GHz | 10GbE |搭载Nvidia Tesla K80，P40，V100或T4 GPU | 人工智能，科学计算，图形渲染等  |
+
 
 机型迭代信息：
 - 快杰系列：UCloud旗舰云服务器系列，支持网络增强2.0与RSSD云盘，因此最大网络性能达到1000W PPS，最大存储性能达到120W IOPS。
