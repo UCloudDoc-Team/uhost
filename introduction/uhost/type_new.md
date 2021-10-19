@@ -26,10 +26,9 @@ Ucloud云服务器类型详情：
 
 ### 快杰O型
 
-1）概述：
-快杰O型是计算、存储与网络性能卓越的旗舰云服务器，最大网络性能达到1000W PPS，最大存储性能达到120W IOPS。经历Ucloud机型整合，快杰O型现提供基于两种不同架构，即x86架构和Arm架构的CPU平台可选配。当前，快杰O型云服务器在Web服务，游戏服务，数据分析处理等绝大多数场景表现出色。
+1）概述：快杰O型是计算、存储与网络性能卓越的旗舰云服务器，最大网络性能达到1000W PPS，最大存储性能达到120W IOPS。经历Ucloud机型整合，快杰O型现提供基于两种不同架构，即x86架构和Arm架构的CPU平台可选配。当前，快杰O型云服务器在Web服务，游戏服务，数据分析处理等绝大多数场景表现出色。
 
-2）CPU平台支持：Intel Cascadelake(Gold6248)；Intel CascadelakeR(Gold6248R)；Intel IceLake(8358P)；AMD EPYC2(Rome7542)；Ampere Altra(8030)。
+2）CPU平台支持：Intel Cascadelake(Gold6248)；Intel Cascadelake-Refresh(Gold6248R)；Intel IceLake(8358P); AMD EPYC2(Rome7542)；Ampere Altra(8030)。
 
 3）CPU内存组合（支持配比1:1-1:8，具体配比以创建控制台为准）：
 
@@ -65,7 +64,7 @@ Ucloud云服务器类型详情：
 
 ### 快杰PRO型 
 
-1）概述：快杰PRO型采用AMD EPYC(Rome 7F52) CPU（3.5GHz-3.9GHz），在快杰系列中享最高单核算力。同时，内存带宽达快杰O型的2倍，平均每核L3缓存达快杰型O的4倍，最大网络性能达到1000W PPS，最大存储性能达到120W IOPS。 
+1）概述： <br> 快杰PRO型采用AMD EPYC(Rome 7F52) CPU（3.5GHz-3.9GHz），在快杰系列中享最高单核算力。同时，内存带宽达快杰O型的2倍，平均每核L3缓存达快杰型O的4倍，最大网络性能达到1000W PPS，最大存储性能达到120W IOPS。 
 
 2）CPU平台支持：AMD EPYC2(Rome 7F52)。
 
@@ -178,7 +177,7 @@ Ucloud云服务器类型详情：
 
 ### 通用型 N
 
-1）概述：提供最灵活自由的CPU、内存、磁盘组合。适合计算、存储、网络等均衡的场景。
+1）概述：Ucloud云服务器上一代机型。提供灵活自由的CPU、内存、磁盘组合。适合计算、存储、网络等均衡的场景。
 
 2）CPU平台支持：Intel IvyBridge/Haswell/Broadwell/Skylake
 
@@ -315,7 +314,8 @@ Ucloud云服务器类型详情：
 
 ## CPU平台
 
-CPU平台属性是指云主机所在宿主机的CPU微架构版本，包含以下选项：
+### CPU平台概述
+CPU平台属性是指云服务器所在宿主机的CPU微架构版本，包含以下选项：
 - Intel IvyBridge,
 - Intel Haswell
 - Intel Broadwell
@@ -325,11 +325,11 @@ CPU平台属性是指云主机所在宿主机的CPU微架构版本，包含以�
 - AMD EPYC2
 - Arm Altra
 
-每代CPU平台的主要差异为硬件架构不同、指令集不同。**同个CPU架构下，不同CPU平台的云主机价格相同。**
+每代CPU平台的主要差异为硬件架构不同、指令集不同。**同个CPU架构下，不同CPU平台的云服务器价格相同。**
 
 创建时可选定最低的CPU平台，或让后台完全自动分配。例如，用户创建时选择了通用型，CPU平台≥Intel Haswell (V3)，后台调度系统可能将主机调度到Haswell、Broadwell或是Skylake平台的宿主机上。
 
-CPU平台选择最佳实践：
+### CPU平台选择最佳实践
 
 1）CPU平台是主机创建的高级选项，普通的Web网站/APP/数据库/devops以及其他并非重计算业务（CPU平均使用率在30%以下），以及对指令集无要求，建议选择CPU平台为自动分配。
 
