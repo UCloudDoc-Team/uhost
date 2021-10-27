@@ -4,7 +4,7 @@
 - [快杰O型 Ampere版](#快杰O型-Ampere版)
 
 
-# 快杰O型 Ampere版
+## 快杰O型 Ampere版
 ### 产品介绍
 快杰O型是计算、存储与网络性能卓越的旗舰云主机，快杰O型Ampere版，它采用Ampere® Altra® Q80-30处理器，覆盖25G基础网络和智能网卡，采用RDMA-SSD云盘，网络性能最高可达1000万PPS，存储性能最高可达120万IOPS。
 
