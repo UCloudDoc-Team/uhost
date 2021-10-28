@@ -4,7 +4,7 @@
     * [什么是云主机](/uhost/introduction/concept)
     * [产品优势](/uhost/introduction/advantages)
     * [功能简介](/uhost/introduction/functions)
-    * [计费说明](/uhost/introduction/charge)
+    * [计费说明](/uhost/buy/charge)
     * 主机
         * [地域与可用区](/uhost/introduction/uhost/az)
         * [机型与CPU平台](/uhost/introduction/uhost/type_new)
