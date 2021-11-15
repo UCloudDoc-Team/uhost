@@ -19,7 +19,7 @@
 
 ### Linux镜像
 
-系统：基于CentOS、Redhat、Ubuntu、OpenSUSE、SUSE发行版的镜像。支持32位和64位。（暂不支持Debian和Gentoo，若希望导入此类镜像，请咨询技术支持）
+系统：基于CentOS、Redhat、Ubuntu、OpenSUSE、SUSE发行版的镜像。支持32位和64位。
 
 支持镜像格式：raw、vhd、qcow2、vmdk
 
