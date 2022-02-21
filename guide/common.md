@@ -108,7 +108,7 @@ uhost[uhost-0a3gcvih] deleted
 如您需要重新调整外网防火墙策略，请阅读[防火墙操作指南](https://docs.ucloud.cn/unet/firewall/guide)
 
 ### 绑定弹性IP
-如您需要重新绑定外网弹性IP，请阅读[外网弹性IP操作指南](https://docs.ucloud.cn/unet/firewall/guide)
+如您需要重新绑定外网弹性IP，请阅读[外网弹性IP操作指南](https://docs.ucloud.cn/unet/eip/guide)
 
 ## 磁盘配置 
 **操作路径**<br>
