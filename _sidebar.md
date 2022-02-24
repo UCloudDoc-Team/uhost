@@ -13,8 +13,8 @@
         * [配额](/uhost/introduction/uhost/quota)
     * [磁盘](/uhost/introduction/disk)
     * 镜像
-        * [镜像](uhost/introduction/image/folder/introduction.md)
-        * [关于CentOS官方停止维护CentOS Linux8的应对方案](uhost/introduction/image/folder/Regarding_CentOS8_EOL.md)
+        * [镜像](uhost/introduction/image/introduction.md)
+        * [关于CentOS官方停止维护CentOS Linux8的应对方案](uhost/introduction/image/Regarding_CentOS8_EOL.md)
     * 网络
         * [内网](/uhost/introduction/network/vpc.md)
         * [弹性外网IP](/uhost/introduction/network/eip.md)
