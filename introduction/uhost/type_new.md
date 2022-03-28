@@ -11,7 +11,7 @@ UCloud云主机类型详情：
 | ----------- | ---------|-----------------------------|  -------- | -------------------- | ---------------- |
 | 快杰O型  | 快杰系列 | Intel CascadeLake: 2.5GHz-3.9GHz <br> Intel CascadelakeR: 3.0GHz-4.0GHz <br> Intel IceLake: 2.6GHz-3.4GHz <br>  AMD EPYC2: 2.9GHz-3.4GHz <br> Ampere Altra: 2.8GHz-3.0GHz | 25GbE  | 提供基于x86和Arm两种架构的CPU平台可选 <br> 计算、存储、网络性能卓越 | 全面场景  |
 | 快杰PRO型 OPRO  | 快杰系列 | AMD EPYC2: 3.5GHz-3.9GHz | 25GbE | 3.5GHz顶级单核算力，网络性能较高主频型C有显著提升 | 高频交易，高性能数据，EDA等  |
-| 快杰内存型  | 快杰系列 | Intel IceLake:2.6GHz-3.4GHz | 50GbE | 采用大容量内存型服务器，提供超大cpu内存配比选择 | 内存型数据库，例如：Redis <br> Hadoop集群，Spark集群以及其他企业大内存需求应用  |
+| 快杰内存型  | 快杰系列 | Intel IceLake:2.6GHz-3.4GHz | 25GbE | 采用大容量内存型服务器，提供超大cpu内存配比选择 | 内存型数据库，例如：Redis <br> Hadoop集群，Spark集群以及其他企业大内存需求应用  |
 | 快杰共享型  | 快杰系列 | AMD EPYC2: 2.6GHz-3.3GHz | 25GbE | CPU资源性能共享搭配华北二自建机房提供最高性价比的云计算服务 | 中小型网站，轻量级数据库，轻量级企业应用等 |
 | 通用型 N       | 上一代系列 | Intel Skylake: 2.6GHz-3.7GHz <br> Intel Broadwell: 2.2GHz-2.9GHz| 10GbE | 配置自由灵活，选择丰富          | 企业级应用，内存服务，数据分析等 |
 | 高主频型 C      | 上一代系列 | Intel Skylake:  3.2GHz-4.2GHz | 10GbE |采用3.2GHz主频的CPU，单核计算性能最高 | 高频交易，数据处理，EDA等  |
