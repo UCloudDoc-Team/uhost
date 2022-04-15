@@ -2,7 +2,7 @@
 
 # 镜像
 
-镜像（Image）是 云主机实例运行环境的模板，包含了操作系统和预装软件以及配置。
+镜像（Image）是云主机实例运行环境的模板，包含了操作系统和预装软件以及配置。
 
 镜像分为两类。
 
@@ -17,3 +17,13 @@
 对于上传后无法支持快杰云主机的镜像，请联系技术支持指导内核版本的升级。
 
 针对 Windows 镜像，则无此类内核版本要求。
+
+## 标准镜像筛选逻辑
+
+[获取镜像列表 - DescribeImage](https://docs.ucloud.cn/api/uhost-api/describe_image)
+
+|产品类型 |机型类别 |筛选条件|备注|
+| ----------- | ---------|------------- |-----------------------|
+|云主机UHost|快杰机型|镜像Features包含RssdAttachable，过滤Vgpu_AMD、Vgpu_NVIDIA|快杰机型需要专用镜像，通过rssdattachable来识别|
+|云主机UHost|ARM机型|镜像Features包含RssdAttachable、Aarch64_Type，过滤Vgpu_AMD、Vgpu_NVIDIA|ARM机型是快杰系列里的一种，属于快杰O型Ampere版|
+|云主机UHost|通用机型|ImageName不能包含“高内核”，过滤Vgpu_AMD、Vgpu_NVIDIA|伪代码演示：!ImageName.includes(“高内核”)|
