@@ -18,7 +18,7 @@
 
 针对 Windows 镜像，则无此类内核版本要求。
 
-## 标准镜像筛选逻辑
+## 标准镜像筛选
 
 [获取镜像列表 - DescribeImage](https://docs.ucloud.cn/api/uhost-api/describe_image)
 
