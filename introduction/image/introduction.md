@@ -23,9 +23,9 @@
 [获取镜像列表 - DescribeImage](https://docs.ucloud.cn/api/uhost-api/describe_image)
 
 |产品类型 |机型类别 |筛选条件|备注|
-| ----------- | ---------|------------- |-----------------------|
+| ----------- | --------- | ------------- |-----------------------|
 |云主机UHost|快杰机型|镜像Features包含RssdAttachable，过滤Vgpu_AMD、Vgpu_NVIDIA|快杰机型需要专用镜像，通过RssdAttachable来识别|
 |云主机UHost|ARM机型|镜像Features包含RssdAttachable、Aarch64_Type，过滤Vgpu_AMD、Vgpu_NVIDIA|ARM机型是快杰系列里的一种，属于快杰O型Ampere版|
 |云主机UHost|通用机型|ImageName不能包含“高内核”，过滤Vgpu_AMD、Vgpu_NVIDIA|伪代码演示：!ImageName.includes(“高内核”)|
 
-Vgpu_AMD、 Vgpu_NVIDIA为EPC产品镜像图形增强相关镜像Tag，这里不做相关逻辑赘述。
+Vgpu_AMD、Vgpu_NVIDIA为EPC产品镜像图形增强相关镜像Tag，这里不做相关逻辑赘述。
