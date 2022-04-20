@@ -13,7 +13,7 @@
         * [配额](/uhost/introduction/uhost/quota)
         * [机型与规格](/uhost/introduction/uhost/type)
     * [磁盘](/uhost/introduction/disk)
-    * [镜像](/uhost/introduction/image)
+    * [镜像](/uhost/introduction/image/introduction)
     * 网络
         * [内网](/uhost/introduction/network/vpc.md)
         * [弹性外网IP](/uhost/introduction/network/eip.md)
