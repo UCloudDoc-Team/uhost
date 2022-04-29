@@ -8,24 +8,27 @@
     * 主机
         * [地域与可用区](/uhost/introduction/uhost/az)
         * [机型与CPU平台](/uhost/introduction/uhost/type_new)
-        * [特性](/uhost/introduction/uhost/feature)
         * [订单构成](/uhost/introduction/uhost/lifecycle)
         * [配额](/uhost/introduction/uhost/quota)
         * [机型与规格](/uhost/introduction/uhost/type)
+    * [特性](/uhost/introduction/feature)
     * [磁盘](/uhost/introduction/disk)
     * [镜像](/uhost/introduction/image/introduction)
     * 网络
         * [内网](/uhost/introduction/network/vpc.md)
         * [弹性外网IP](/uhost/introduction/network/eip.md)
     * [监控](/uhost/introduction/monitor)
+    
 * 购买指导
     * [计费模式](/uhost/buy/charge)
     * [配置变更](/uhost/buy/configuration)
     * [续费](/uhost/buy/renew)
     * [回收](/uhost/buy/recycle)
+    
 * 快速上手
     * [常见注意事项](/uhost/newuser/tips)
     * [创建第一台主机](/uhost/newuser/briefguide)
+    
 * 操作指南
     * [常用操作导航](/uhost/guide/nav)
     * [主机](/uhost/guide/common)
@@ -42,11 +45,15 @@
         * [自定义数据](/uhost/guide/metadata/userdata) 
     * [密钥对](/uhost/guide/keypair)        
     * [硬件隔离组](/uhost/guide/isolationgroup)
+    
 * 性能数据
     * [本地磁盘I/O性能测试](/uhost/testdata/io_uhost)
     * [网络增强性能数据](/uhost/testdata/netenhanced)
+    
 * [主机价格](/uhost/price.md) 
+
 * [FAQ](/uhost/faq) 
+
 * Linux服务配置指南
     * [CentOS 6.X下配置Keepalived VIP](/uhost/public/keepalived)
     * [CentOS KPTI关闭方法](/uhost/public/centos_kpti)
@@ -60,10 +67,10 @@
     * [安装配置LNMP](/uhost/public/lnmp)
     * [更新CentOS系统](/uhost/public/centos_update_version)
     * [优化DNS配置方法](/uhost/public/dns_setting)
+    
 * Windows服务配置指南
     * [KMS激活方式说明](/uhost/windows_op/kms)
     * [防火墙启用教程](/uhost/windows_op/win_firewall)
     * [优化DNS配置方法](/uhost/windows_op/dns_setting)
-    
     
     
