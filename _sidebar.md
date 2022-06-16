@@ -49,7 +49,7 @@
     * [本地磁盘I/O性能测试](/uhost/testdata/io_uhost)
     * [网络增强性能数据](/uhost/testdata/netenhanced)
 * [主机价格](/uhost/price.md) 
-* [境外机房调价](/uhost/overseas_price_adjust.md)
+* [境外机房价格调价](/uhost/overseas_price_adjust.md)
 * [FAQ](/uhost/faq) 
 * Linux服务配置指南
     * [CentOS 6.X下配置Keepalived VIP](/uhost/public/keepalived)
