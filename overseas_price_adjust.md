@@ -6,7 +6,7 @@
 >文档中的价格供用户参考,2022年7月1日可直接访问[云主机控制台](https://console.ucloud.cn/uhost/uhost/create)或[价格计算器](https://www.ucloud.cn/site/calculator.html#!/uhost)，各机型详情可查看[机型与规格](https://docs.ucloud.cn/uhost/introduction/uhost/type)。
 
 
-## 新加坡机房
+## 新加坡可用区
 
 ### 通用型N
 
@@ -64,7 +64,7 @@
 
 
 
-## 伦敦机房
+## 伦敦可用区
 
 ### 通用型N
 
@@ -122,7 +122,7 @@
 | 32  | 128 | 5552    | 55520   |
 
 
-## 雅加达机房
+## 雅加达可用区
 
 ### 通用型N
 
