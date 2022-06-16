@@ -53,7 +53,7 @@
     * [网络增强性能数据](/uhost/testdata/netenhanced)
     
 * [主机价格](/uhost/price.md) 
-* [海外价格调整](/uhost/overseas_price_adjust)
+* [海外价格调整](/uhost/overseas_price_adjust.md)
 
 * [FAQ](/uhost/faq) 
 
