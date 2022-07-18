@@ -12,7 +12,7 @@
 
 ## 使用限制
 使用SSH密钥对有如下限制：
-* 仅支持Linux实例且支持CloudInit的实例
+* **仅支持Linux实例且支持CloudInit的实例
 * 只支持创建4096位的RSA密钥对
 * 控制台创建实例选择密钥登录时，一台Linux实例只能绑定一个密钥对
 * 如果创建实例时已绑定密钥对，重装系统绑定新的密钥对会替换原来的密钥对
@@ -40,9 +40,9 @@
 * 查找您的私钥文件，例如私钥文件为```ucloud-test.cer```
 * 如有需要，运行此命令，以确保您的密钥不可见，示例：
 ```bash
-chmod 400 ucloud-test.pem
+chmod 400 ucloud-test.cer
 ```
 * 连接到您的实例，示例：
 ```bash
-ssh -i ~/Desktop/ucloud-test.pem  root@113.31.112.80 
+ssh -i ~/Desktop/ucloud-test.cer  root@113.31.112.80 
 ```
