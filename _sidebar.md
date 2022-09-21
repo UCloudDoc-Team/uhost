@@ -1,7 +1,7 @@
 
 * [概览](/uhost/README)
 * 动态与公告
-    * [新功能发布记录](introduction/release_notes/updates.md）
+    * [新功能发布记录](introduction/release_notes/updates.md)
     * [公告](introduction/announcements_and_updates.md)
 * 产品简介
     * [什么是云主机](/uhost/introduction/concept)
