@@ -1,5 +1,8 @@
 
 * [概览](/uhost/README)
+* 动态与公告
+    * [新功能发布记录](/uhost/introduction/release_notes/updates)
+    * [公告](introduction/announcements_and_updates)
 * 产品简介
     * [什么是云主机](/uhost/introduction/concept)
     * [产品优势](/uhost/introduction/advantages)
