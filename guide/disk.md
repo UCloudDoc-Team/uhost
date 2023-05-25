@@ -164,7 +164,6 @@ df -ihT
 * 如果是ext4文件格式的操作系统，请在云主机内部进行以下操作（如CentOS6）  
 
 ``` 
-e2fsck -f /dev/vdb
 resize2fs /dev/vdb
 ``` 
 
