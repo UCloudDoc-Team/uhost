@@ -145,7 +145,9 @@ xfs_growfs /dev/vda1 (xfs文件系统) 或xfs_growfs /
 
 在控制台选择“更改配置”，关机升级后，重新开机即可。
 
-?> 如文件系统并未扩容完毕，则需要执行**系统内扩容步骤**。
+?> 
+- 当前云硬盘支持在线扩容
+- 如文件系统并未扩容完毕，则需要执行**系统内扩容步骤**。
 
 ### 2. 系统内扩容步骤
 
@@ -161,14 +163,14 @@ df -ihT
 
 ![image](/images/xfs.png)
 
-* 针对ext4文件格式的操作系统（如CentOS6）  
+* 如果是ext4文件格式的操作系统，请在云主机内部进行以下操作（如CentOS6）  
 
 ``` 
 e2fsck -f /dev/vdb
 resize2fs /dev/vdb
 ``` 
 
-* 针对xfs文件格式的操作系统（如CentOS7）  
+* 如果是xfs文件格式的操作系统，请在云主机内部进行以下操作（如CentOS7）  
 
 ``` 
 xfs_repair /dev/vdb
