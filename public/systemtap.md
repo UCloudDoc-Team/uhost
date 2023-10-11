@@ -24,7 +24,8 @@
 
 Ubuntu Key认证：
 
-    sudo apt-key adv --keyserver keyserver.ubuntu.com --recv-keys ECDCAD72428D7C01
+    sudo apt-get update
+    sudo apt-get install ubuntu-dbgsym-keyring
 
 更新索引：
 
