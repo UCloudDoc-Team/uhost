@@ -9,7 +9,7 @@ UCloud云主机类型详情：
 
 |             | 分类 | CPU主频 | 内网带宽 | 特点                   | 适用场景             |
 | ----------- | ---------|-----------------------------|  -------- | -------------------- | ---------------- |
-| 快杰O型  | 快杰系列 | Intel CascadeLake: 2.5GHz-3.9GHz <br> Intel CascadelakeR: 3.0GHz-4.0GHz <br> Intel IceLake: 2.6GHz-3.4GHz <br>  AMD EPYC2: 2.9GHz-3.4GHz <br> Ampere Altra: 2.8GHz-3.0GHz | 25GbE  | 提供基于x86和Arm两种架构的CPU平台可选 <br> 计算、存储、网络性能卓越 | 全面场景  |
+| 快杰O型  | 快杰系列 | Intel CascadeLake: 2.5GHz-3.9GHz <br> Intel CascadelakeR: 3.0GHz-4.0GHz <br> Intel IceLake: 2.6GHz-3.4GHz <br> SapphireRapids: 2.7GHz-3.8GHz <br>AMD EPYC2: 2.9GHz-3.4GHz <br> Ampere Altra: 2.8GHz-3.0GHz | 25GbE  | 提供基于x86和Arm两种架构的CPU平台可选 <br> 计算、存储、网络性能卓越 | 全面场景  |
 | 快杰PRO通用型| 快杰系列 | AMD EPYC2: 2.9GHz-3.4GHz | 25GbE | 独享vCPU，云主机间无CPU资源竞争，提供强大计算能力和高稳定性 | 渲染场景，游戏业务场景 |
 | 快杰PRO增强型| 快杰系列 | AMD EPYC2: 3.5GHz-3.9GHz | 25GbE | 3.5GHz顶级单核算力，网络性能较高主频型C有显著提升 | 高频交易，高性能数据，EDA等  |
 | 快杰内存型  | 快杰系列 | Intel IceLake:2.6GHz-3.4GHz | 25GbE | 采用大容量内存型服务器，提供超大cpu内存配比选择 | 内存型数据库，例如：Redis <br> Hadoop集群，Spark集群以及其他企业大内存需求应用  |
@@ -28,7 +28,7 @@ UCloud云主机类型详情：
 
 1）概述：<br> 快杰O型是计算、存储与网络性能卓越的旗舰云主机，最大网络性能达到1000W PPS，最大存储性能达到120W IOPS。经历UCloud机型整合，快杰O型现提供基于两种不同架构，即x86架构和Arm架构的CPU平台可选配。当前，快杰O型云主机在Web服务，游戏服务，数据分析处理等绝大多数场景表现出色。
 
-2）CPU平台支持：Intel Cascadelake(Gold6248)；Intel Cascadelake-Refresh(Gold6248R)；Intel IceLake(8358P); AMD EPYC2(Rome7542)；Ampere Altra(8030)。
+2）CPU平台支持：Intel Cascadelake(Gold6248)；Intel Cascadelake-Refresh(Gold6248R)；Intel IceLake(8358P); SapphireRapids(8458p);AMD EPYC2(Rome7542)；Ampere Altra(8030)。
 
 3）CPU内存组合（支持配比1:1-1:8，不同可用区可选配比不同，具体配比以创建控制台为准）：
 
@@ -136,9 +136,9 @@ UCloud云主机类型详情：
 
 ### 快杰内存型
 
-1）概述：<br> 快杰内存型云主机是一款搭载英特尔第三代®至强®可扩展处理器 IceLake(Platinum 8358P)和 英特尔® 傲腾™ 持久内存(PMem)的大容量内存型产品。提供高达1:16的超大处理器与内存配比，极大幅度降低内存型应用单GiB内存的成本。
+1）概述：<br> 快杰内存型云主机是一款搭载英特尔第三代®至强®可扩展处理器 IceLake(Platinum 8358P)和 英特尔® 傲腾™ 持久内存(PMem)的大容量内存型产品。提供高达1:16的超大处理器与内存配比，极大幅度降低内存型应用单GiB内存的成本。同时,快杰内存型新增AMD平台,提供高达1:16的超大处理器与内存配比.
 
-2）CPU平台支持：Intel IceLake(Platinum 8358P) 。
+2）CPU平台支持：Intel IceLake(Platinum 8358P) ; AMD EPYC2(Rome7542)。
 
 3）CPU内存组合（支持配比1:8和1:16，具体配比以创建控制台为准）：
 
@@ -375,16 +375,17 @@ CPU平台属性是指云主机所在宿主机的CPU微架构版本，包含以�
 
 2）对指令集有要求的业务（如软件明确要求AVX指令集），建议您参照以下表格进行选择：
 
-| CPU平台       | AVX | AVX-2 | AVX-512 |
-| ----------- | --- | ----- | ------- |
-| Intel/IvyBridge   |     |       |         |
-| Intel/Haswell     | √   |       |         |
-| Intel/Broadwell   | √   | √     |         |
-| AMD/EPYC2         | √   | √     |         |
-| Intel/Skylake     | √   | √     | √       |
-| Intel/Cascadelake | √   | √     | √       |
-| Intel/CascadelakeR | √   | √     | √       |
-| Intel/IceLake |  √   | √     | √       |
-| Arm/Altra |    |      |        |
+| CPU平台       | AVX | AVX-2 | AVX-512 |AMX |
+| ----------- | --- | ----- | ------- | ------- |
+| Intel/IvyBridge   |     |       |         |         |
+| Intel/Haswell     | √   |       |         |         |
+| Intel/Broadwell   | √   | √     |         |         |
+| AMD/EPYC2         | √   | √     |         |         |
+| Intel/Skylake     | √   | √     | √       |         |
+| Intel/Cascadelake | √   | √     | √       |         |
+| Intel/CascadelakeR | √   | √     | √       |         |
+| Intel/IceLake |  √   | √     | √       |         |
+| Intel/ SapphireRapids|  √   | √     | √       |√         |
+| Arm/Altra |    |      |        |         |
 
 3）对计算性能有明确要求的业务，推荐选择当前可用区的最新一代。
