@@ -7,7 +7,7 @@
 | --- | --- |
 | UHost主机 | 云主机根据机型、规格（CPU、内存）、购买时长及所购买实例用量进行计费。 |
 | 云硬盘 | 默认系统盘20GB（需购买），递增的最小幅度是10GB，具体计费请参考[云硬盘计费](https://docs.ucloud.cn/udisk/price)。选择云主机时购买的云硬盘付费周期和主机一致，其他场景下购买云硬盘的付费周期也建议与将挂载主机的付费周期一致。 |
-| 镜像 | 目前UCloud提供的公共镜像免费。如果通过US3服务上传自制镜像，计费标准请查看[US3产品价格](https://docs.ucloud.cn/ufile/bill/billing)。 |
+| 镜像 | 目前UCloud提供的公共镜像免费。如果通过US3服务上传自制镜像，计费标准请查看[US3产品价格](https://docs.ucloud.cn/ufile/bill/billing); 以及自制镜像存储费用,计费标准查看 [镜像计费](https://docs.ucloud.cn/uhost/introduction/image/Regarding_CustomImage_Charge)|
 | 网络 | 网络支持按时长、按用量等方式计费，计费标准请查看[网络产品计价](https://docs.ucloud.cn/unet/eip_price/traffic)。 |
 | 其他服务特性 | 包括快照、数据方舟、网络增强的特性。 |
 
