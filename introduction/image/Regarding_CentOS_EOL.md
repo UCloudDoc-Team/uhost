@@ -2,10 +2,10 @@
 
 依据CentOS官方公告所知，其将停止维护CentOS Linux项目，UCloud所提供的基础镜像CentOS Linux源于CentOS官方，故在官方停止维护后UCloud也将停止对该基础镜像的维护。
 <br>
-本文主要就CentOS官方公告内容及影响，UCloud基础镜像应对方案及应对建议进行介绍。
+本文主要就CentOS官方公告内容及影响、UCloud基础镜像应对方案及应对建议进行介绍。
 
 ## CentOS官方公告内容
-2020年12月08日，CentOS官方宣布了停止维护CentOS Linux 的计划，并推出了CentOS Stream项目。具体信息，请阅读[CentOS官方公告](https://www.centos.org/cl-vs-cs/)。因此对CentOS Linux镜像存在以下影响：
+2020年12月08日，CentOS官方宣布了停止维护CentOS Linux 的计划，并推出了CentOS Stream项目。具体信息请阅读[CentOS官方公告](https://www.centos.org/cl-vs-cs/)。因此对CentOS Linux镜像存在以下影响：
 - CentOS Linux 7作为RHEL 7的复刻版本已于2020年08月06日停止更新，但会延续当前的支持计划，于2024年06月30日停止维护（EOL）；
 - CentOS Linux 8作为RHEL 8的复刻版本，生命周期缩短，已于2021年12月31日停止更新并停止维护（EOL）。
 
@@ -17,7 +17,7 @@ CentOS官方建议停止维护后，可以将环境迁移至CentOS Stream版本�
 ## UCloud基础镜像应对方案
 基于CentOS官方公告，UCloud的应对方案如下：
 - UCloud对于CentOS操作系统的服务支持将和CentOS官方日期保持同步。对CentOS Linux 7的服务支持将持续至2024年06月30日。
-- CentOS Linux8已于2021年12月31日停止维护，UCloud已停止对该基础镜像的更新和维护。但暂不会下线CentOS Linux8，所以对于正在使用相关镜像的云主机用户不会受到影响；
+- CentOS Linux 8已于2021年12月31日停止维护，UCloud已停止对该基础镜像的更新和维护。但暂不会下线CentOS Linux 8，所以对于正在使用相关镜像的云主机用户不会受到影响；
 
 ## 应对建议
 您可以根据业务情况选择适用的操作系统替代CentOS Linux，具体操作说明如下：
