@@ -7,6 +7,7 @@
 所有通知消息将通过邮件、短信以及站内信的方式通知到您设置的通知接收人。
 
 设置通知人：<https://console.ucloud.cn/uaccount/costcenter>
+![](/images/buy/recycle6.png)
 
 ## 回收
 ### 预付费按年付/按月付
