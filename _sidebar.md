@@ -19,8 +19,8 @@
     * [磁盘](/uhost/introduction/disk)
     * 镜像
         * [镜像](/uhost/introduction/image/introduction.md)
-        * [关于CentOS官方停止维护CentOS Linux的应对方案](/uhost/introduction/image/Regarding_CentOS_EOL.md)
         * [镜像计费](uhost/introduction/image/Regarding_CustomImage_Charge.md)
+        * [镜像EOL的应对方案](/uhost/introduction/image/Regarding_CentOS_EOL.md)
     * 网络
         * [内网](/uhost/introduction/network/vpc.md)
         * [弹性外网IP](/uhost/introduction/network/eip.md)
