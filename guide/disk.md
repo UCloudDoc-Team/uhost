@@ -247,11 +247,17 @@ ucloud udisk attach --udisk-id bsm-bagfqw5u --zone cn-bj2-05 --uhost-id uhost-bh
 udisk[bsm-bagfqw5u] is attaching to uhost uhost[uhost-bh0fvsnh]...done
 ```
 然后在云主机内做如下操作：
-
-    mkdir /udisk
-    mount /dev/vdc /udisk
-    df -h
-
+(临时挂载——重启后会丢失挂载点)
+```
+mkdir -p /data1
+mkfs -t xfs /dev/vdc
+mount /dev/vdc /data1
+```
+(永久挂载)
+```
+mkdir -p /data1
+echo -e "/dev/disk/by-id/virtio-UCLOUD_DISK_VDC\t/data1\tauto\tdefaults,nofail,discard,comment=cloudconfig\t0\t2" >> /etc/fstab
+```
 ## 卸载云硬盘
 
 > 您只能操作卸载数据盘，系统盘不能被卸载。同时本地盘也不支持卸载，不支持单独释放。
