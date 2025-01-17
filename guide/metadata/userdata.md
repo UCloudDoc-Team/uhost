@@ -48,15 +48,7 @@ chkconfig httpd on
 
 详情请参考[官方示例](https://cloudinit.readthedocs.io/en/latest/topics/modules.html)
 
-**示例 1：** 修改Hostname
-
-```yaml
-#cloud-config
-
-hostname: uhost1
-```
-
-**示例 2：** 修改数据盘挂载点到/opt/data
+**示例 1：** 修改数据盘挂载点到/opt/data
 
 ```yaml
 #cloud-config
@@ -65,7 +57,7 @@ mounts:
   - [ /dev/vdb, /opt/data ]
 ```
 
-**示例 3：** 主机创建后自动执行一次yum update或者apt-get upgrade
+**示例 2：** 主机创建后自动执行一次yum update或者apt-get upgrade
    
 ```yaml
 #cloud-config
@@ -73,7 +65,7 @@ mounts:
 package_upgrade: true
 ```
 
-**示例 4：** 创建主机时配置密钥
+**示例 3：** 创建主机时配置密钥
    
 ```yaml
 #cloud-config
