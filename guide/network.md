@@ -13,7 +13,3 @@
 * 防火墙
      * [产品简介](/unet/firewall/introduction)
      * [操作指南](/unet/firewall/guide)
-* IPv6转换功能
-     * [产品简介](/unet/ipv6translation/introduction)
-     * [原理架构](/unet/ipv6translation/structure)
-     * [操作指南](/unet/ipv6translation/guide)
