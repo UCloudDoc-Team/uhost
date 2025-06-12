@@ -170,7 +170,6 @@ resize2fs /dev/vdb
 * 如果是xfs文件格式的操作系统，请在云主机内部进行以下操作（如CentOS7）  
 
 ``` 
-xfs_repair /dev/vdb
 xfs_growfs /data
 ``` 
 
