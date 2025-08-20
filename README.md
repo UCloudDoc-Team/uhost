@@ -19,6 +19,7 @@
     * 网络
         * [内网](/uhost/introduction/network/vpc.md)
         * [弹性外网IP](/uhost/introduction/network/eip.md)
+        * [IPv6](/uhost/introduction/network/ipv6.md)
     * [监控](/uhost/introduction/monitor)
     
 * 购买指导
