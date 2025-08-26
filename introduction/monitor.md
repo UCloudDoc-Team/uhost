@@ -26,7 +26,7 @@
     - Debian 11.7 64位
     - RedHat 8.3 64位
     - Rocky 8.5 64位
-  - GPU云主机选择上述镜像需要在创建页勾选安装GPU驱动
+  - GPU云主机选择上述镜像需要在创建页勾选安装GPU驱动。
 
     
 #### 步骤一：点击开关，开启资源监控
@@ -44,7 +44,7 @@
 ps -ef | grep uboltagent
 ```
 
-若执行结果如下图所示，说明 UboltAgent 相关进程已正常启动，则已经成功安装 UboltAgent
+若执行结果如下图所示，说明 UboltAgent 相关进程已正常启动，则已经成功安装 UboltAgent。
 
 ![](https://www-s.ucloud.cn/2025/08/75e68ccc76bea93419e60e0f461b6922_1756177473974.png)
 
@@ -58,13 +58,13 @@ service uboltagent status
 systemctl status uboltagent
 ```
 
-若执行结果如下图所示，说明 UboltAgent 服务状态正常
+若执行结果如下图所示，说明 UboltAgent 服务状态正常。
 
 ![](https://www-s.ucloud.cn/2025/08/730834ab849436670aa3f9a60c5ddac2_1756177473992.png)
 
 ##### 登录云监控确认
 
-等待约5分钟，进入云主机详情页 - 监控信息，查看相关指标图表数据是否正常展示
+等待约5分钟，进入云主机详情页 - 监控信息，查看相关指标图表数据是否正常展示。
 
 ![](https://www-s.ucloud.cn/2025/08/1dde6fe8f8589958c9c7442364300618_1756177474081.png)
 
