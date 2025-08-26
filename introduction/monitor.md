@@ -7,38 +7,32 @@
 
 # 监控代理程序安装
 
-当前，您可以在主机创建完成后，安装我们的监控代理程序，具体安装方式请参考：[监控代理操作指南](https://docs.ucloud.cn/umon/agent)
+当前，您可以在主机创建完成后，安装我们的监控代理程序，具体安装方式请参考：[监控代理操作指南](https://docs.ucloud.cn/cloudwatch/ublotagent/UboltAgent_Linux_Installation_Guide)
 
-同时，如果您希望在创建主机时能附带安装和启动我们的监控代理程序，可以参考以下方式，创建主机。
+同时，如果您希望在创建主机时能附带安装和启动我们的监控代理程序，可以通过【创建页】-【高级设置】-【资源监控】，创建主机。
+
+## 创建控制台操作指南
+
+### 资源监控一键安装
+操作位置：创建控制台-高级设置-监控资源。
 
 - 限制条件：
 
-  - 机型：快杰机型
+  - 镜像：
+    - CentOS 7.9 64位 （标准）
+    - CentOS 7.6 64位 （快杰）
+    - Ubuntu 22.04 64位
+    - Ubuntu 20.04 64位
+    - Ubuntu 18.04 64位
+    - Debian 11.7 64位
+    - RedHat 8.3 64位
+    - Rocky 8.5 64位
+   
+步骤一：点击开关，开启资源监控
 
-  - 镜像：CentOS镜像
+![image](https://www-s.ucloud.cn/2025/08/f0990c2bfac3edff1e926edddb4a97a3_1756176566236.png)
 
-  - 可用区：快杰机型所支持的可用区
 
-## 创建控制台操作指南
-&ensp; 操作位置：创建控制台下拉到最底部，更多设置卡片中的自定义数据。
-
-![image](https://user-images.githubusercontent.com/91523214/191237686-ab92ed1a-741e-442d-b0a5-77011984a506.png)
-
-步骤一：输入cloud-config脚本
-
-&ensp; 除CentOS 8.0/8.2/8.3镜像版本外，输入以下脚本
-
-```
-#config
-packages:
-- uma
-```
-&ensp; CentOS 8.0/8.2/8.3镜像版本，输入以下脚本
-```
-#cloud-config
- packages:
- - uma-py3
-```
 步骤二：确认是否成功预安装
 
 &ensp; 方法1：通过命令行确认：预安装成功会返回结果，反之则无返回
