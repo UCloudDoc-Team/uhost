@@ -11,10 +11,8 @@
 
 同时，如果您希望在创建主机时能附带安装和启动我们的监控代理程序，可以通过【创建页】-【高级设置】-【资源监控】，创建主机。
 
-## 创建控制台操作指南
-
-### 资源监控一键安装
-操作位置：创建控制台-高级设置-监控资源。
+## 创建控制台操作指南 —— 资源监控一键安装
+操作位置：创建控制台 - 高级设置 - 资源监控。
 
 - 限制条件：
 
@@ -28,42 +26,56 @@
     - RedHat 8.3 64位
     - Rocky 8.5 64位
    
-步骤一：点击开关，开启资源监控
+### 步骤一：点击开关，开启资源监控
 
-![image](https://www-s.ucloud.cn/2025/08/f0990c2bfac3edff1e926edddb4a97a3_1756176566236.png)
+![](https://www-s.ucloud.cn/2025/08/f0990c2bfac3edff1e926edddb4a97a3_1756176566236.png)
 
 
-步骤二：确认是否成功预安装
+### 步骤二：确认是否成功预安装
 
-&ensp; 方法1：通过命令行确认：预安装成功会返回结果，反之则无返回
+#### 查看进程是否启动
+
+执行命令如下：
+
+```bash
+ps -ef | grep uboltagent
 ```
-#rpm -qa | grep uma
+
+若执行结果如下图所示，说明 UboltAgent 相关进程已正常启动，则已经成功安装 UboltAgent
+
+![](https://www-s.ucloud.cn/2025/08/75e68ccc76bea93419e60e0f461b6922_1756177473974.png)
+
+#### 查看服务状态
+
+执行命令如下：
+
+```bash
+service uboltagent status
+# 或者
+systemctl status uboltagent
 ```
-&ensp; 方法2: 在管理控制台，相应云主机的详情页中，确认监控信息模块的数据，若已安装监控agent会展示监控数据
-![image](https://user-images.githubusercontent.com/91523214/191244019-8a6cbdea-a3e5-4dec-b1df-c332864ed092.png)
 
+若执行结果如下图所示，说明 UboltAgent 服务状态正常
 
+![](https://www-s.ucloud.cn/2025/08/730834ab849436670aa3f9a60c5ddac2_1756177473992.png)
+
+#### 登录云监控确认
+
+等待约5分钟，进入云主机详情页 - 监控信息，查看相关指标图表数据是否正常展示
+
+![](https://www-s.ucloud.cn/2025/08/1dde6fe8f8589958c9c7442364300618_1756177474081.png)
+
+---
 
 ## API操作指南
-步骤一：通过设置UserData字段，指定安装监控agent，输入base64编码
-
-&ensp; 除CentOS 8.0/8.2/8.3镜像版本外，输入以下编码
+### 步骤一：通过设置UserData字段，指定安装监控agent，输入以下base64编码
 
 ```
-I2Nsb3VkLWNvbmZpZwpwYWNrYWdlczoKICAtIHVtYQ==
+I2Nsb3VkLWNvbmZpZwpwYWNrYWdlczoKICAtIGN1cmwKcnVuY21kOgotICdjdXJsIC1PIGh0dHA6Ly91bW9uLmFwaS5zZXJ2aWNlLnVjbG91ZC5jbi9zdGF0aWMvY2xvdWR3YXRjaC9pbnN0YWxsX3Vib2x0YWdlbnQuc2ggJiYgc3VkbyBzaCBpbnN0YWxsX3Vib2x0YWdlbnQuc2gn
 ```
-&ensp; CentOS 8.0/8.2/8.3镜像版本，输入以下脚本
-```
-I2Nsb3VkLWNvbmZpZwpwYWNrYWdlczoKICAtIHVtYS1weTM=
-```
+> 请确认镜像版本后安装。
 
-步骤二：确认是否成功预安装
+### 步骤二：确认是否成功预安装
 
-&ensp; 方法1：通过命令行确认：预安装成功会返回结果，反之则无返回
-```
-#rpm -qa | grep uma
-```
-&ensp; 方法2: 在管理控制台，相应云主机的详情页中，确认监控信息模块的数据，若已安装监控agent会展示监控数据
-![image](https://user-images.githubusercontent.com/91523214/191244019-8a6cbdea-a3e5-4dec-b1df-c332864ed092.png)
-
+同创建控制台预安装检查方式。
 
