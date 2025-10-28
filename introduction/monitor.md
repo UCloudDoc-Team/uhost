@@ -8,7 +8,7 @@
 ## 监控代理程序安装
 
 
-当前，您可以在主机创建完成后，安装我们的监控代理程序，具体安装方式请参考：[监控代理操作指南](https://docs.ucloud.cn/cloudwatch/ublotagent/UboltAgent_Linux_Installation_Guide)
+当前，您可以在主机创建完成后，安装我们的监控代理程序，具体安装方式请参考：[监控代理操作指南](https://docs.ucloud.cn/cloudwatch/uboltagent/UboltAgent_Linux_Installation_Guide)
 
 同时，如果您希望在创建主机时能附带安装和启动我们的监控代理程序，可以通过【创建页】-【高级设置】-【资源监控】，创建主机。
 
