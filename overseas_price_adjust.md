@@ -3,7 +3,7 @@
 受境外市场电价等能源生产要素价格上涨的影响，UCloud将于2022年7月1日0点调整新加坡、伦敦、雅加达可用区云主机产品官网列表价。在2022年7月1日00:00创建的新购、续费订单将按新价格执行。
 
 
->文档中的价格供用户参考,2022年7月1日可直接访问[云主机控制台](https://console.ucloud.cn/uhost/uhost/create)或[价格计算器](https://www.ucloud.cn/site/calculator.html#!/uhost)，各机型详情可查看[机型与规格](https://docs.ucloud.cn/uhost/introduction/uhost/type)。
+>文档中的价格供用户参考,2022年7月1日可直接访问[云主机控制台](https://console.ucloud.cn/uhost/uhost/create)或[价格计算器](https://www.ucloud.cn/site/calculator.html#!/uhost)，各机型详情可查看[机型与规格](/uhost/introduction/uhost/type_new.md)。
 
 
 ## 新加坡可用区
