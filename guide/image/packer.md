@@ -36,10 +36,6 @@ Packer 是 Hashicorp 公司推出的自动化打包镜像的轻量级开源工�
 
 ### 相关链接
 
-[官方参考文档地址](https://www.packer.io/docs/builders/ucloud-uhost.html)
-
-用于查询 UCloud Packer Builder 的各种参数
-
 [官方下载页面](https://www.packer.io/downloads.html?spm=a2c4g.11186623.2.13.7186682bskvY7M)
 
 用于安装 Packer
