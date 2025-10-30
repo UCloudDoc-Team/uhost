@@ -20,7 +20,10 @@
 
 ## 监控相关操作
 
-[监控代理安装](https://docs.ucloud.cn/umon/agent)
+[监控代理安装(Linux)](https://docs.ucloud.cn/cloudwatch/uboltagent/UboltAgent_Linux_Installation_Guide)
+
+[监控代理安装(Windows)](https://docs.ucloud.cn/cloudwatch/uboltagent/UboltAgent_Windows_Installation_Guide)
+
 
 ## 备份相关操作
 
