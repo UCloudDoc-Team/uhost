@@ -49,7 +49,7 @@ Packer 首先利用 [QEMU Builder](https://www.packer.io/docs/builders/qemu.html
 
 ### 编写 JSON 文件 
 
-让我们基于 MacOs 系统使用 QEMU 创建并导入一个 CentOS 6.10 的自定义镜像为例，[示例链接](https://github.com/hashicorp/packer/tree/master/examples/ucloud/local)。首先创建一个干净的空文件夹作为工作区，并且切换到该目录下，编写一个 JSON 规格文件(eg：local.json)，如下 ：
+让我们基于 MacOs 系统使用 QEMU 创建并导入一个 CentOS 6.10 的自定义镜像为例。首先创建一个干净的空文件夹作为工作区，并且切换到该目录下，编写一个 JSON 规格文件(eg：local.json)，如下 ：
 
 ```json
 {"variables": {
