@@ -35,8 +35,4 @@
 
 “选择您想安装在主机上的 Cloudera Manager 的特定版本。
 
-选择“自定义存储库”
-
-输入“<http://cloudera-manager.mirror.ucloud.cn/>”
-
 注:我们的主机名称默认为10-4-4-1（例），在安装CDH的时候，请先修改hostanme，不要含有“-”，部分软件对此不兼容。
