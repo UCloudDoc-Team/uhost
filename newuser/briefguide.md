@@ -31,7 +31,7 @@
 ![自定义配置](/images/newuser/image02.png)<br>
 
 > 1. 可自定义选择[机型](https://docs.ucloud.cn/uhost/introduction/uhost/type_new)、CPU、内存、[磁盘类型及大小](https://docs.ucloud.cn/uhost/introduction/disk)。<br>
-> 2. 可选择是否开启网络增强以及热升级特性，部分镜像及机型可能不支持网络增强和热升级特性，如您想详情了解，请阅读[云主机特性](https://docs.ucloud.cn/uhost/introduction/uhost/feature)。<br>
+> 2. 可选择是否开启网络增强以及热升级特性，部分镜像及机型可能不支持网络增强和热升级特性，如您想详情了解，请阅读[特性](/uhost/introduction/feature/feature.md),[热升级](/uhost/introduction/feature/HotPlugFeature.md)。<br>
 > 3. CPU平台是指云主机所在宿主机的CPU微架构版本，每代CPU平台主要升级了硬件架构。如您想详情了解，请阅读[CPU平台](https://docs.ucloud.cn/uhost/introduction/uhost/type_new)。
 
 ### 3. 配置网络
