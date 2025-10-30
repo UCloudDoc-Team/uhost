@@ -4,7 +4,7 @@
 
 > 文档中的价格以华北一可用区E为例。
 
-其它可用区价格可查看[云主机控制台](https://console.ucloud.cn/uhost/uhost/create)或[价格计算器](https://www.ucloud.cn/site/calculator.html#!/uhost)，各机型详情可查看[机型与规格](https://docs.ucloud.cn/uhost/introduction/uhost/type)。
+其它可用区价格可查看[云主机控制台](https://console.ucloud.cn/uhost/uhost/create)或[价格计算器](https://www.ucloud.cn/site/calculator.html#!/uhost)，各机型详情可查看[机型与规格](introduction/uhost/type_new)。
 
 ## 1. 计费方式
 
