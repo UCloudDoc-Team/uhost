@@ -9,7 +9,7 @@ UCloud云主机类型详情：
 
 |             | 分类 | CPU主频 | 内网带宽 | 特点                   | 适用场景             |
 | ----------- | ---------|-----------------------------|  -------- | -------------------- | ---------------- |
-| 快杰O型  | 快杰系列 | Intel CascadeLake: 2.5GHz-3.9GHz <br> Intel CascadelakeR: 3.0GHz-4.0GHz <br> Intel IceLake: 2.6GHz-3.4GHz <br> SapphireRapids: 2.7GHz-3.8GHz <br>AMD EPYC2: 2.9GHz-3.4GHz <br> Ampere Altra: 2.8GHz-3.0GHz | 25GbE  | 提供基于x86和Arm两种架构的CPU平台可选 <br> 计算、存储、网络性能卓越 | 全面场景  |
+| 快杰O型  | 快杰系列 | Intel CascadeLake: 2.5GHz-3.9GHz <br> Intel CascadelakeR: 3.0GHz-4.0GHz <br> Intel IceLake: 2.6GHz-3.4GHz <br> Intel SapphireRapids: 2.7GHz-3.8GHz <br> **Intel EmeraldRapids(新增): 2.7GHz-4.0GHz** <br> AMD EPYC2: 2.9GHz-3.4GHz <br> Ampere Altra: 2.8GHz-3.0GHz | 25GbE  | 提供基于x86和Arm两种架构的CPU平台可选 <br> 计算、存储、网络性能卓越 | 全面场景  |
 | 快杰PRO通用型| 快杰系列 | AMD EPYC2: 2.9GHz-3.4GHz | 25GbE | 独享vCPU，云主机间无CPU资源竞争，提供强大计算能力和高稳定性 | 渲染场景，游戏业务场景 |
 | 快杰PRO增强型| 快杰系列 | AMD EPYC2: 3.5GHz-3.9GHz | 25GbE | 3.5GHz顶级单核算力，网络性能较高主频型C有显著提升 | 高频交易，高性能数据，EDA等  |
 | 快杰内存型  | 快杰系列 | Intel IceLake:2.6GHz-3.4GHz | 25GbE | 采用大容量内存型服务器，提供超大cpu内存配比选择 | 内存型数据库，例如：Redis <br> Hadoop集群，Spark集群以及其他企业大内存需求应用  |
@@ -28,7 +28,7 @@ UCloud云主机类型详情：
 
 1）概述：<br> 快杰O型是计算、存储与网络性能卓越的旗舰云主机，最大网络性能达到1000W PPS，最大存储性能达到120W IOPS。经历UCloud机型整合，快杰O型现提供基于两种不同架构，即x86架构和Arm架构的CPU平台可选配。当前，快杰O型云主机在Web服务，游戏服务，数据分析处理等绝大多数场景表现出色。
 
-2）CPU平台支持：Intel Cascadelake(Gold6248)；Intel Cascadelake-Refresh(Gold6248R)；Intel IceLake(8358P); SapphireRapids(8458p);AMD EPYC2(Rome7542)；Ampere Altra(8030)。
+2）CPU平台支持：Intel Cascadelake(Gold6248)；Intel Cascadelake-Refresh(Gold6248R)；Intel IceLake(8358P); Intel SapphireRapids(8458P); Intel EmeraldRapids(8558P); AMD EPYC2(Rome7542)；Ampere Altra(8030)。
 
 3）CPU内存组合（支持配比1:1-1:8，不同可用区可选配比不同，具体配比以创建控制台为准）：
 
@@ -282,75 +282,6 @@ UCloud云主机类型详情：
 | SSD本地盘（20-100GB） | SSD本地盘（20-1000GB）                |
 
 
-### GPU型 G
-
-概述：<br> 附带GPU卡的机型，适合需要GPU进行计算的业务，比如，高性能运算、渲染、人工智能等。目前支持K80, P40, V1003种GPU卡。三种卡附属的配置略有不同。
-
-#### GPU性能对比
-
-| 参数       | Tesla V100 | Tesla P40 | Tesla K80  |
-| -------- | ---------- | --------- | ---------- |
-| CUDA核心数  | 5120       | 3840      | 2496       |
-| 单精度浮点性能  | 14 TFOPS   | 12 TFLOPS | 8.7 TFLOPS |
-| INT8性能   | N/A        | 47 TOPS   | N/A        |
-| Tensor性能 | 112 TFLOPS | N/A       | N/A        |
-| 显存容量     | 16GB       | 24GB      | 12GB       |
-| 架构       | Volta      | Pascal    | Kepler     |
-
-#### V100 / P40 GPU
-
-1）CPU平台支持：Broadwell
-
-2）GPU-CPU-内存组合支持（具体配比以创建控制台为准）：
-
-| GPU | CPU | 内存       |
-| --- | --- | -------- |
-| 1颗  | 4核  | 8G，16G   |
-|     | 8核  | 16G，32G  |
-| 2颗  | 8核  | 16G，32G  |
-|     | 16核 | 32G，64G  |
-| 4颗  | 16核 | 32G，64G  |
-|     | 32核 | 64G，128G |
-
-
-3）功能支持与限制：
-- 网络增强1.0
-- 磁盘类型支持：仅支持云盘、普通本地盘、SSD本地盘
-
-具体选择范围：
-
-| 系统盘              | 数据盘                              |
-| ---------------- | -------------------------------- |
-| SSD云盘 (20-500GB) | SSD云盘（20-4000GB），普通云盘（20-8000GB） |
-| 普通本地盘（20-100GB）  | 普通本地盘（20-2000GB）                 |
-| SSD本地盘（20-100GB） | SSD本地盘（20-1000GB）                |
-
-
-#### K80 GPU
-
-1）CPU平台支持：Intel Haswell
-
-2）GPU-CPU-内存组合支持（具体配比以创建控制台为准）：
-
-| GPU   | CPU | 内存      |
-| ----- | --- | ------- |
-| 1颗/2颗 | 4核  | 8G，16G  |
-|       | 8核  | 16G，32G |
-|       | 16核 | 32G，64G |
-
-3）功能支持与限制：
-- 网络增强1.0
-- 磁盘类型支持：仅支持云盘、普通本地盘、SSD本地盘
-
-具体选择范围：
-
-| 系统盘              | 数据盘                              |
-| ---------------- | -------------------------------- |
-| SSD云盘 (20-500GB) | SSD云盘（20-4000GB），普通云盘（20-8000GB） |
-| 普通本地盘（20-100GB）  | 普通本地盘（20-2000GB）                 |
-| SSD本地盘（20-100GB） | SSD本地盘（20-1000GB）                |
-
-
 ## CPU平台
 
 ### CPU平台概述
@@ -362,6 +293,7 @@ CPU平台属性是指云主机所在宿主机的CPU微架构版本，包含以�
 - Intel Cascadelake
 - Intel Cascadelake-Refresh
 - Intel IceLake
+- Intel EmeraldRapids
 - AMD EPYC2
 - Arm Altra
 
@@ -386,6 +318,7 @@ CPU平台属性是指云主机所在宿主机的CPU微架构版本，包含以�
 | Intel/CascadelakeR | √   | √     | √       |         |
 | Intel/IceLake |  √   | √     | √       |         |
 | Intel/ SapphireRapids|  √   | √     | √       |√         |
+| Intel/ EmeraldRapids|  √   | √     | √       |√         |
 | Arm/Altra |    |      |        |         |
 
 3）对计算性能有明确要求的业务，推荐选择当前可用区的最新一代。
