@@ -317,7 +317,7 @@ CPU平台属性是指云主机所在宿主机的CPU微架构版本，包含以�
 | Intel/Cascadelake | √   | √     | √       |         |
 | Intel/CascadelakeR | √   | √     | √       |         |
 | Intel/IceLake |  √   | √     | √       |         |
-| Intel/ SapphireRapids|  √   | √     | √       |√         |
+| Intel/ SapphireRapids|  √   | √     | √       |         |
 | Intel/ EmeraldRapids|  √   | √     | √       |          |
 | Arm/Altra |    |      |        |         |
 
