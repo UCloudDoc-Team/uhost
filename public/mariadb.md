@@ -25,9 +25,9 @@ enabled=1
 
 | 数据中心    | 仓库url                                                         |
 | ------- | ------------------------------------------------------------- |
-| 北京一可用区A | mariadb5.mirror.ucloud.cn 或者 mariadb5.mirrors.ucloud.cn       |
-| 华北一可用区B | mariadb5.mirror.cs.ucloud.cn 或者 mariadb5.mirrors.cs.ucloud.cn |
-| 华北一可用区C | mariadb5.mirror.yg.ucloud.cn 或者 mariadb5.mirrors.yg.ucloud.cn |
+| 华北（北京）可用区A | mariadb5.mirror.ucloud.cn 或者 mariadb5.mirrors.ucloud.cn       |
+| 华北（北京2）可用区B | mariadb5.mirror.cs.ucloud.cn 或者 mariadb5.mirrors.cs.ucloud.cn |
+| 华北（北京2）可用区C | mariadb5.mirror.yg.ucloud.cn 或者 mariadb5.mirrors.yg.ucloud.cn |
 | 华南双线    | mariadb5.mirror.gz.ucloud.cn 或者 mariadb5.mirrors.gz.ucloud.cn |
 | 亚太      | mariadb5.mirror.hk.ucloud.cn 或者 mariadb5.mirrors.hk.ucloud.cn |
 | 北美      | mariadb5.mirror.la.ucloud.cn 或者 mariadb5.mirrors.la.ucloud.cn |
@@ -53,9 +53,9 @@ enabled=1
 
 | 数据中心    | 仓库url                                                             |
 | ------- | ----------------------------------------------------------------- |
-| 北京一可用区A | mariadb100.mirror.ucloud.cn 或者 mariadb100.mirrors.ucloud.cn       |
-| 华北一可用区B | mariadb100.mirror.cs.ucloud.cn 或者 mariadb100.mirrors.cs.ucloud.cn |
-| 华北一可用区C | mariadb100.mirror.yg.ucloud.cn 或者 mariadb100.mirrors.yg.ucloud.cn |
+| 华北（北京）可用区A | mariadb100.mirror.ucloud.cn 或者 mariadb100.mirrors.ucloud.cn       |
+| 华北（北京2）可用区B | mariadb100.mirror.cs.ucloud.cn 或者 mariadb100.mirrors.cs.ucloud.cn |
+| 华北（北京2）可用区C | mariadb100.mirror.yg.ucloud.cn 或者 mariadb100.mirrors.yg.ucloud.cn |
 | 华南双线    | mariadb100.mirror.gz.ucloud.cn 或者 mariadb100.mirrors.gz.ucloud.cn |
 | 亚太      | mariadb100.mirror.hk.ucloud.cn 或者 mariadb100.mirrors.hk.ucloud.cn |
 | 北美      | mariadb100.mirror.la.ucloud.cn 或者 mariadb100.mirrors.la.ucloud.cn |
@@ -81,9 +81,9 @@ enabled=1
 
 | 数据中心    | 仓库url                                                             |
 | ------- | ----------------------------------------------------------------- |
-| 北京一可用区A | mariadb101.mirror.ucloud.cn 或者 mariadb101.mirrors.ucloud.cn       |
-| 华北一可用区B | mariadb101.mirror.cs.ucloud.cn 或者 mariadb101.mirrors.cs.ucloud.cn |
-| 华北一可用区C | mariadb101.mirror.yg.ucloud.cn 或者 mariadb101.mirrors.yg.ucloud.cn |
+| 华北（北京）可用区A | mariadb101.mirror.ucloud.cn 或者 mariadb101.mirrors.ucloud.cn       |
+| 华北（北京2）可用区B | mariadb101.mirror.cs.ucloud.cn 或者 mariadb101.mirrors.cs.ucloud.cn |
+| 华北（北京2）可用区C | mariadb101.mirror.yg.ucloud.cn 或者 mariadb101.mirrors.yg.ucloud.cn |
 | 华南双线    | mariadb101.mirror.gz.ucloud.cn 或者 mariadb101.mirrors.gz.ucloud.cn |
 | 亚太      | mariadb101.mirror.hk.ucloud.cn 或者 mariadb101.mirrors.hk.ucloud.cn |
 | 北美      | mariadb101.mirror.la.ucloud.cn 或者 mariadb101.mirrors.la.ucloud.cn |

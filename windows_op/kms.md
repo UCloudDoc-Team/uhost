@@ -33,7 +33,7 @@ UHost在初始化完成便可自动激活系统，整个过程用户无感知也
 
 ![image](/images/software/kms02.png)
 
-Uhost所在机房：华北一可用区C
+Uhost所在机房：华北（北京2）可用区C
 
 Uhost安装系统：Windows server 2008 datacenter r2
 
