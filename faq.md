@@ -22,7 +22,7 @@ UCloud云主机可选三种类型的磁盘：云硬盘（UDisk），本地普通
 
 ## 在SSD云主机上使用MySQL，如何发挥最佳性能？
 
-在SSD云主机上使用MySQL数据库需要进行以下优化：innodb\_io\_capacity设为2000 (若使用MyISAM则无需此配置）
+在SSD云主机上使用MySQL数据库需要进行以下优化：innodb\_io\_capacity设为2000 (若使用MyISAM则无需此配置）。
 
 ## 怎么将文件迁移到云主机呢？
 
