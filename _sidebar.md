@@ -10,7 +10,6 @@
     * 主机
         * [地域与可用区](/uhost/introduction/uhost/az)
         * [机型与CPU平台](/uhost/introduction/uhost/type_new)
-        * [机型选择](/uhost/introduction/uhost/select_type)
         * [订单构成](/uhost/introduction/uhost/lifecycle)
         * [配额](/uhost/introduction/uhost/quota)
     * 特性
