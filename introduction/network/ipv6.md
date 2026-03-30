@@ -15,7 +15,21 @@
     - H800
     - H20
 - 支持IPv6的镜像列表：
+  - CentOS 8.4
+  - CentOS 8.3
+  - CentOS 8.2
+  - CentOS 8.0
   - CentOS 7.9
+  - CentOS 7.8（快杰、高内核）
+  - CentOS 7.6（快杰、高内核）
+  - CentOS 7.4（快杰、高内核）
+  - CentOS 7.3（快杰、高内核）
+  - CentOS 7.2（快杰、高内核）
+  - Rocky 9.5 64位
+  - Rocky 9.4 64位
+  - Rocky 9.2 64位
+  - Rocky 9.1 64位
+  - Rocky 8.5 64位
   - Debian 11.7
 - 绑定的VPC已开通IPv6网段。
 - 每个资源（主机、弹性网卡）限制绑定1个IPv6地址。
