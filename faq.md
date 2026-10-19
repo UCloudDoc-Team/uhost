@@ -181,10 +181,6 @@ yum install rpm-build redhat-rpm-config patchutils xmlto asciidoc elfutils-libel
 centos-release*，这样可以防止在装软件包时无意更新内核相关的东西。
 如果确实需要安装此软件包，将/etc/yum.conf中的这行代码注释即可。
 
-## /usr/bin/uga程序是什么？主机中的uga进程是什么？
-
-UGA是UCloud提供的主机内置代理程序。仅仅用于帮助用户结合主机控制台功能执行自动化操作，提升用户体验。无法通过UGA查、增、删、改用户文件。[详情](uhost/guide/uga)
-
 ## 如何激活UHost上的Windows Server?
 
 UCloud上创建的Windows云主机，默认是自动激活的，用户无需再操作。参考 [KMS激活说明](uhost/windows_op/kms)
