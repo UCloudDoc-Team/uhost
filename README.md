@@ -38,6 +38,9 @@
     * [磁盘](/uhost/guide/disk)
     * 镜像
         * [自定义镜像](/uhost/guide/image/common)
+        * [自制镜像](/uhost/guide/image/common2)
+        * [制作镜像](/uhost/guide/image/create_image)
+        * [导入镜像](/uhost/guide/image/upload_image2)
         * [使用 Packer 创建自定义镜像](/uhost/guide/image/packer)
         * [使用 Packer 创建并导入本地镜像](/uhost/guide/image/packer_import)
         * [镜像上传](/uhost/guide/image/upload_image)

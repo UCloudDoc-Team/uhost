@@ -15,10 +15,12 @@
 1. 登录 UCloud 控制台，切换至目标项目和地域。
   
 2. 进入【云主机】>【镜像管理】>【自制镜像】，点击【导入镜像】。
-  <img width="807" height="551" alt="image" src="https://github.com/user-attachments/assets/e88592bb-7665-4cdc-9e93-c28f3e69daa1" />
+
+   <img src="https://github.com/user-attachments/assets/e88592bb-7665-4cdc-9e93-c28f3e69daa1" alt="image" style="max-width: 100%; height: auto;" />
 
 3. 填写镜像名称、描述和 US3 文件地址，选择与文件一致的操作系统平台、版本及镜像格式，点击【确定】。
-<img width="812" height="763" alt="image" src="https://github.com/user-attachments/assets/02d8597f-f815-4a7f-b993-0a430ef27a1c" />
+
+   <img src="https://github.com/user-attachments/assets/02d8597f-f815-4a7f-b993-0a430ef27a1c" alt="image" style="max-width: 100%; height: auto;" />
 
 
 ### 3. 查看结果并使用
@@ -46,6 +48,5 @@
 ## 其他类型镜像
 
 当您的镜像不在UCloud支持的镜像范围内时，可以选择上传为“其他”类型镜像。
-<img width="807" height="765" alt="image" src="https://github.com/user-attachments/assets/b4d97e2b-ac60-4b7d-ad67-a41990857f5f" />
 
-##
+<img src="https://github.com/user-attachments/assets/b4d97e2b-ac60-4b7d-ad67-a41990857f5f" alt="image" style="max-width: 100%; height: auto;" />

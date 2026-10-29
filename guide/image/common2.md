@@ -8,13 +8,13 @@
 
 将账户下已有云主机实例制作为自制镜像，用于复用已经配置好的系统环境。按支持情况，还可以关联数据盘快照。
 
-[点击跳转到制作镜像教程](create_image.md)。
+[点击跳转到制作镜像教程](/uhost/guide/image/create_image)。
 
 ## 导入镜像
 
 将已准备好的本地系统盘镜像文件上传至US3，再通过控制台导入为自制镜像。该流程与从已有UCloud实例制作镜像不同。
 
-[点击跳转到导入自制镜像教程](upload_image.md)。
+[点击跳转到导入自制镜像教程](/uhost/guide/image/upload_image2)。
 
 ## 镜像管理
 
@@ -30,9 +30,8 @@
 1. 通过页面提供的编辑入口修改镜像名称或备注，并保存。
   
 2. 建议在名称或备注中记录系统版本、软件版本、用途及维护信息，例如 `app-base-linux-v1`，以便区分不同版本。名称或备注中不要填写密码、密钥等敏感信息。
-   ![镜像名称和备注编辑界面](https://github.com/user-attachments/assets/37bc6d4b-76c1-42c5-aebd-6db70dc65135)
 
-<img width="1845" height="704" alt="image" src="https://github.com/user-attachments/assets/37bc6d4b-76c1-42c5-aebd-6db70dc65135" />
+   <img src="https://github.com/user-attachments/assets/37bc6d4b-76c1-42c5-aebd-6db70dc65135" alt="镜像名称和备注编辑界面" style="max-width: 100%; height: auto;" />
 
   
 
@@ -43,11 +42,12 @@
 2. 点击【操作-从镜像创建主机】，选择CPU型/GPU型创建相应主机。或在【主机创建页】，选择自制镜像，选择目标镜像进行创建主机。
   
 3. 使用限制：
-  1. 本地域的镜像只能创建本地域的主机。若需跨地域创建，请提交工单开通镜像升级到地域级服务权限。
-  2. 若镜像包含关联数据盘的快照，暂不支持跨可用区创建和本地盘制作，仅支持创建快照服务所在可用区的主机和其他类型磁盘。
-  3. 镜像的适用机型限制传承自该自定义镜像的母镜像。例如，该镜像的母镜像是Windows镜像，则无法通过此镜像创建1核的主机，也无法开启网络增强。
 
- <img width="1841" height="527" alt="image" src="https://github.com/user-attachments/assets/6f00e601-54dd-4339-99e2-0218eab6086d" />
+    1. 本地域的镜像只能创建本地域的主机。若需跨地域创建，请提交工单开通镜像升级到地域级服务权限。
+    2. 若镜像包含关联数据盘的快照，暂不支持跨可用区创建和本地盘制作，仅支持创建快照服务所在可用区的主机和其他类型磁盘。
+    3. 镜像的适用机型限制传承自该自定义镜像的母镜像。例如，该镜像的母镜像是Windows镜像，则无法通过此镜像创建1核的主机，也无法开启网络增强。
+
+<img src="https://github.com/user-attachments/assets/6f00e601-54dd-4339-99e2-0218eab6086d" alt="image" style="max-width: 100%; height: auto;" />
  
  
 
@@ -71,7 +71,7 @@
   
 3. 转换成轻量云自制镜像后，该镜像无法在云主机镜像列表中展示。
 
-<img width="1850" height="494" alt="image" src="https://github.com/user-attachments/assets/f060b20e-2d31-4df0-8c00-df744265401e" />
+<img src="https://github.com/user-attachments/assets/f060b20e-2d31-4df0-8c00-df744265401e" alt="image" style="max-width: 100%; height: auto;" />
 
   
 
@@ -86,7 +86,7 @@
 > 警告：删除镜像会同时删除其关联的数据盘快照。现有规则不允许单独删除镜像关联的数据盘快照。删除镜像及快照不会自动关闭磁盘快照服务，应另行检查服务和计费状态。
 
 
-<img width="1848" height="572" alt="image" src="https://github.com/user-attachments/assets/265b24ff-01e9-4a8e-975b-3702b6273aae" />
+<img src="https://github.com/user-attachments/assets/265b24ff-01e9-4a8e-975b-3702b6273aae" alt="image" style="max-width: 100%; height: auto;" />
 
 
 ## 自定义镜像配额
@@ -101,5 +101,3 @@
 | 广东  | 10  |
 | 香港  | 10  |
 | 加州  | 10  |
-
-###
