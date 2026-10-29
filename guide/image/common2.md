@@ -30,6 +30,7 @@
 1. 通过页面提供的编辑入口修改镜像名称或备注，并保存。
   
 2. 建议在名称或备注中记录系统版本、软件版本、用途及维护信息，例如 `app-base-linux-v1`，以便区分不同版本。名称或备注中不要填写密码、密钥等敏感信息。
+   ![镜像名称和备注编辑界面](https://github.com/user-attachments/assets/37bc6d4b-76c1-42c5-aebd-6db70dc65135)
 
 <img width="1845" height="704" alt="image" src="https://github.com/user-attachments/assets/37bc6d4b-76c1-42c5-aebd-6db70dc65135" />
 
