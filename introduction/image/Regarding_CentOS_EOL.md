@@ -10,7 +10,6 @@
 ## 一、镜像版本维护时间
 
 ### Ubuntu
-
 | 版本  | 标准支持结束时间 |
 | --- | --- |
 | Ubuntu 24.04 LTS | 2029-05 |
@@ -23,7 +22,6 @@
 详细信息请参见 [Ubuntu 官网](https://ubuntu.com/about/release-cycle)。
 
 ### CentOS
-
 | 版本  | 停止维护时间 |
 | --- | --- |
 | CentOS Stream 9 | 2027-05-31 |
@@ -38,7 +36,6 @@ CentOS官方建议停止维护后，可以将环境迁移至CentOS Stream版本�
 详细信息请参见 [CentOS 官网](https://www.centos.org/download/)。
 
 ### Windows Server
-
 | 版本  | 主流支持结束时间 | 延长支持结束时间 |
 | --- | --- | --- |
 | Windows Server 2022 | 2026-10-13 | 2031-10-14 |
@@ -46,16 +43,13 @@ CentOS官方建议停止维护后，可以将环境迁移至CentOS Stream版本�
 | Windows Server 2016 | 2022-01-11 | 2027-01-12 |
 | Windows Server 2012 | 2018-10-09 | 2023-10-10 |
 | Windows Server 2008 | 2015-01-13 | 2020-01-14 |
-
 说明：
-
 - **主流支持**：微软提供安全更新、问题修复及产品改进等支持，结束后进入延长支持阶段。
 - **延长支持**：以安全更新为主，通常不再提供新功能；结束后不再提供常规安全更新。
 
 详细信息请参见 [Microsoft 官网](https://learn.microsoft.com/zh-cn/lifecycle/products/)。
 
 ### Debian
-
 | 版本  | 常规支持结束时间 | 社区 LTS 结束时间 |
 | --- | --- | --- |
 | Debian 12.7 | 2026-07-11 | 2028-06-30 |
@@ -65,28 +59,21 @@ CentOS官方建议停止维护后，可以将环境迁移至CentOS Stream版本�
 | Debian 9.8 | 2020-07-18 | 2022-07-01 |
 | Debian 9.0 | 2020-07-18 | 2022-07-01 |
 | Debian 8.8 | 2018-06-17 | 2020-06-30 |
-
 说明：
-
 - **常规支持结束时间**：Debian 安全团队停止常规安全维护的时间，之后进入社区长期支持（LTS）阶段。
 - **社区 LTS 结束时间**：LTS 团队停止提供安全更新的时间。LTS 只覆盖部分架构和软件包。
-
 详细信息请参见 [Debian 官网](https://www.debian.org/releases/)。
 
 ### Red Hat Enterprise Linux
-
 | 版本  | 对应大版本维护结束时间 | 固定小版本支持情况 |
 | --- | --- | --- |
 | Red Hat Enterprise Linux 9.6 | 2032-05-31 | EUS 至 2027-05-31，需相应订阅 |
 | Red Hat Enterprise Linux 8.3 | 2029-05-31 | 该小版本于 2021-05-31 停止常规更新 |
 | Red Hat Enterprise Linux 6.6 | 2020-11-30 | 该小版本 EUS 于 2016-10-31 结束 |
-
 大版本维护期限不代表旧小版本可一直使用，额外支持以有效订阅为准。
-
 详细信息请参见 [Red Hat 官网](https://access.redhat.com/support/policy/updates/errata)。
 
 ### Rocky Linux
-
 | 版本  | 该小版本停止维护时间 |
 | --- | --- |
 | Rocky Linux 10.1 | 2026-05-29 |
@@ -97,21 +84,16 @@ CentOS官方建议停止维护后，可以将环境迁移至CentOS Stream版本�
 | Rocky Linux 9.2 | 2023-11-20 |
 | Rocky Linux 9.1 | 2023-05-16 |
 | Rocky Linux 8.5 | 2022-05-16 |
-
 新小版本发布后，旧小版本停止维护；请更新至官方支持的最新小版本。
-
 详细信息请参见 [Rocky Linux 官网](https://docs.rockylinux.org/10/releases/)。
 
 ### Kylin（银河麒麟）
-
 | 版本  | 停止维护时间 |
 | --- | --- |
 | Kylin Server V10 SP3（aarch64） | 以麒麟软件官方公告为准 |
-
 详细信息请参见 [麒麟软件官网](https://support.kylinos.cn/#/support/policies)。
 
 ## 二、应对建议
-
 - **无需保留系统盘数据：** 备份重要数据后，通过[重装系统](https://docs.ucloud.cn/uhost/guide/common?id=%e9%87%8d%e8%a3%85%e7%b3%bb%e7%bb%9f)更换镜像。重装会清除原系统盘内容。
 - **需要保留业务数据：** 建议使用UCloud服务器迁移中心（USMC）进行迁移，详见[产品说明](https://docs.ucloud.cn/usmc/introduction/concept)。
 - **替代镜像选择：** CentOS Linux 用户可优先考虑仍在维护期内的 Rocky Linux，也可选择 Ubuntu、Debian 或具备有效订阅的Red Hat Enterprise Linux；Windows 用户应选择仍受支持的 Windows Server 版本。具体可选版本以控制台为准。
