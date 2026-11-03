@@ -43,6 +43,7 @@ CentOS官方建议停止维护后，可以将环境迁移至CentOS Stream版本�
 | Windows Server 2016 | 2022-01-11 | 2027-01-12 |
 | Windows Server 2012 | 2018-10-09 | 2023-10-10 |
 | Windows Server 2008 | 2015-01-13 | 2020-01-14 |
+
 说明：
 - **主流支持**：微软提供安全更新、问题修复及产品改进等支持，结束后进入延长支持阶段。
 - **延长支持**：以安全更新为主，通常不再提供新功能；结束后不再提供常规安全更新。
@@ -59,6 +60,7 @@ CentOS官方建议停止维护后，可以将环境迁移至CentOS Stream版本�
 | Debian 9.8 | 2020-07-18 | 2022-07-01 |
 | Debian 9.0 | 2020-07-18 | 2022-07-01 |
 | Debian 8.8 | 2018-06-17 | 2020-06-30 |
+
 说明：
 - **常规支持结束时间**：Debian 安全团队停止常规安全维护的时间，之后进入社区长期支持（LTS）阶段。
 - **社区 LTS 结束时间**：LTS 团队停止提供安全更新的时间。LTS 只覆盖部分架构和软件包。
@@ -70,6 +72,7 @@ CentOS官方建议停止维护后，可以将环境迁移至CentOS Stream版本�
 | Red Hat Enterprise Linux 9.6 | 2032-05-31 | EUS 至 2027-05-31，需相应订阅 |
 | Red Hat Enterprise Linux 8.3 | 2029-05-31 | 该小版本于 2021-05-31 停止常规更新 |
 | Red Hat Enterprise Linux 6.6 | 2020-11-30 | 该小版本 EUS 于 2016-10-31 结束 |
+
 大版本维护期限不代表旧小版本可一直使用，额外支持以有效订阅为准。
 详细信息请参见 [Red Hat 官网](https://access.redhat.com/support/policy/updates/errata)。
 
@@ -84,6 +87,7 @@ CentOS官方建议停止维护后，可以将环境迁移至CentOS Stream版本�
 | Rocky Linux 9.2 | 2023-11-20 |
 | Rocky Linux 9.1 | 2023-05-16 |
 | Rocky Linux 8.5 | 2022-05-16 |
+
 新小版本发布后，旧小版本停止维护；请更新至官方支持的最新小版本。
 详细信息请参见 [Rocky Linux 官网](https://docs.rockylinux.org/10/releases/)。
 
@@ -91,6 +95,7 @@ CentOS官方建议停止维护后，可以将环境迁移至CentOS Stream版本�
 | 版本  | 停止维护时间 |
 | --- | --- |
 | Kylin Server V10 SP3（aarch64） | 以麒麟软件官方公告为准 |
+
 详细信息请参见 [麒麟软件官网](https://support.kylinos.cn/#/support/policies)。
 
 ## 二、应对建议
