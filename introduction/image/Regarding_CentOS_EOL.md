@@ -1,39 +1,117 @@
 # 关于镜像结束生命周期（EOL）的应对方案
-镜像EOL是指镜像结束了生命周期（由于第三方支持、开源计划等原因），UCloud同时停止对使用相应镜像的技术支持，并在选择镜像版本时标注「EOL」提示该镜像已结束生命周期。
-<br>
-针对镜像EOL后的解决方案可参考本文档，如无涉及相关镜像可联系我们提供方案。
 
-## 一、CentOS Linux停止维护后的应对方案
-依据CentOS官方公告所知，其将停止维护CentOS Linux项目，UCloud所提供的基础镜像CentOS Linux源于CentOS官方，故在官方停止维护后UCloud也将停止对该基础镜像的维护。
-<br>
-本文主要就CentOS官方公告内容及影响、UCloud基础镜像应对方案及应对建议进行介绍。
+镜像结束生命周期（End of Life，EOL），是指其操作系统版本已停止维护。**官方停止维护后，UCloud 也将停止对相应基础镜像的更新、维护及相关操作系统技术支持，并在镜像选择时标注「EOL」。**
 
-### CentOS官方公告内容
-2020年12月08日，CentOS官方宣布了停止维护CentOS Linux 的计划，并推出了CentOS Stream项目。具体信息请阅读[CentOS官方公告](https://www.centos.org/cl-vs-cs/)。因此对CentOS Linux镜像存在以下影响：
-- CentOS Linux 7作为RHEL 7的复刻版本已于2020年08月06日停止更新，但会延续当前的支持计划，于2024年06月30日停止维护（EOL）；
-- CentOS Linux 8作为RHEL 8的复刻版本，生命周期缩短，已于2021年12月31日停止更新并停止维护（EOL）。
 
-基于以上官方变更计划，CentOS Linux 7和CentOS Linux 8用户将无法获得包括问题修复和功能更新在内的任何软件维护和支持。
-CentOS官方建议停止维护后，可以将环境迁移至CentOS Stream版本；对于生产环境或部署关键业务的系统，建议使用稳定的Red Hat Enterprise Linux。对此，用户需评估以下问题：
+
+ >注意：
+ EOL 不代表云主机停止运行或镜像立即下架，但操作系统停止维护后将无法获得包括问题修复和功能更新在内的软件维护和支持，建议您及时更换仍在维护期内的镜像版本。针对镜像EOL后的解决方案可参考本文档。
+
+## 一、镜像版本维护时间
+
+### Ubuntu
+
+| 版本  | 标准支持结束时间 |
+| --- | --- |
+| Ubuntu 24.04 LTS | 2029-05 |
+| Ubuntu 22.04 LTS | 2027-05 |
+| Ubuntu 20.04 LTS | 2025-05 |
+| Ubuntu 18.04 LTS | 2023-05 |
+| Ubuntu 16.04 LTS | 2021-04 |
+| Ubuntu 14.04 LTS | 2019-04 |
+
+详细信息请参见 [Ubuntu 官网](https://ubuntu.com/about/release-cycle)。
+
+### CentOS
+
+| 版本  | 停止维护时间 |
+| --- | --- |
+| CentOS Stream 9 | 2027-05-31 |
+| CentOS 8 | 2021-12-31 |
+| CentOS 7 | 2024-06-30 |
+| CentOS 6 | 2020-11-30 |
+
+CentOS官方建议停止维护后，可以将环境迁移至CentOS Stream版本。对此，用户需评估以下问题：
 
 - CentOS Stream是一个滚动发行的版本，仅为RHEL前置测试版，运用于生产环境时，可能存在一定风险。
 
-### UCloud基础镜像应对方案
-基于CentOS官方公告，UCloud的应对方案如下：
-- UCloud对于CentOS操作系统的服务支持将和CentOS官方日期保持同步。对CentOS Linux 7的服务支持将持续至2024年06月30日。
-- CentOS Linux 8已于2021年12月31日停止维护，UCloud已停止对该基础镜像的更新和维护。但暂不会下线CentOS Linux 8，所以对于正在使用相关镜像的云主机用户不会受到影响；
+详细信息请参见 [CentOS 官网](https://www.centos.org/download/)。
 
-### 应对建议
-您可以根据业务情况选择适用的操作系统替代CentOS Linux，具体操作说明如下：
-- 无需保留系统盘数据：可通过重装操作系统进行更换，具体操作详见[操作指南](https://docs.ucloud.cn/uhost/guide/common?id=%e9%87%8d%e8%a3%85%e7%b3%bb%e7%bb%9f)；
-- 如需保留系统盘数据：建议使用UCloud服务器迁移中心（USMC)进行迁移，详见[产品说明](https://docs.ucloud.cn/usmc/introduction/concept)；
-- UCloud建议您使用Rocky Linux镜像。
+### Windows Server
 
+| 版本  | 主流支持结束时间 | 延长支持结束时间 |
+| --- | --- | --- |
+| Windows Server 2022 | 2026-10-13 | 2031-10-14 |
+| Windows Server 2019 | 2024-01-09 | 2029-01-09 |
+| Windows Server 2016 | 2022-01-11 | 2027-01-12 |
+| Windows Server 2012 | 2018-10-09 | 2023-10-10 |
+| Windows Server 2008 | 2015-01-13 | 2020-01-14 |
 
-UCloud基础镜像中还提供了其他多种基础镜像可选，您可以根据业务的实际情况，选择适用的操作系统替代CentOS Linux。具体说明如下：
+说明：
 
-| 镜像名称 | 概述 |
-| ----------- | ---------|
-|Red Hat Enterprise Linux | Red Hat Enterprise Linux是Red Hat公司提供的企业版操作系统，UCloud基础镜像中目前支持RedHat 8.3 64位版本。|
-|Rocky Linux  | Rocky Linux 是一个社区化的企业级操作系统，Rocky Linux与CentOS一样，提供了适用于服务器的稳定版本，旨在作为CentOS完全兼容的替代版本。 |
-|Debian、Ubuntu等其他操作系统 | Linux的其他发行版操作系统，不同操作系统在使用习惯和应用兼容性上存在一定差异。|
+- **主流支持**：微软提供安全更新、问题修复及产品改进等支持，结束后进入延长支持阶段。
+- **延长支持**：以安全更新为主，通常不再提供新功能；结束后不再提供常规安全更新。
+
+详细信息请参见 [Microsoft 官网](https://learn.microsoft.com/zh-cn/lifecycle/products/)。
+
+### Debian
+
+| 版本  | 常规支持结束时间 | 社区 LTS 结束时间 |
+| --- | --- | --- |
+| Debian 12.7 | 2026-07-11 | 2028-06-30 |
+| Debian 11.7 | 2024-08-14 | 2026-08-31 |
+| Debian 10.0 | 2022-09-10 | 2024-06-30 |
+| Debian 9.9 | 2020-07-18 | 2022-07-01 |
+| Debian 9.8 | 2020-07-18 | 2022-07-01 |
+| Debian 9.0 | 2020-07-18 | 2022-07-01 |
+| Debian 8.8 | 2018-06-17 | 2020-06-30 |
+
+说明：
+
+- **常规支持结束时间**：Debian 安全团队停止常规安全维护的时间，之后进入社区长期支持（LTS）阶段。
+- **社区 LTS 结束时间**：LTS 团队停止提供安全更新的时间。LTS 只覆盖部分架构和软件包。
+
+详细信息请参见 [Debian 官网](https://www.debian.org/releases/)。
+
+### Red Hat Enterprise Linux
+
+| 版本  | 对应大版本维护结束时间 | 固定小版本支持情况 |
+| --- | --- | --- |
+| Red Hat Enterprise Linux 9.6 | 2032-05-31 | EUS 至 2027-05-31，需相应订阅 |
+| Red Hat Enterprise Linux 8.3 | 2029-05-31 | 该小版本于 2021-05-31 停止常规更新 |
+| Red Hat Enterprise Linux 6.6 | 2020-11-30 | 该小版本 EUS 于 2016-10-31 结束 |
+
+大版本维护期限不代表旧小版本可一直使用，额外支持以有效订阅为准。
+
+详细信息请参见 [Red Hat 官网](https://access.redhat.com/support/policy/updates/errata)。
+
+### Rocky Linux
+
+| 版本  | 该小版本停止维护时间 |
+| --- | --- |
+| Rocky Linux 10.1 | 2026-05-29 |
+| Rocky Linux 9.7 | 2026-05-28 |
+| Rocky Linux 9.6 | 2025-12-01 |
+| Rocky Linux 9.5 | 2025-06-04 |
+| Rocky Linux 9.4 | 2024-11-19 |
+| Rocky Linux 9.2 | 2023-11-20 |
+| Rocky Linux 9.1 | 2023-05-16 |
+| Rocky Linux 8.5 | 2022-05-16 |
+
+新小版本发布后，旧小版本停止维护；请更新至官方支持的最新小版本。
+
+详细信息请参见 [Rocky Linux 官网](https://docs.rockylinux.org/10/releases/)。
+
+### Kylin（银河麒麟）
+
+| 版本  | 停止维护时间 |
+| --- | --- |
+| Kylin Server V10 SP3（aarch64） | 以麒麟软件官方公告为准 |
+
+详细信息请参见 [麒麟软件官网](https://support.kylinos.cn/#/support/policies)。
+
+## 二、应对建议
+
+- **无需保留系统盘数据：** 备份重要数据后，通过[重装系统](https://docs.ucloud.cn/uhost/guide/common?id=%e9%87%8d%e8%a3%85%e7%b3%bb%e7%bb%9f)更换镜像。重装会清除原系统盘内容。
+- **需要保留业务数据：** 建议使用UCloud服务器迁移中心（USMC）进行迁移，详见[产品说明](https://docs.ucloud.cn/usmc/introduction/concept)。
+- **替代镜像选择：** CentOS Linux 用户可优先考虑仍在维护期内的 Rocky Linux，也可选择 Ubuntu、Debian 或具备有效订阅的Red Hat Enterprise Linux；Windows 用户应选择仍受支持的 Windows Server 版本。具体可选版本以控制台为准。
