@@ -19,7 +19,7 @@
     * 镜像
         * [镜像](/uhost/introduction/image/introduction.md)
         * [镜像计费](uhost/introduction/image/Regarding_CustomImage_Charge.md)
-        * [镜像EOL的应对方案](/uhost/introduction/image/Regarding_CentOS_EOL.md)
+        * [镜像EOL的应对方案](/uhost/introduction/image/Image_EOL_Response_Plan.md)
     * 网络
         * [内网](/uhost/introduction/network/vpc.md)
         * [弹性外网IP](/uhost/introduction/network/eip.md)
